@@ -1,21 +1,33 @@
 # EnhancerX
 Annotate Enhancers using various ML techniques
 
-## INTERN
+## INTERN_Rules
+
+READ THE ORGANIZATION AND STICK TO THE STRUCTURE
+BE ORGANIZED
+Rules can be changed through democratic means.
+
+### Data
 DO NOT upload data to github repo directly. 
 
 The folder 'data' is added to .gitignore, so anything inside that folder will be ignored by git.
 
+### Log
 If you write a code, or modify anything that uses a new data, update README.md - Data section and Organization section on how to download/unzip the raw data accordingly.
 
 Provide whatever necessary tech-tutorials to "TroubleShooting"
 
-Use tsv, not csv if possible. 
+Writing small logs on DEVDIARY.md may help others and help you get back to work quickly later.
 
-READ THE ORGANIZATION AND STICK TO THE STRUCTURE
-BE ORGANIZED
+### Formats
+Use tsv, not csv if possible. (decimal point , . conversion error can screw things up)
+Use hard typing if possible.
+Use docstring if possible.
+Showing Database Format (header + head(1)) in a comment can help, whereever you call data from a database.
+
 
 ## Organization
+minor helper functions are skipped
 ```
 EnhancerX/
 ├── data/
