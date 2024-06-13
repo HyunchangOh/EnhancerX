@@ -10,7 +10,7 @@ If you write a code, or modify anything that uses a new data, update README.md -
 
 Provide whatever necessary tech-tutorials to "TroubleShooting"
 ## Organization
-'''
+```
 EnhancerX/
 ├── data/
 |   ├── hg19
@@ -19,7 +19,7 @@ EnhancerX/
 ├── model/
 ├── .gitignore
 └── README.md
-'''
+```
 ## Data 
 Put all raw data into 'data' directory. Make a subdirectory for each database you use.
 
