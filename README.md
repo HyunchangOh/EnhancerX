@@ -41,11 +41,15 @@ EnhancerX/
 |   └── GC_content/
 |       └── enhancer_atlas_AND_hg19.py
 ├── processed/
+|   ├── la_grande_table.tsv
 |   └── enrichment_GC_PER_sequence.tsv
 ├── model/
 ├── .gitignore
 └── README.md
 ```
+la_grande_table.tsv is the super large table with all the features/responses/pseudo-responses/ whatever information that may be helpful for us.
+
+Goal is to make this table as large as possible WITHOUT HARMING THE INTEGRITY
 
 * enrichment_GC_PER_sequence.tsv
 sequence(hg19 chr1) / GC_content / enrichment_score (enhancerAtlas GM12878 chr1)
