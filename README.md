@@ -9,25 +9,49 @@ The folder 'data' is added to .gitignore, so anything inside that folder will be
 If you write a code, or modify anything that uses a new data, update README.md - Data section and Organization section on how to download/unzip the raw data accordingly.
 
 Provide whatever necessary tech-tutorials to "TroubleShooting"
+
+Use tsv, not csv if possible. 
+
+READ THE ORGANIZATION AND STICK TO THE STRUCTURE
+BE ORGANIZED
+
 ## Organization
 ```
 EnhancerX/
 ├── data/
-|   ├── hg19
-|   └── PLACEHOLDER
+|   ├── hg19/
+|   |   └── chr1.fa
+|   ├── hg38/
+|   |   └── chr1.fa
+|   └── enhancer_atlas/
+|       └── GM12878.txt
 ├── preprocess/
+|   └── GC_content/
+|       └── enhancer_atlas_AND_hg19.py
+├── processed/
+|   └── enrichment_GC_PER_sequence.tsv
 ├── model/
 ├── .gitignore
 └── README.md
 ```
+
+* enrichment_GC_PER_sequence.tsv
+sequence(hg19 chr1) / GC_content / enrichment_score (enhancerAtlas GM12878 chr1)
+
 ## Data 
 Put all raw data into 'data' directory. Make a subdirectory for each database you use.
 
 The following explains how the data was accessed and what they are.
 
 ### hg19
-The data was downloaded from: https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/
+Source: https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/
 Scrolling down to find the link. You do not need FTP for this.
+
+### hg38
+Source: https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/
+Source: https://hgdownload.cse.ucsc.edu/goldenpath/hg38/chromosomes/
+The link above leads to big zip files that contain all the data.
+The link below leads to separate files for each chromosome.
 
 ## TroubleShooting
 Here are some instructions to tackle frequently encountered problems or tips for technical issues.
