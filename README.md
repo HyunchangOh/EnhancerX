@@ -1,7 +1,14 @@
 # EnhancerX
 Annotate Enhancers using various ML techniques
 
-## Organisation (INTERN)
+## INTERN
+Provide Instructions on how to download the data. DO NOT upload data to github repo directly. The folder 'data' is added to .gitignore, so anything inside that folder will be ignored by git.
+
+If you write a code, or modify anything that uses a new data, update README.md - Data section on how to download/unzip the raw data accordingly.
+
+Provide whatever necessary tech-tutorials to "TroubleShooting"
+
+## Data 
 Put all raw data into 'data' directory. Make a subdirectory for each database you use.
 
 The following explains how the data was accessed and what they are.
@@ -11,7 +18,7 @@ The data was downloaded from: https://hgdownload.soe.ucsc.edu/goldenPath/hg19/ch
 Scrolling down to find the link. You do not need FTP for this.
 
 ## TroubleShooting
-Here are some instructions to tackle frequently encountered issues. 
+Here are some instructions to tackle frequently encountered problems or tips for technical issues.
 
 ### 1. How to Unzip .gz File in Windows
 Tested System: Windows10 Version 22H2.
