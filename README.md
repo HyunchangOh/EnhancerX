@@ -2,11 +2,22 @@
 Annotate Enhancers using various ML techniques
 
 ## INTERN
-Provide Instructions on how to download the data. DO NOT upload data to github repo directly. The folder 'data' is added to .gitignore, so anything inside that folder will be ignored by git.
+DO NOT upload data to github repo directly. 
 
-If you write a code, or modify anything that uses a new data, update README.md - Data section on how to download/unzip the raw data accordingly.
+The folder 'data' is added to .gitignore, so anything inside that folder will be ignored by git.
+
+If you write a code, or modify anything that uses a new data, update README.md - Data section and Organization section on how to download/unzip the raw data accordingly.
 
 Provide whatever necessary tech-tutorials to "TroubleShooting"
+## Organization
+EnhancerX/
+├── data/
+|   ├── hg19
+|   └── PLACEHOLDER
+├── preprocess/
+└── model/
+├── .gitignore
+└── README.md
 
 ## Data 
 Put all raw data into 'data' directory. Make a subdirectory for each database you use.
