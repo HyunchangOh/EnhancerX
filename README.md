@@ -35,6 +35,8 @@ EnhancerX/
 |   |   └── chr1.fa
 |   ├── hg38/
 |   |   └── chr1.fa
+|   ├── VISTA/
+|   |   └── vista.txt
 |   └── enhancer_atlas/
 |       └── GM12878.txt
 ├── preprocess/
@@ -58,6 +60,25 @@ sequence(hg19 chr1) / GC_content / enrichment_score (enhancerAtlas GM12878 chr1)
 Put all raw data into 'data' directory. Make a subdirectory for each database you use.
 
 The following explains how the data was accessed and what they are.
+
+### VISTA
+| **Field**           | **Example**     | **Description**                                          |
+|---------------------|-----------------|----------------------------------------------------------|
+| **chrom**           | chr1            | Chromosome (or contig, scaffold, etc.)                   |
+| **chromStart**      | 167327716       | Start position in chromosome                             |
+| **chromEnd**        | 167329809       | End position in chromosome                               |
+| **name**            | hs1331          | Name of item                                             |
+| **score**           | 0               | Score from 0-1000                                        |
+| **strand**          | .               | + or -                                                   |
+| **thickStart**      | 167327717       | Start of where display should be thick (start codon)     |
+| **thickEnd**        | 167329809       | End of where display should be thick (stop codon)        |
+| **color**           | 255,0,0         | Primary RGB color for the decoration                     |
+| **patternExpression**| positive       | Observed spatial pattern of expression                   |
+| **experimentId**    | 1331            | Experiment ID    
+
+https://enhancer.lbl.gov/cgi-bin/imagedb3.pl?page_size=10000;search.form=no;page=1;action=search;search.result=yes;show=1;form=search;search.sequence=1
+
+Coordinates reference hg19 (human) mm9 (mouse)
 
 ### hg19
 Source: https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/  
@@ -83,6 +104,8 @@ If you are using windows you will probably want to use $Invoke-WebRequest -Uri "
 If you are using linux, a simple $wget.  
 
 Ideally would download "Enhancers of all species by bed format", but files are very large, species -> cell line/tissue will have to do for now.  
+
+Coordinates reference hg19
 
 ## TroubleShooting
 Here are some instructions to tackle frequently encountered problems or tips for technical issues.
