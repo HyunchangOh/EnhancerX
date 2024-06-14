@@ -7,3 +7,8 @@ End: The base position on the chromosome where the enhancer region ends.
 Sequence: The actual DNA sequence of the enhancer region.
 GC_content: The percentage of Guanine (G) and Cytosine (C) nucleotides in the sequence. Enhancers often have a higher GC content compared to the surrounding DNA.
 Enrichment_Score_GM12878: This column refers to an enrichment score specifically for the human cell line GM12878. Enrichment scores measure how much more frequently a particular DNA sequence is found bound to proteins that regulate gene expression compared to random background sequences. A higher score suggests the region is more likely to be a functional enhancer.
+
+Source:
+This dataset is obtained from EnhancerAtlas 2.0 (publicly available via http://enhanceratlas.org/ and constructed by Tianshun Gao and Jiang Qian. EnhancerAtlas 2.0: an updated resource with enhancer annotation in 586 tissue/cell types across nine species. Nucleic Acids Res. 2019.)
+
+The consensus enhancers were predicted based on multiple high throughput experimental datasets (e.g. histone modification, CAGE, GRO-seq, transcription factor binding and DHS).
