@@ -69,18 +69,19 @@ Source: https://hgdownload.cse.ucsc.edu/goldenpath/hg38/chromosomes/
 The link above leads to big zip files that contain all the data.  
 The link below leads to separate files for each chromosome.
 
-## enhanceratlas.org
+### enhanceratlas.org
 General source: http://enhanceratlas.org/downloadv2.php
 
-Files are in BED (text) format, with four (4) columns in each file (at "Download enhancers"):
-chrom-Enh - Name of the chromosome for enhancer;
-chromStart - The starting position of enhancer;
-chromEnd - The ending position of enhancer;
-enhancer signal - enrichment score.
+Files are in BED (text) format, with four (4) columns in each file (at "Download enhancers"):  
+chrom-Enh - Name of the chromosome for enhancer;  
+chromStart - The starting position of enhancer;  
+chromEnd - The ending position of enhancer;  
+enhancer signal - enrichment score.  
 
 Simply download cell line/tissue file using whatever means.  
 If you are using windows you will probably want to use $Invoke-WebRequest -Uri "enhancer_file_URL", or maybe even ctrl+a, copy to .txt file (files are not too large).    
 If you are using linux, a simple $wget.  
+
 Ideally would download "Enhancers of all species by bed format", but files are very large, species -> cell line/tissue will have to do for now.  
 
 ## TroubleShooting
