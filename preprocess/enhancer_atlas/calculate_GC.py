@@ -1,0 +1,13 @@
+f = open("../../processed/enrichment_score_PER_sequence.tsv","r")
+g = open("../../processed/enrichment_GC_PER_sequence.tsv","w")
+for l in f.readlines():
+    l = l.strip().split("\t")
+    sequence = l[0].lower()
+    gc = sequence.count('g')+sequence.count('c')
+    gc /= len(sequence)
+    g.write(l[0])
+    g.write("\t")
+    g.write(str(gc))
+    g.write("\t")
+    g.write(l[1])
+    g.write("\n")

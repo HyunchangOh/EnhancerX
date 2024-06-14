@@ -43,6 +43,8 @@ EnhancerX/
 |   └── GC_content/
 |       └── enhancer_atlas_AND_hg19.py
 ├── processed/
+|   ├── VISTA/
+|   |   └── vista.tsv 
 |   ├── la_grande_table.tsv
 |   └── enrichment_GC_PER_sequence.tsv
 ├── model/
