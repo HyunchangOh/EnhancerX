@@ -3,8 +3,8 @@ Annotate Enhancers using various ML techniques
 
 ## INTERN_Rules
 
-READ THE ORGANIZATION AND STICK TO THE STRUCTURE
-BE ORGANIZED
+READ THE ORGANIZATION AND STICK TO THE STRUCTURE  
+BE ORGANIZED  
 Rules can be changed through democratic means.
 
 ### Data
@@ -27,7 +27,7 @@ Showing Database Format (header + head(1)) in a comment can help, whereever you 
 
 
 ## Organization
-minor helper functions are skipped
+Minor helper functions are skipped
 ```
 EnhancerX/
 ├── data/
@@ -60,14 +60,28 @@ Put all raw data into 'data' directory. Make a subdirectory for each database yo
 The following explains how the data was accessed and what they are.
 
 ### hg19
-Source: https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/
+Source: https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/  
 Scrolling down to find the link. You do not need FTP for this.
 
 ### hg38
-Source: https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/
-Source: https://hgdownload.cse.ucsc.edu/goldenpath/hg38/chromosomes/
-The link above leads to big zip files that contain all the data.
+Source: https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/  
+Source: https://hgdownload.cse.ucsc.edu/goldenpath/hg38/chromosomes/  
+The link above leads to big zip files that contain all the data.  
 The link below leads to separate files for each chromosome.
+
+## enhanceratlas.org
+General source: http://enhanceratlas.org/downloadv2.php
+
+Files are in BED (text) format, with four (4) columns in each file (at "Download enhancers"):
+chrom-Enh - Name of the chromosome for enhancer;
+chromStart - The starting position of enhancer;
+chromEnd - The ending position of enhancer;
+enhancer signal - enrichment score.
+
+Simply download cell line/tissue file using whatever means.  
+If you are using windows you will probably want to use $Invoke-WebRequest -Uri "enhancer_file_URL", or maybe even ctrl+a, copy to .txt file (files are not too large).    
+If you are using linux, a simple $wget.  
+Ideally would download "Enhancers of all species by bed format", but files are very large, species -> cell line/tissue will have to do for now.  
 
 ## TroubleShooting
 Here are some instructions to tackle frequently encountered problems or tips for technical issues.
@@ -85,4 +99,4 @@ You can check the path to gzip.exe in the installer while installing gzip.
 3. Open Terminal and navigate to the folder where your .gz file is.
 
 4. gzip -d chr1.fa.gz
-This wii REMOVE the gz file and create a new file named chr1.fa
+This will REMOVE the gz file and create a new file named chr1.fa
