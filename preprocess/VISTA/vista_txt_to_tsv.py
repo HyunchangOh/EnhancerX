@@ -10,6 +10,8 @@ for l in lines:
         l = l.strip().split("|")
         if l[0]==">Human":
             reference = "hg19"
+        else:
+            reference = "mm9"
         chromosome = l[1].split(":")[0]
         start = l[1].split(":")[1].split("-")[0].strip()
         end = l[1].split(":")[1].split("-")[1].strip()
