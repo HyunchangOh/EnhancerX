@@ -15,7 +15,7 @@ for l in lines:
         end = l[1].split(":")[1].split("-")[1].strip()
         ElementNumber = l[2].strip()
         PatternExpression = l[3].strip()
-        ActiveTissues = ""
+        ActiveTissues = " "
         if len(l)>=5:
             ActiveTissues = "|".join(l[4:])
         header = [reference,chromosome,start,end,ElementNumber,PatternExpression,ActiveTissues]
