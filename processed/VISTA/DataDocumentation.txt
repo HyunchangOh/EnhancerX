@@ -1,0 +1,10 @@
+This dataset includes information, based on each column that:
+
+Reference: Specifying the reference genome assembly used (e.g., hg19 for human genome assembly 19).
+Chromosome: Indicates where the enhancer is located on a particular chromosome (e.g., chr16).
+Start: Denotes the base position on the chromosome where the enhancer region begins.
+End: Represents the base position on the chromosome where the enhancer region ends.
+ElementNumber: This functions as a unique identifier for each enhancer within the VISTA dataset.
+PatternExpression: In VISTA, this column signify a conserved sequence motif or pattern found within the enhancer sequence. These motifs could be potential binding sites for transcription factors that regulate gene expression.
+ActiveTissues: It refers to tissues or cell types where the VISTA enhancer has been experimentally validated to show activity. The bracketed numbers (e.g., [12/12]) might indicate the success rate of enhancer activity in a specific tissue (e.g., all 12 samples tested showed enhancer activity).
+Sequence: The actual DNA sequence of the enhancer region itself.
