@@ -62,8 +62,8 @@ else:
 #Continue code here, using database[cell_line][text_line] 
 #Enhancer atlas files don't have a header.
 
-# Now would read hg19 maybe chromosome by chromosome
-
+# INPUT: Chromosome number (chrX, where X is the number)
+# OUTPUT: String of bases
 def read_chromosome(chromosome_number):
     file_path = f"../data/hg19/{chromosome_number}.fa"
     with open(file_path, "r") as g:
@@ -87,4 +87,4 @@ if not chromosome_number:
 chromosome_data = read_chromosome(chromosome_number)
 print("Chromosome data length:", len(chromosome_data))
 
-
+###############################################################################

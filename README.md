@@ -40,8 +40,9 @@ EnhancerX/
 |   └── enhancer_atlas/
 |       └── GM12878.txt
 ├── preprocess/
-|   └── GC_content/
-|       └── enhancer_atlas_AND_hg19.py
+|   ├── GC_content/
+|   |   └── enhancer_atlas_AND_hg19.py
+|   └── read_gen_db.py
 ├── processed/
 |   ├── VISTA/
 |   |   └── vista.tsv 
