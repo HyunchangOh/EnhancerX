@@ -180,10 +180,10 @@ def learnHMM(obs, allq, N, K):
 
     return A, B
 
-print("Lengths of genome_train:", len(genome_train), "and annotation_train:", len(annotation_train))
+#print("Lengths of genome_train:", len(genome_train), "and annotation_train:", len(annotation_train))
 A,B = learnHMM(genome_train, annotation_train, nb_states, nb_obs)
-print("Transition matrix A:\n", A)
-print("\nEmission matrix B:\n", B)
+# print("Transition matrix A:\n", A)
+# print("\nEmission matrix B:\n", B)
 
 
 # VITERBI. OUTPUT: "ANNOTATION OF STATES"
@@ -234,13 +234,34 @@ def viterbi(obs,Pi,A,B):
 
     return path
 
+# Can formalize this later
+import time
+start_time = time.time()
 pred = viterbi(genome_test, Pi, A, B)
+print("\n--- Viterbi took %s seconds ---\n" % (time.time() - start_time))
 
-print("Most probable path:\n", pred[5:])
 np.savetxt('prediction.txt', pred, delimiter=',', fmt='%0.3f')
-count = 0
-for i in range(len(pred)):
-    if pred[i] == 0:
-        count = count+1
 
-print("Number of bp not predicted to be part of enhancers:", count)
+def create_confusion_matrix(actual, predict):
+    TP = 0 # cm[0,0]
+    FP = 0 # cm[0,1]
+    FN = 0 # cm[1,0]
+    TN = 0 # cm[1,1]
+
+    for i in range(len(actual)):
+        if actual[i]==predict[i]:
+            if actual[i]==1:
+                TP+=1
+            else:
+                TN+=1
+        elif actual[i]==1:
+            FN+=1
+        else:
+            FP+=1
+
+    return np.array([[TP, FP], [FN, TN]])
+
+cm = create_confusion_matrix(annotation_test, pred)
+
+#print("TP:", cm[0,0], "FP:", cm[0,1], "FN:", cm[1,0], "TN:", cm[1,1])
+print("Accuracy:", ((cm[0,0] + cm[1,1])/np.sum(cm))*100, "%")
