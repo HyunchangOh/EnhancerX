@@ -7,10 +7,16 @@ import os
 import numpy as np
 
 # Globals?
+# Ranges to analyze
 chr_no = "chr1"
 demo_start = 0
-demo_end = 1000000
+demo_end = 2000000
 demo_len = demo_end-demo_start
+
+# HMM data
+Pi = np.array([1, 0]) # First base state probabilities (we assume te first base is not an enhancer)
+nb_states= 2 ## (non-enhancer, enhancer)
+nb_obs = 5 ## (A,C,G,T,N)
 
 # READ BASE PAIR SEQUENCE FROM DATA FOLDER, CHOOSING CHROMOSOME NUMBER, RANGE (ALL BY DEFAULT) AND REF GENOME (HG19 BY DEFAULT)
 def read_chromosome(chromosome_number, ref_genome="hg19", range_start=None, range_end=None):
@@ -114,52 +120,70 @@ for i in range(len(ranged_cell_line)):
     for j in range(cur_enha[1], cur_enha[2]):
         Annotation[0][j] = 1
 
-# Add an annotation layer would be:
+# Adding an annotation layer would be:
 #Annotation.append([])
-# Access new annotation layer:
+# Accessing new annotation layer:
 #Annotation[1]
+
+cur_annotation=Annotation[0]
 
 ## Split into halves for train and test
 genome_train=Genome[:(demo_len//2)]
 genome_test=Genome[(demo_len//2):]
-annotation_train=Annotation[:(demo_len//2)]
-annotation_test=Annotation[(demo_len//2):]
-
+annotation_train=cur_annotation[:(demo_len//2)]
+annotation_test=cur_annotation[(demo_len//2):]
 
 
 def learnHMM(obs, allq, N, K):
-    """ Learn an HMM given a pair of observation and states 
-    np.array[int] * np.array[int] * int * int -> 
-            (np.array[double,double], np.array[double,double])
-    return transition matrices A and B"""
+    """ 
+    Learn an HMM given a pair of observation and states 
+
+    Input:
+    array[int], array[int], int, int
+
+    Output: 
+    array[double,double], array[double,double]
+    Transition matrices A and B
+    """
+    # Return null if observations and data aren't same length
+    if len(obs) != len(allq):
+        print("Error, data and annotations are not of the same length, returning null.")
+        return None, None
+    else:
+        length=len(obs)
+
     A = np.zeros((N, N)) 
     B = np.zeros((N, K))
 
+    # CALCULATE A (transition matrix (states x states))
     # Estimate the transition probabilities
-    for i in range(len(allq) - 1):
+    for i in range(length - 1):
         A[allq[i], allq[i+1]] += 1
     
     # Normalize the transition matrix
-    A = A / A.sum(axis=1, keepdims=True)
+    row_sums = A.sum(axis=1, keepdims=True)
+    for i in range(N):
+        if row_sums[i] > 0:
+            A[i] /= row_sums[i]
 
+
+    # CALCULATE B (emission matrix (rows: states, columns: observations))
     # Estimate the emission probabilities
-    for i in range(len(obs)):
+    for i in range(length):
         B[allq[i], obs[i]] += 1
     
     # Normalize the emission matrix
-    B = B / B.sum(axis=1, keepdims=True)
+    row_sums = B.sum(axis=1, keepdims=True)
+    for i in range(N):
+        if row_sums[i] > 0:
+            B[i] /= row_sums[i]
 
     return A, B
 
-Pi = np.array([1, 0])
-nb_states= 2 ## (non-enhancer, enhancer)
-nb_obs = 4 ## (A,C,G,T)
-
+print("Lengths of genome_train:", len(genome_train), "and annotation_train:", len(annotation_train))
 A,B = learnHMM(genome_train, annotation_train, nb_states, nb_obs)
-print("Transition matrix A:")
-print(A)
-print("\nEmission matrix B:")
-print(B)
+print("Transition matrix A:\n", A)
+print("\nEmission matrix B:\n", B)
 
 
 # VITERBI. OUTPUT: "ANNOTATION OF STATES"
@@ -175,8 +199,13 @@ def viterbi(obs,Pi,A,B):
     Where K is the number of possible states, and N number of states. 
     (transition matrix K columns, N rows)
     """
-    T = len(obs)
-    N = len(Pi)
+    # Return null if observations and data aren't same length
+    if A is None or B is None:
+        print("Error, no transition or emission matrix, returning null.")
+        return None
+    else:
+        T = len(obs)
+        N = len(Pi)
 
     ## Initialisation
     psi = np.zeros((N, T))
@@ -207,4 +236,11 @@ def viterbi(obs,Pi,A,B):
 
 pred = viterbi(genome_test, Pi, A, B)
 
-print("Most probable path:\n", pred)
+print("Most probable path:\n", pred[5:])
+np.savetxt('prediction.txt', pred, delimiter=',', fmt='%0.3f')
+count = 0
+for i in range(len(pred)):
+    if pred[i] == 0:
+        count = count+1
+
+print("Number of bp not predicted to be part of enhancers:", count)
