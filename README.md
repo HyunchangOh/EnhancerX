@@ -49,6 +49,8 @@ EnhancerX/
 |   ├── la_grande_table.tsv
 |   └── enrichment_GC_PER_sequence.tsv
 ├── model/
+|   ├── proto_HMM.py
+|   └── prediction.txt
 ├── .gitignore
 └── README.md
 ```
@@ -109,6 +111,17 @@ If you are using linux, a simple $wget.
 Ideally would download "Enhancers of all species by bed format", but files are very large, species -> cell line/tissue will have to do for now.  
 
 Coordinates reference hg19
+
+## Models
+Different models here.
+
+### HMM
+Currently in a proto state.  
+Run directly.  
+Current relevant values for analysis right now are: 
+- Chromosome 1
+- Positions 0 through 2M
+- 2-state-markov chain (non-enhancer or enhancer, by base pair)
 
 ## TroubleShooting
 Here are some instructions to tackle frequently encountered problems or tips for technical issues.
