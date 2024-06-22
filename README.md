@@ -119,9 +119,16 @@ Different models here.
 Currently in a proto state.  
 Run directly.  
 Current relevant values for analysis right now are: 
-- Chromosome 1
-- Positions 0 through 2M
-- 2-state-markov chain (non-enhancer or enhancer, by base pair)
+- Chromosome 1.
+- Positions 0 through 2M.
+- 2-state-markov chain (non-enhancer or enhancer, by base pair).
+
+### CNN
+Currently in proto state.  
+Run directly.  
+- Definable chromosome number.
+- Definable base pair range.
+- 800 wide input layer (sliding window).
 
 ## TroubleShooting
 Here are some instructions to tackle frequently encountered problems or tips for technical issues.
