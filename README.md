@@ -47,9 +47,11 @@ EnhancerX/
 |   ├── VISTA/
 |   |   └── vista.tsv 
 |   ├── la_grande_table.tsv
-|   └── enrichment_GC_PER_sequence.tsv
+|   ├── enrichment_GC_PER_sequence.tsv
+|   └── la_grande_table_gen.py
 ├── model/
 |   ├── proto_HMM.py
+|   ├── proto_CNN.py
 |   └── prediction.txt
 ├── .gitignore
 └── README.md
@@ -111,6 +113,10 @@ If you are using linux, a simple $wget.
 Ideally would download "Enhancers of all species by bed format", but files are very large, species -> cell line/tissue will have to do for now.  
 
 Coordinates reference hg19
+
+### La grande table
+Generate la grande table from la_grande_table_gen.py, in folder processed/.  
+For now, it takes data from hg19, and Enhancer Atlas.  
 
 ## Models
 Different models here.
