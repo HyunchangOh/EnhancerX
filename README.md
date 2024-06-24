@@ -40,15 +40,19 @@ EnhancerX/
 |   └── enhancer_atlas/ *preprocessed!
 |       └── GM12878.txt
 ├── preprocess/
-|   └── GC_content/
-|       └── enhancer_atlas_AND_hg19.py
+|   ├── GC_content/
+|   |   └── enhancer_atlas_AND_hg19.py
+|   └── read_gen_db.py
 ├── processed/
 |   ├── VISTA/
 |   |   └── vista.tsv 
-|   ├── EnhancementAtlas/
-|   |   └── enhancementAtlas.tsv
-|   └── enrichment_GC_PER_sequence.tsv
+|   ├── la_grande_table.tsv
+|   ├── enrichment_GC_PER_sequence.tsv
+|   └── la_grande_table_gen.py
 ├── model/
+|   ├── proto_HMM.py
+|   ├── proto_CNN.py
+|   └── prediction.txt
 ├── .gitignore
 └── README.md
 ```
@@ -108,6 +112,28 @@ If you are using linux, a simple $wget.
 Ideally would download "Enhancers of all species by bed format", but files are very large, species -> cell line/tissue will have to do for now.  
 
 Coordinates reference hg19
+
+### La grande table
+Generate la grande table from la_grande_table_gen.py, in folder processed/.  
+For now, it takes data from hg19, and Enhancer Atlas.  
+
+## Models
+Different models here.
+
+### HMM
+Currently in a proto state.  
+Run directly.  
+Current relevant values for analysis right now are: 
+- Chromosome 1.
+- Positions 0 through 2M.
+- 2-state-markov chain (non-enhancer or enhancer, by base pair).
+
+### CNN
+Currently in proto state.  
+Run directly.  
+- Definable chromosome number.
+- Definable base pair range.
+- 800 wide input layer (sliding window).
 
 ## TroubleShooting
 Here are some instructions to tackle frequently encountered problems or tips for technical issues.
