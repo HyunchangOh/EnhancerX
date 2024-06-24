@@ -66,3 +66,10 @@ for l in f.readlines():
         for j in range(thick_start,thick_end+1):
             reverses_thick[chromosome][j] = True
 
+path = "../../la_grande_table/"
+for i in range(len(list(chromosome_converter.keys()))):
+    np.save(path+list(chromosome_converter)[i]+"/promoter_forward.npy",forwards[i])
+    np.save(path+list(chromosome_converter)[i]+"/promoter_reverse.npy",reverses[i])
+    np.save(path+list(chromosome_converter)[i]+"/promoter_transcribed_forward.npy",forwards_thick[i])
+    np.save(path+list(chromosome_converter)[i]+"/promoter_transcribed_reverse.npy",reverses_thick[i])
+    print(list(chromosome_converter.keys())[i])

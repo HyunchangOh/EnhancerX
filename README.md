@@ -42,8 +42,8 @@ EnhancerX/
 |   └── enhancer_atlas/ *preprocessed!
 |       └── GM12878.txt
 ├── preprocess/
-|   ├── GC_content/
-|   |   └── enhancer_atlas_AND_hg19.py
+|   ├── EPD/
+|   |   └── annotate.py # reads Hs_EPDnew_006_hg19.bed / writes in la_grande_table
 |   └── read_gen_db.py
 ├── processed/
 |   ├── VISTA/
@@ -51,6 +51,10 @@ EnhancerX/
 |   ├── la_grande_table.tsv
 |   ├── enrichment_GC_PER_sequence.tsv
 |   └── la_grande_table_gen.py
+├── la_grande_table/
+|   ├── chr1/
+|   ├── ...
+|   └── chr2/
 ├── model/
 |   ├── proto_HMM.py
 |   ├── proto_CNN.py
