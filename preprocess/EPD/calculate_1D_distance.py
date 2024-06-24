@@ -7,7 +7,7 @@ def closest_true_distances(arr,direction="both"):
     result = [float('inf')] * n
 
     # Traverse from left to right
-    if direction == "both" or direction == "forward":
+    if direction == "both" or direction == "reverse":
         closest_true_index = -1
         for i in range(n):
             if arr[i]:
@@ -16,7 +16,7 @@ def closest_true_distances(arr,direction="both"):
                 result[i] = i - closest_true_index
 
     # Traverse from right to left
-    if direction == "both" or direction =="reverse":
+    if direction == "both" or direction =="forward":
         closest_true_index = -1
         for i in range(n - 1, -1, -1):
             if arr[i]:
