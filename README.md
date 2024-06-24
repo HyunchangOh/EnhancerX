@@ -31,17 +31,19 @@ Minor helper functions are skipped
 ```
 EnhancerX/
 ├── data/
-|   ├── hg19/
+|   ├── hg19/ *reference
 |   |   └── chr1.fa
-|   ├── hg38/
+|   ├── hg38/ *reference
 |   |   └── chr1.fa
-|   ├── VISTA/
+|   ├── VISTA/ *preprocessed!
 |   |   └── vista.txt
-|   └── enhancer_atlas/
+|   ├── EPD/
+|   |   └── Hs_EPDnew_006_hg19.bed
+|   └── enhancer_atlas/ *preprocessed!
 |       └── GM12878.txt
 ├── preprocess/
-|   ├── GC_content/
-|   |   └── enhancer_atlas_AND_hg19.py
+|   ├── EPD/
+|   |   └── annotate.py # reads Hs_EPDnew_006_hg19.bed / writes in la_grande_table
 |   └── read_gen_db.py
 ├── processed/
 |   ├── VISTA/
@@ -49,6 +51,10 @@ EnhancerX/
 |   ├── la_grande_table.tsv
 |   ├── enrichment_GC_PER_sequence.tsv
 |   └── la_grande_table_gen.py
+├── la_grande_table/
+|   ├── chr1/
+|   ├── ...
+|   └── chr2/
 ├── model/
 |   ├── proto_HMM.py
 |   ├── proto_CNN.py
@@ -56,7 +62,6 @@ EnhancerX/
 ├── .gitignore
 └── README.md
 ```
-la_grande_table.tsv is the super large table with all the features/responses/pseudo-responses/ whatever information that may be helpful for us.
 
 Goal is to make this table as large as possible WITHOUT HARMING THE INTEGRITY
 
@@ -96,6 +101,18 @@ Source: https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/
 Source: https://hgdownload.cse.ucsc.edu/goldenpath/hg38/chromosomes/  
 The link above leads to big zip files that contain all the data.  
 The link below leads to separate files for each chromosome.
+
+### EPD
+Source: https://epd.expasy.org/ftp/epdnew/ 
+head:
+chromosome  start   end     name    score   strand  thick(transcribed start)    thick(transcribed end)
+chr1	    894625	894685	NOC2L_1	900	    -	    894625	                    894636
+
+preprocessed:
+annotate 0/1 for forward-promoters
+annotate 0/1 for reverse-promoters
+annotate 0/1 for thick-forward-promoters
+annotate 0/1 for thick-transcribed-promoters
 
 ### enhanceratlas.org
 General source: http://enhanceratlas.org/downloadv2.php
