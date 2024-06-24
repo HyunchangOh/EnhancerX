@@ -31,13 +31,13 @@ Minor helper functions are skipped
 ```
 EnhancerX/
 ├── data/
-|   ├── hg19/
+|   ├── hg19/ *reference
 |   |   └── chr1.fa
-|   ├── hg38/
+|   ├── hg38/ *reference
 |   |   └── chr1.fa
-|   ├── VISTA/
+|   ├── VISTA/ *preprocessed!
 |   |   └── vista.txt
-|   └── enhancer_atlas/
+|   └── enhancer_atlas/ *preprocessed!
 |       └── GM12878.txt
 ├── preprocess/
 |   └── GC_content/
@@ -45,13 +45,13 @@ EnhancerX/
 ├── processed/
 |   ├── VISTA/
 |   |   └── vista.tsv 
-|   ├── la_grande_table.tsv
+|   ├── EnhancementAtlas/
+|   |   └── enhancementAtlas.tsv
 |   └── enrichment_GC_PER_sequence.tsv
 ├── model/
 ├── .gitignore
 └── README.md
 ```
-la_grande_table.tsv is the super large table with all the features/responses/pseudo-responses/ whatever information that may be helpful for us.
 
 Goal is to make this table as large as possible WITHOUT HARMING THE INTEGRITY
 
