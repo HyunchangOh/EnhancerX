@@ -37,6 +37,8 @@ EnhancerX/
 |   |   └── chr1.fa
 |   ├── VISTA/ *preprocessed!
 |   |   └── vista.txt
+|   ├── EPD/
+|   |   └── Hs_EPDnew_006_hg19.bed
 |   └── enhancer_atlas/ *preprocessed!
 |       └── GM12878.txt
 ├── preprocess/
@@ -95,6 +97,18 @@ Source: https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/
 Source: https://hgdownload.cse.ucsc.edu/goldenpath/hg38/chromosomes/  
 The link above leads to big zip files that contain all the data.  
 The link below leads to separate files for each chromosome.
+
+### EPD
+Source: https://epd.expasy.org/ftp/epdnew/ 
+head:
+chromosome  start   end     name    score   strand  thick(transcribed start)    thick(transcribed end)
+chr1	    894625	894685	NOC2L_1	900	    -	    894625	                    894636
+
+preprocessed:
+annotate 0/1 for forward-promoters
+annotate 0/1 for reverse-promoters
+annotate 0/1 for thick-forward-promoters
+annotate 0/1 for thick-transcribed-promoters
 
 ### enhanceratlas.org
 General source: http://enhanceratlas.org/downloadv2.php
