@@ -29,47 +29,47 @@ import numpy as np
 
 ## Globals?
 ## Ranges to analyze
-chr_no = "chr1"
-demo_start = 0
-demo_end = 20000000 # 20M
-#demo_end = 500000 # 500k
-demo_len = demo_end-demo_start
+# chr_no = "chr1"
+# demo_start = 0
+# demo_end = 20000000 # 20M
+# #demo_end = 500000 # 500k
+# demo_len = demo_end-demo_start
+chromosomes = [
+        'chr1',
+        'chr2',
+        'chr3',
+        'chr4',
+        'chr5',
+        'chr6',
+        'chr7',
+        'chr8',
+        'chr9',
+        'chr10',
+        'chr11',
+        'chr12',
+        'chr13',
+        'chr14',
+        'chr15',
+        'chr16',
+        'chr17',
+        'chr18',
+        'chr19',
+        'chr20',
+        'chr21',
+        'chr22',
+        'chrX',
+        'chrY'
+    ]
 
 #########################################################################################################
 ## Create folder structure. If some folder already exists, then nothing happens.
 
 def ensure_folder_structure():
-    base_path = "../la_grande_table"
-    # Structure
-    folders = [
-        '/chr1',
-        '/chr2',
-        '/chr3',
-        '/chr4',
-        '/chr5',
-        '/chr6',
-        '/chr7',
-        '/chr8',
-        '/chr9',
-        '/chr10',
-        '/chr11',
-        '/chr12',
-        '/chr13',
-        '/chr14',
-        '/chr15',
-        '/chr16',
-        '/chr17',
-        '/chr18',
-        '/chr19',
-        '/chr20',
-        '/chr21',
-        '/chr22',
-        '/chrX',
-        '/chrY'
-    ]
+    base_path = "../la_grande_table/"
+    
     # Create all folders, exist=ok then ignores already created folders
-    for folder in folders:
-        os.makedirs(base_path+folder, exist_ok=True)
+    for folder in chromosomes:
+        os.makedirs(base_path + folder, exist_ok=True)
 
 ensure_folder_structure()
 
@@ -179,20 +179,38 @@ def read_translate_save(chromosome_number, ref_genome="hg19", range_start=None, 
 
 
 #########################################################################################################
-## Test for sequence and coding annotation
-#for i in ["chr1", "chr2", "chr3"]:
-for i in ["chr2", "chr3"]:
+## Read all available fasta files stored in your data/
+
+for i in chromosomes:
     read_translate_save(i)
 
+#########################################################################################################
+
+
+#########################################################################################################
+## Quick test for loading sequence and coding annotation
+
+time_seq1 = time.time()
+testo1 = np.load("../la_grande_table/chr1/seq.npy", allow_pickle=False, fix_imports=False)
+print("\n--- Loading chr1 seq with " + str(len(testo1)) + "bp, took %s seconds ---\n" % (time.time() - time_seq1))
+print("Testo: ", testo1[10000:10010])
+
+time_cod1 = time.time()
+testo2 = np.load("../la_grande_table/chr1/cod.npy", allow_pickle=False, fix_imports=False)
+print("\n--- Loading chr1 cod with " + str(len(testo2)) + " elements, took %s seconds ---\n" % (time.time() - time_cod1))
+print("Testo: ", testo2[10000:10010])
+
+
+
 time_seq2 = time.time()
-testo1 = np.load("../la_grande_table/chr2/seq.npy", allow_pickle=False, fix_imports=False)
-print("\n--- Loading chr2 seq with " + str(len(testo1)) + "bp, took %s seconds ---\n" % (time.time() - time_seq2))
-print("Testo: ", testo1[10000:10020])
+testo3 = np.load("../la_grande_table/chr2/seq.npy", allow_pickle=False, fix_imports=False)
+print("\n--- Loading chr2 seq with " + str(len(testo3)) + "bp, took %s seconds ---\n" % (time.time() - time_seq2))
+print("Testo: ", testo3[10000:10010])
 
 time_cod2 = time.time()
-testo2 = np.load("../la_grande_table/chr2/cod.npy", allow_pickle=False, fix_imports=False)
-print("\n--- Loading chr2 cod with " + str(len(testo2)) + " elements, took %s seconds ---\n" % (time.time() - time_cod2))
-print("Testo: ", testo2[10000:10020])
+testo4 = np.load("../la_grande_table/chr2/cod.npy", allow_pickle=False, fix_imports=False)
+print("\n--- Loading chr2 cod with " + str(len(testo4)) + " elements, took %s seconds ---\n" % (time.time() - time_cod2))
+print("Testo: ", testo4[10000:10010])
 
 #########################################################################################################
 
@@ -247,7 +265,7 @@ def load_annotate_save(chromosome_number):
     # Read enhacner atlas.
     enhancer_atlas_db = read_enh_atlas("enhancer_atlas")
 
-    # Keep only enhancers inside chromosome and range
+    # Keep only enhancers inside chromosome
     ranged_cell_line = []
     cur_cell_line = enhancer_atlas_db["GM12878"]
     for i in range(len(cur_cell_line)):
@@ -273,25 +291,36 @@ def load_annotate_save(chromosome_number):
 
 
 #########################################################################################################
-## Test for enhancer atlas annotation
-testo3 = np.load("../la_grande_table/chr2/seq.npy", allow_pickle=False, fix_imports=False)
-print("Testo enh: ", testo3[10000:10020])
+## Read and store all enhancers of "GM12878" into each chromosome into la grande table
+
+for i in chromosomes:
+    load_annotate_save(i)
+
+#########################################################################################################
+
+
+#########################################################################################################
+## Test for loading enhancer atlas annotation
+
+testo5 = np.load("../la_grande_table/chr2/seq.npy", allow_pickle=False, fix_imports=False)
+print("Testo enh: ", testo5[10000:10010])
 
 
 time_read_atl = time.time()
 load_annotate_save("chr2")
-print("\n--- Reading chr2 atl with " + str(len(testo3)) + " elements, took %s seconds ---\n" % (time.time() - time_read_atl))
+print("\n--- Saving chr2 atl to la grande table, took %s seconds ---\n" % (time.time() - time_read_atl))
 
 time_atl2 = time.time()
-testo4 = np.load("../la_grande_table/chr2/atl.npy", allow_pickle=False, fix_imports=False)
-print("\n--- Loading chr2 atl with " + str(len(testo4)) + " elements, took %s seconds ---\n" % (time.time() - time_atl2))
-print("Testo enh: ", testo4[10000:10020])
+testo6 = np.load("../la_grande_table/chr2/atl.npy", allow_pickle=False, fix_imports=False)
+print("\n--- Loading chr2 atl with " + str(len(testo6)) + " elements, took %s seconds ---\n" % (time.time() - time_atl2))
+print("Testo enh: ", testo6[10000:10010])
 
 #########################################################################################################
 
 
 #########################################################################################################
 # Demo for loading, but also for applying loading function:
+
 columns = ["seq", "cod", "atl"]
 def mucho_load(chromosome_number, list_of_features):
 
@@ -311,12 +340,28 @@ def mucho_load(chromosome_number, list_of_features):
     la_grande_table = np.append(la_grande_table, np.load(file_path + column + ".npy", allow_pickle=False, fix_imports=False))
     dim = 1
     for column in list_of_features[1:]:
-        la_grande_table = np.expand_dims(la_grande_table, dim)
+        la_grande_table = np.expand_dims(la_grande_table, (la_grande_table.shape[1]+1))
         dim += 1
-        la_grande_table = np.append(la_grande_table, np.load(file_path + column + ".npy", allow_pickle=False, fix_imports=False), (la_grande_table.shape[1]+1))
+        la_grande_table = np.append(la_grande_table, np.load(file_path + column + ".npy", allow_pickle=False, fix_imports=False), la_grande_table.shape[1])
 
     return la_grande_table
 
-# mucho_load("chr1", columns)
+# Use, before any model, would be:
+# np_array = mucho_load("chr1", columns)
+# Where columns is the list of features to use. The ones defined in this file are seq, cod, and atl.
+
+#########################################################################################################
+
+
+#########################################################################################################
+## mucho_load demo
+
+# la_demo_table = mucho_load("chr1", columns)
+
+# print("Positions 10.000 to 10.010 of all features in la grande table for chromosome 1:")
+# j = 0
+# for col in columns:
+#     print("Column " + col + ":", la_demo_table[j])
+#     j += 1
 
 #########################################################################################################
