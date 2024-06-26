@@ -42,18 +42,8 @@ root_folder = "../../la_grande_table/"
 for name in names:
     print(name)
     d = root_folder+name+"/"
-    a = np.load(d+"promoter_any.npy")
-    f = np.load(d+"promoter_forward.npy")
-    r = np.load(d+"promoter_reverse.npy")
-
-    # f_d =closest_true_distances(f,"forward")
-    # np.save(d+"promoter_1D_Dist_forward.npy",f_d)
-    # print("forward done")
-
-    # r_d = closest_true_distances(r,"reverse")
-    # np.save(d+"promoter_1D_Dist_reverse.npy",r_d)
-    # print("reverse done")
+    a = np.load(d+"h3k27ac.npy")
 
     a_d = closest_true_distances(a,"both")
-    np.save(d+"promoter_1D_Dist_any.npy",a_d)
+    np.save(d+"h3k27ac_1D_Dist.npy",a_d)
     print("both direction done")

@@ -39,6 +39,8 @@ EnhancerX/
 |   |   └── vista.txt
 |   ├── EPD/
 |   |   └── Hs_EPDnew_006_hg19.bed
+|   ├── ENCODE/
+|   |   └── ENCFF795IDC.bed #GM12878 cell line, h3k27ac, hg19
 |   └── enhancer_atlas/ *preprocessed!
 |       └── GM12878.txt
 ├── preprocess/
