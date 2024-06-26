@@ -1,21 +1,85 @@
 # GENERATE LA GRANDE TABLE
+## Some comments:
+'''
+Check whether there are already sequence and coding annotation npy ingrande table: CHECK
+Time and progress for fasta reading: CHECK
 
-# Imports
+Ranges are only implemented for seq and cod, not for enhancer atlas annotation, don't know wheter to apply for both or none.
+Reference genome is defaulted to hg19, don't know whether we're always gonna work with it and take it out, or leave it as it is.
+Cell line enhacner atlas is set to "GM12878". Should be simple adding more
+read_enh_atlas is kinda generic, was originally intended to be, but fit to do enhancer atlas.
+
+Format is:
+#########################################################################################################
+## Description of function/section
+
+#########################################################################################################
+
+'''
+
+#########################################################################################################
+## Imports
+### The Python Standard Library
 import os
-import numpy as np
 import time
+### Others
+import numpy as np
 
-# Globals?
-# Ranges to analyze
+#########################################################################################################
+
+## Globals?
+## Ranges to analyze
 chr_no = "chr1"
 demo_start = 0
 demo_end = 20000000 # 20M
 #demo_end = 500000 # 500k
 demo_len = demo_end-demo_start
 
+#########################################################################################################
+## Create folder structure. If some folder already exists, then nothing happens.
 
-# READ BASE PAIR SEQUENCE FROM DATA FOLDER, CHOOSING CHROMOSOME NUMBER, RANGE (ALL BY DEFAULT) AND REF GENOME (HG19 BY DEFAULT)
-def read_chromosome(chromosome_number, ref_genome="hg19", range_start=None, range_end=None):
+def ensure_folder_structure():
+    base_path = "../la_grande_table"
+    # Structure
+    folders = [
+        '/chr1',
+        '/chr2',
+        '/chr3',
+        '/chr4',
+        '/chr5',
+        '/chr6',
+        '/chr7',
+        '/chr8',
+        '/chr9',
+        '/chr10',
+        '/chr11',
+        '/chr12',
+        '/chr13',
+        '/chr14',
+        '/chr15',
+        '/chr16',
+        '/chr17',
+        '/chr18',
+        '/chr19',
+        '/chr20',
+        '/chr21',
+        '/chr22',
+        '/chrX',
+        '/chrY'
+    ]
+    # Create all folders, exist=ok then ignores already created folders
+    for folder in folders:
+        os.makedirs(base_path+folder, exist_ok=True)
+
+ensure_folder_structure()
+
+#########################################################################################################
+
+
+#########################################################################################################
+## Check whether fasta file exists for given chromosome. Read fasta, print progress every 5%, then return string of base pairs.
+
+def read_chromosome(chromosome_number, ref_genome = "hg19", range_start=None, range_end=None):
     file_path = "../data/" + ref_genome + "/" + chromosome_number + ".fa"
     if not os.path.exists(file_path):
         print("Fasta file not found for " + chromosome_number + ".")
@@ -24,12 +88,6 @@ def read_chromosome(chromosome_number, ref_genome="hg19", range_start=None, rang
         g.readline()  # Skip the header line
         lines = g.readlines()
         print(chromosome_number + "'s lines are read.")
-
-    #length = len(lines)
-    if range_start==None:
-        range_start=0
-    if range_end==None:
-        range_start=len(lines)-1
     
     # Combine all lines into a single string and strip newlines
     full_chromosome_data = ''.join(line.strip() for line in lines)
@@ -37,17 +95,17 @@ def read_chromosome(chromosome_number, ref_genome="hg19", range_start=None, rang
     # Determine the length of the chromosome data
     chromosome_length = len(full_chromosome_data)
     
-    # Set default values for range_start and range_end
+    # Set default values for range_start and range_end, and validate range
     if range_start is None:
         range_start = 0
     if range_end is None:
         range_end = chromosome_length
 
-    # Validate and adjust range_end if it exceeds the chromosome length
     if range_end > chromosome_length:
         range_end = chromosome_length
 
-    step = (range_end - range_start) // 20 # Print progress every 5%
+    # Print progress every 5%
+    step = (range_end - range_start) // 20 
 
     # Extract the desired range of chromosome data
     chromosome_data = ""
@@ -62,38 +120,39 @@ def read_chromosome(chromosome_number, ref_genome="hg19", range_start=None, rang
 
     return chromosome_data
 
+#########################################################################################################
 
-##################################################################
-# LOAD GENOME DATA from data folder into variable Genome, 
-# which is a list of numbers from the dictionary dDNA
-
+#########################################################################################################
+## Check whether fasta and npy files exist. 
+## Then use read_chromosome function and translate to numeric. 
+## Then "divide" into sequence and coding/non-coding annotation numpy arrays.
+## Save npy files, and in case one already exists, only save the other one
 
 def read_translate_save(chromosome_number, ref_genome="hg19", range_start=None, range_end=None):
 
     file_path = "../la_grande_table/" + chromosome_number + "/"
-
+    file_path_single = None
     # Check whether the fasta file is there, and whether there is already an npy file
     if os.path.exists(file_path + "seq.npy") and os.path.exists(file_path + "cod.npy"):
-        print("Sequence and coding files already exist.")
+        print("Sequence and coding files already exist for " + chromosome_number)
         return
     elif not os.path.exists("../data/" + ref_genome + "/" + chromosome_number +  ".fa"):
-        print("Chromosome data could not be read.")
+        print(chromosome_number + " data could not be read.")
         return
     else:
-        if not os.path.exists(file_path + "seq.npy"):
+        if os.path.exists(file_path + "cod.npy"):
             file_path_single = file_path + "seq"
             seq = True
-            print("Ahead with loading (coding file already exists).")
-        elif not os.path.exists(file_path + "cod.npy"):
+            print("Ahead with loading (coding file already exists for " + chromosome_number + ").")
+        elif os.path.exists(file_path + "seq.npy"):
             file_path_single = file_path + "cod"
             seq = False
-            print("Ahead with loading (sequence file already exists).")
+            print("Ahead with loading (sequence file already exists for " + chromosome_number + ").")
         else: 
-            print("Ahead with loading.")
+            print("Ahead with loading both sequence and coding annotation for " + chromosome_number + ".")
 
     start_time = time.time()
     Genome_l = list(read_chromosome(chromosome_number, ref_genome=ref_genome, range_start=range_start, range_end=range_end))
-    # Genome_l = list(Genome_l)
     print("\n--- Reading " + chromosome_number + ", with " + str(len(Genome_l)) + "bp, took %s seconds ---\n" % (time.time() - start_time))
 
     # Transform letters to numbers
@@ -107,7 +166,7 @@ def read_translate_save(chromosome_number, ref_genome="hg19", range_start=None, 
     coding = np.array([1 if bp.isupper() else 0 for bp in Genome_l])
 
     # Save sequence and/or coding/non-coding annotation to la grande table, depending on whether one of them already exists
-    if file_path_single:
+    if file_path_single is not None:
         if seq==True:
             np.save(file_path_single, genome, allow_pickle=False, fix_imports=False)
         else:
@@ -116,35 +175,47 @@ def read_translate_save(chromosome_number, ref_genome="hg19", range_start=None, 
         np.save(file_path + "seq", genome, allow_pickle=False, fix_imports=False)
         np.save(file_path + "cod", coding, allow_pickle=False, fix_imports=False)
 
+#########################################################################################################
 
 
-
-##################################################################
-
-for i in ["chr1", "chr2", "chr3"]:
+#########################################################################################################
+## Test for sequence and coding annotation
+#for i in ["chr1", "chr2", "chr3"]:
+for i in ["chr2", "chr3"]:
     read_translate_save(i)
 
-testo=np.load("../la_grande_table/chr2/seq.npy", allow_pickle=False, fix_imports=False)
-print("Testo: ", testo[10000:10020])
+time_seq2 = time.time()
+testo1 = np.load("../la_grande_table/chr2/seq.npy", allow_pickle=False, fix_imports=False)
+print("\n--- Loading chr2 seq with " + str(len(testo1)) + "bp, took %s seconds ---\n" % (time.time() - time_seq2))
+print("Testo: ", testo1[10000:10020])
 
-# Demo for loading, but also for applying loading function:
-# def mucho_load(chromosome_number, ):
-#     la_grande_table = []
+time_cod2 = time.time()
+testo2 = np.load("../la_grande_table/chr2/cod.npy", allow_pickle=False, fix_imports=False)
+print("\n--- Loading chr2 cod with " + str(len(testo2)) + " elements, took %s seconds ---\n" % (time.time() - time_cod2))
+print("Testo: ", testo2[10000:10020])
 
-#     return la_grande_table
+#########################################################################################################
 
-'''
-##################################################################
-# READ ANNOTATION DATA
-def load_database(database_name, file_ext=".txt"):
-    database_path = "../data/" + database_name
+
+#########################################################################################################
+## Read enhancer atlas for all cell line files stored in data/enhancer_atlas/.
+## Could be extended to other databases in principle.
+## Outputs a dictionary, where the key is the string of cell line name, value is a list (all lines) of lists (each line) of items (columns).
+
+def read_enh_atlas(database_name, file_ext=".txt"):
+    
+    database_path = "../data/" + database_name + "/"
     database = {}
+    if not os.path.exists(database_path):
+        print(database_name + " not found, could not be read.")
+        return
 
     # Iterate over all files in the directory
     for filename in os.listdir(database_path):
         if filename.endswith(file_ext):
             cell_line = filename.split(".")[0]  # Extract the cell line name from the filename
-            file_path = os.path.join(database_path, filename)
+
+            file_path = database_path + filename
 
             with open(file_path, "r") as f:
                 data_entries = []
@@ -156,59 +227,96 @@ def load_database(database_name, file_ext=".txt"):
                 database[cell_line] = data_entries
 
     return database
-# OUTPUT: database["cell_line"][line_no][item_no], where item_no are 0:chromosome_no, 1:start, 2: end, 3:enrichment_score
+    # Output format: database["cell_line"][line_no][item_no], where item_no are 0:chromosome_no, 1:start, 2: end, 3:enrichment_score
 
-# We load enhancer atlas, for example, and specifically GM12878
-enhancer_atlas_db = load_database("enhancer_atlas")
-
-# Keep only enhancers inside chromosome and range
-ranged_cell_line = []
-cur_cell_line=enhancer_atlas_db["GM12878"]
-for i in range(len(cur_cell_line)):
-    # Check chromosome number, and range of enhancer
-    if (cur_cell_line[i][0] == chr_no) and (demo_start <= cur_cell_line[i][1] <= demo_end and demo_start <= cur_cell_line[i][2] <= demo_end):
-        ranged_cell_line.append(cur_cell_line[i])
+#########################################################################################################
 
 
-# Multidimensional annotation
-Annotation=[[]]
+#########################################################################################################
+## Load enhancer atlas, save to la grande table.
 
-# FOR NOW WE WILL DO 0-1
-# Set all annotations to 0
-for i in range(len(Genome)):
-    Annotation[0].append(0)
-# Set enhancer regions to 1
-for i in range(len(ranged_cell_line)):
-    cur_enha=ranged_cell_line[i]
-    for j in range(cur_enha[1], cur_enha[2]):
-        Annotation[0][j] = 1
+def load_annotate_save(chromosome_number):
 
-# Adding an annotation layer would be:
-#Annotation.append([])
-# Accessing new annotation layer:
-#Annotation[1]
+    file_path = "../la_grande_table/" + chromosome_number + "/"
 
-cur_annotation = Annotation[0]
-##################################################################
+    # Check whether enhancer atlas npy file is already there
+    if os.path.exists(file_path + "atl.npy"):
+        print("Enhancer atlas annotation already exists for " + chromosome_number + ".")
+        return
+    
+    # Read enhacner atlas.
+    enhancer_atlas_db = read_enh_atlas("enhancer_atlas")
 
-# Here we would save to npy
+    # Keep only enhancers inside chromosome and range
+    ranged_cell_line = []
+    cur_cell_line = enhancer_atlas_db["GM12878"]
+    for i in range(len(cur_cell_line)):
+    # Save only enhancers inside chromosome
+        if (cur_cell_line[i][0] == chromosome_number):
+            ranged_cell_line.append(cur_cell_line[i])
+    
+    Annotation = []
+    # We don't wanna load it all, we just want to get the length, so mmap_mode r.
+    seq = np.load(file_path + "seq.npy", mmap_mode='r', allow_pickle=False, fix_imports=False)
+    # Set all annotations to 0
+    for i in range(seq.size):
+        Annotation.append(0)
+    # Set enhancer regions to 1
+    for i in range(len(ranged_cell_line)):
+        cur_enha = ranged_cell_line[i]
+        for j in range(cur_enha[1], cur_enha[2]):
+            Annotation[j] = 1
+    
+    np.save(file_path + "atl", Annotation, allow_pickle=False, fix_imports=False)
+
+#########################################################################################################
 
 
-##################################################################
-## Split into halves for train and test
+#########################################################################################################
+## Test for enhancer atlas annotation
+testo3 = np.load("../la_grande_table/chr2/seq.npy", allow_pickle=False, fix_imports=False)
+print("Testo enh: ", testo3[10000:10020])
 
-genome_train = Genome[:(demo_len//2)]
-genome_test = Genome[(demo_len//2):]
-annotation_train = cur_annotation[:(demo_len//2)]
-annotation_test = cur_annotation[(demo_len//2):]
 
-##################################################################
+time_read_atl = time.time()
+load_annotate_save("chr2")
+print("\n--- Reading chr2 atl with " + str(len(testo3)) + " elements, took %s seconds ---\n" % (time.time() - time_read_atl))
 
-##################################################################
-## Just some interesting data:
-print("Random, very deletable data:\n length genome:", len(Genome),
-       "\n length 1st annotation:", len(Annotation[0]), # Just to check they're the same length
-        "\n nº enhancers in range:", len(ranged_cell_line), 
-        "\n nº total enhancers this cell line:", len(cur_cell_line))
-##################################################################
-'''
+time_atl2 = time.time()
+testo4 = np.load("../la_grande_table/chr2/atl.npy", allow_pickle=False, fix_imports=False)
+print("\n--- Loading chr2 atl with " + str(len(testo4)) + " elements, took %s seconds ---\n" % (time.time() - time_atl2))
+print("Testo enh: ", testo4[10000:10020])
+
+#########################################################################################################
+
+
+#########################################################################################################
+# Demo for loading, but also for applying loading function:
+columns = ["seq", "cod", "atl"]
+def mucho_load(chromosome_number, list_of_features):
+
+    file_path = "../la_grande_table/" + chromosome_number + "/"
+
+    # Check whether all columns for the la grande table are of the same length. 
+    # If not, print which one it is, and break.
+    check = []
+    for i in range(len(list_of_features)):
+        check[i] = np.load(file_path + list_of_features[i] + ".npy", mmap_mode='r', allow_pickle=False, fix_imports=False)
+    for i in range(len(check)):
+        if check[i].size != check[0].size: # Assuming seq is always put in list_of_features in the first place
+            print(list_of_features[i] + " is not of chromosome length.")
+            break
+
+    la_grande_table = np.empty(1)
+    la_grande_table = np.append(la_grande_table, np.load(file_path + column + ".npy", allow_pickle=False, fix_imports=False))
+    dim = 1
+    for column in list_of_features[1:]:
+        la_grande_table = np.expand_dims(la_grande_table, dim)
+        dim += 1
+        la_grande_table = np.append(la_grande_table, np.load(file_path + column + ".npy", allow_pickle=False, fix_imports=False), (la_grande_table.shape[1]+1))
+
+    return la_grande_table
+
+# mucho_load("chr1", columns)
+
+#########################################################################################################
