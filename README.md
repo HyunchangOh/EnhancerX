@@ -30,6 +30,7 @@ Showing Database Format (header + head(1)) in a comment can help, whereever you 
 Minor helper functions are skipped
 ```
 EnhancerX/
+|
 ├── data/
 |   ├── hg19/ *reference
 |   |   └── chr1.fa
@@ -43,24 +44,28 @@ EnhancerX/
 |   |   └── ENCFF795IDC.bed #GM12878 cell line, h3k27ac, hg19
 |   └── enhancer_atlas/ *preprocessed!
 |       └── GM12878.txt
+|
+├── la_grande_table/
+|   ├── chr1/
+|   ├── chr2/
+|   ├── ...
+|   └── chrY/
+|
 ├── preprocess/
-|   ├── EPD/
-|   |   └── annotate.py # reads Hs_EPDnew_006_hg19.bed / writes in la_grande_table
-|   └── read_gen_db.py
+|   └── EPD/
+|       └── annotate.py # reads Hs_EPDnew_006_hg19.bed / writes in la_grande_table
+|
 ├── processed/
 |   ├── VISTA/
 |   |   └── vista.tsv 
-|   ├── la_grande_table.tsv
 |   ├── enrichment_GC_PER_sequence.tsv
 |   └── la_grande_table_gen.py
-├── la_grande_table/
-|   ├── chr1/
-|   ├── ...
-|   └── chr2/
+|
 ├── model/
 |   ├── proto_HMM.py
 |   ├── proto_CNN.py
 |   └── prediction.txt
+|
 ├── .gitignore
 └── README.md
 ```
@@ -134,8 +139,9 @@ Ideally would download "Enhancers of all species by bed format", but files are v
 Coordinates reference hg19
 
 ### La grande table
-Generate la grande table from la_grande_table_gen.py, in folder processed/.  
-For now, it takes data from hg19, and Enhancer Atlas.  
+La grande table is a structure of folders as defined in the folder structure above. Every chromosome folder contains the npy files required to load all features (one npy file per feature), each one being a column in the table.  
+It is automatically created running processed/la_grande_table_gen.py, using whichever fasta files there are loaded in data/hg19/ for the sequence ("seq") and coding/non-coding annotation ("cod"), and files in data/enhancer_atlas/ for enhancer/non-enhancer annotation ("atl").  
+Function mucho_load is defined, which takes chromosome number (string format: "chr1", "chr2", etc) and list of features or columns to load (list format: ["seq", "cod", "atl"]) as input paramenters, and returns la grande table as a numpy array with shape (no_cols, length_seq). To access a specific data point, for example: la_grande_table[seq][100234].  
 
 ## Models
 Different models here.
