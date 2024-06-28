@@ -128,16 +128,16 @@ def read_chromosome(chromosome_number, ref_genome = "hg19", range_start=None, ra
 ## Then "divide" into sequence and coding/non-coding annotation numpy arrays.
 ## Save npy files, and in case one already exists, only save the other one
 
-def read_translate_save(chromosome_number, ref_genome="hg19", range_start=None, range_end=None):
+def read_translate_save(chromosome_number, ref_genome = "hg19", range_start = None, range_end = None):
 
     file_path = "../la_grande_table/" + chromosome_number + "/"
     file_path_single = None
     # Check whether the fasta file is there, and whether there is already an npy file
     if os.path.exists(file_path + "seq.npy") and os.path.exists(file_path + "cod.npy"):
-        print("Sequence and coding files already exist for " + chromosome_number)
+        print("Sequence and coding files already exist for " + chromosome_number + ".")
         return
     elif not os.path.exists("../data/" + ref_genome + "/" + chromosome_number +  ".fa"):
-        print(chromosome_number + " data could not be read.")
+        print("Fasta for " + chromosome_number + " not found.")
         return
     else:
         if os.path.exists(file_path + "cod.npy"):
@@ -190,27 +190,15 @@ for i in chromosomes:
 #########################################################################################################
 ## Quick test for loading sequence and coding annotation
 
-time_seq1 = time.time()
-testo1 = np.load("../la_grande_table/chr1/seq.npy", allow_pickle=False, fix_imports=False)
-print("\n--- Loading chr1 seq with " + str(len(testo1)) + "bp, took %s seconds ---\n" % (time.time() - time_seq1))
-print("Testo: ", testo1[10000:10010])
+# time_seq1 = time.time()
+# testo1 = np.load("../la_grande_table/chr1/seq.npy", allow_pickle=False, fix_imports=False)
+# print("\n--- Loading chr1 seq with " + str(len(testo1)) + "bp, took %s seconds ---\n" % (time.time() - time_seq1))
+# print("Seq chr1 demo: ", testo1[11470:11480])
 
-time_cod1 = time.time()
-testo2 = np.load("../la_grande_table/chr1/cod.npy", allow_pickle=False, fix_imports=False)
-print("\n--- Loading chr1 cod with " + str(len(testo2)) + " elements, took %s seconds ---\n" % (time.time() - time_cod1))
-print("Testo: ", testo2[10000:10010])
-
-
-
-time_seq2 = time.time()
-testo3 = np.load("../la_grande_table/chr2/seq.npy", allow_pickle=False, fix_imports=False)
-print("\n--- Loading chr2 seq with " + str(len(testo3)) + "bp, took %s seconds ---\n" % (time.time() - time_seq2))
-print("Testo: ", testo3[10000:10010])
-
-time_cod2 = time.time()
-testo4 = np.load("../la_grande_table/chr2/cod.npy", allow_pickle=False, fix_imports=False)
-print("\n--- Loading chr2 cod with " + str(len(testo4)) + " elements, took %s seconds ---\n" % (time.time() - time_cod2))
-print("Testo: ", testo4[10000:10010])
+# time_cod1 = time.time()
+# testo2 = np.load("../la_grande_table/chr1/cod.npy", allow_pickle=False, fix_imports=False)
+# print("\n--- Loading chr1 cod with " + str(len(testo2)) + " elements, took %s seconds ---\n" % (time.time() - time_cod1))
+# print("Cod chr1 demo: ", testo2[11470:11480])
 
 #########################################################################################################
 
@@ -262,6 +250,10 @@ def load_annotate_save(chromosome_number):
         print("Enhancer atlas annotation already exists for " + chromosome_number + ".")
         return
     
+    if not os.path.exists(file_path + "seq.npy"):
+        print("Seq file not found for " + chromosome_number + ", will not load enhacer atlas annotation.")
+        return
+    
     # Read enhacner atlas.
     enhancer_atlas_db = read_enh_atlas("enhancer_atlas")
 
@@ -302,18 +294,13 @@ for i in chromosomes:
 #########################################################################################################
 ## Test for loading enhancer atlas annotation
 
-testo5 = np.load("../la_grande_table/chr2/seq.npy", allow_pickle=False, fix_imports=False)
-print("Testo enh: ", testo5[10000:10010])
+# testo5 = np.load("../la_grande_table/chr2/seq.npy", allow_pickle=False, fix_imports=False)
+# print("Seq chr2 demo: ", testo5[193025:193040])
 
-
-time_read_atl = time.time()
-load_annotate_save("chr2")
-print("\n--- Saving chr2 atl to la grande table, took %s seconds ---\n" % (time.time() - time_read_atl))
-
-time_atl2 = time.time()
-testo6 = np.load("../la_grande_table/chr2/atl.npy", allow_pickle=False, fix_imports=False)
-print("\n--- Loading chr2 atl with " + str(len(testo6)) + " elements, took %s seconds ---\n" % (time.time() - time_atl2))
-print("Testo enh: ", testo6[10000:10010])
+# time_atl2 = time.time()
+# testo6 = np.load("../la_grande_table/chr2/atl.npy", allow_pickle=False, fix_imports=False)
+# print("\n--- Loading chr2 atl with " + str(len(testo6)) + " elements, took %s seconds ---\n" % (time.time() - time_atl2))
+# print("Enhancer atlas chr2 demo: ", testo6[193025:193040])
 
 #########################################################################################################
 
@@ -322,33 +309,36 @@ print("Testo enh: ", testo6[10000:10010])
 # Demo for loading, but also for applying loading function:
 
 columns = ["seq", "cod", "atl"]
-def mucho_load(chromosome_number, list_of_features):
+def mucho_load(chromosome_number, list_of_features: list):
 
     file_path = "../la_grande_table/" + chromosome_number + "/"
+    
+    # Check for size comparing all columns to sequence file length
+    check = [np.load(file_path + feature + ".npy", mmap_mode='r', allow_pickle=False, fix_imports=False).size for feature in list_of_features]
+    if any(size != check[0] for size in check):
+        print(next(feature for feature, size in zip(list_of_features, check) if size != check[0]) + " is not of chromosome length.")
 
-    # Check whether all columns for the la grande table are of the same length. 
-    # If not, print which one it is, and break.
-    check = []
-    for i in range(len(list_of_features)):
-        check[i] = np.load(file_path + list_of_features[i] + ".npy", mmap_mode='r', allow_pickle=False, fix_imports=False)
-    for i in range(len(check)):
-        if check[i].size != check[0].size: # Assuming seq is always put in list_of_features in the first place
-            print(list_of_features[i] + " is not of chromosome length.")
-            break
+    mucho_time = time.time()
+    
+    first_feature = np.load(file_path + list_of_features[0] + ".npy", allow_pickle=False, fix_imports=False) # Assuming column 1 is seq
+    chromosome_length = first_feature.size
+    no_columns = len(list_of_features)
 
-    la_grande_table = np.empty(1)
-    la_grande_table = np.append(la_grande_table, np.load(file_path + column + ".npy", allow_pickle=False, fix_imports=False))
-    dim = 1
-    for column in list_of_features[1:]:
-        la_grande_table = np.expand_dims(la_grande_table, (la_grande_table.shape[1]+1))
-        dim += 1
-        la_grande_table = np.append(la_grande_table, np.load(file_path + column + ".npy", allow_pickle=False, fix_imports=False), la_grande_table.shape[1])
+    # Initialize the la_grande_table with the correct shape
+    la_grande_table = np.empty((no_columns, chromosome_length))
+
+    # Fill in the first column and then the rest
+    la_grande_table[0] = first_feature
+    for idx, column in enumerate(list_of_features[1:], start=1):
+        la_grande_table[idx] = np.load(file_path + column + ".npy", allow_pickle=False, fix_imports=False)
+
+    print("\n--- Loaded la grande table for " + chromosome_number + " with " + str(la_grande_table.shape[0]) + " columns, and " + str(la_grande_table.shape[1]) + "bp in %s seconds ---\n" % (time.time() - mucho_time))
 
     return la_grande_table
 
 # Use, before any model, would be:
 # np_array = mucho_load("chr1", columns)
-# Where columns is the list of features to use. The ones defined in this file are seq, cod, and atl.
+# Where columns is a list of features to use: ["seq", "cod", "atl"]. Those are the ones created by this py file.
 
 #########################################################################################################
 
@@ -361,7 +351,7 @@ def mucho_load(chromosome_number, list_of_features):
 # print("Positions 10.000 to 10.010 of all features in la grande table for chromosome 1:")
 # j = 0
 # for col in columns:
-#     print("Column " + col + ":", la_demo_table[j])
+#     print("Column " + col + ":", la_demo_table[j][10000:10010])
 #     j += 1
 
 #########################################################################################################
