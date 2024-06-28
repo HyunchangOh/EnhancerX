@@ -1,7 +1,7 @@
 import numpy as np
 import heapq
 
-link_source = "../../data/3DIV/GM12878_in-situ_Mbol_HiCaptureSeq_GMiM_cutoff_10.tsv"
+link_source = "../../../data/3DIV/GM12878_in-situ_Mbol_HiCaptureSeq_GMiM_cutoff_10.tsv"
 f = open(link_source,"r")
 f.readline()
 
@@ -82,11 +82,11 @@ def dijkstra_1d_with_links(array, links):
     
     return distances
 
-path = "../../la_grande_table/"
+path = "../../../la_grande_table/"
 # Example usage
 for i in range(24):
     c = list(chromosome_converter.keys())[i]
-    array = np.load(path+c+"/h3k27ac.npy")
+    array = np.load(path+c+"/h3k4me1.npy")
     distances = dijkstra_1d_with_links(array, links[i])
-    np.save(path+c+"/h3k27ac_3D_Dist.npy",distances)
+    np.save(path+c+"/h3k4me1_3D_Dist.npy",distances)
 

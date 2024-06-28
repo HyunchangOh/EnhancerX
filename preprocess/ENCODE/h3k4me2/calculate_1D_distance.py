@@ -36,13 +36,13 @@ def closest_true_distances(arr,direction="both"):
 names = ["chr" + str(i+1) for i in range(22)]
 names += ["chrX","chrY"]
 
-root_folder = "../../la_grande_table/"
+root_folder = "../../../la_grande_table/"
 
 for name in names:
     print(name)
     d = root_folder+name+"/"
-    a = np.load(d+"h3k27ac.npy")
+    a = np.load(d+"h3k4me2.npy")
 
     a_d = closest_true_distances(a,"both")
-    np.save(d+"h3k27ac_1D_Dist.npy",a_d)
+    np.save(d+"h3k4me2_1D_Dist.npy",a_d)
     print("both direction done")

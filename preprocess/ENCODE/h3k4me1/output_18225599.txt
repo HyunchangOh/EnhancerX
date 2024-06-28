@@ -1,0 +1,48 @@
+chr1
+both direction done
+chr2
+both direction done
+chr3
+both direction done
+chr4
+both direction done
+chr5
+both direction done
+chr6
+both direction done
+chr7
+both direction done
+chr8
+both direction done
+chr9
+both direction done
+chr10
+both direction done
+chr11
+both direction done
+chr12
+both direction done
+chr13
+both direction done
+chr14
+both direction done
+chr15
+both direction done
+chr16
+both direction done
+chr17
+both direction done
+chr18
+both direction done
+chr19
+both direction done
+chr20
+both direction done
+chr21
+both direction done
+chr22
+both direction done
+chrX
+both direction done
+chrY
+both direction done
