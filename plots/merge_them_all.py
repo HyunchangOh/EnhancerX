@@ -1,4 +1,4 @@
-#This code is to merge all the batches we created and create just one main table for plotting $ analysis
+# Merge the batches all in cleaner way
 
 import pandas as pd
 
@@ -21,5 +21,17 @@ for file_path in file_paths:
 # Concatenate all the DataFrames into a single DataFrame
 merged_df = pd.concat(dfs, ignore_index=True)
 
-# Save the merged DataFrame to a new CSV file
-merged_df.to_csv('Ratio_Results-Total.csv', index=False)
+# Extract the feature from the File column and create a new column for it
+merged_df['Feature'] = merged_df['File'].apply(lambda x: x.split('/')[-1].replace('_1D_Dist.npy', ''))
+
+# Drop the original 'File' column
+merged_df = merged_df.drop(columns=['File'])
+
+# Re-arrange the columns
+merged_df = merged_df[['Chromosome', 'Feature', 'Number of zeros', 'Number of non-zero elements', 'Ratio']]
+
+# Save the cleaned DataFrame to a new CSV file
+merged_df.to_csv('Cleaned_Merged_Ratio_Results.csv', index=False)
+
+# Display the first few rows of the cleaned DataFrame to verify
+print(merged_df.head())
