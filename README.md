@@ -66,6 +66,10 @@ EnhancerX/
 |   ├── proto_CNN.py
 |   └── prediction.txt
 |
+├── plots/
+|   ├── RatioCalculation.py
+|   ├── DistributionPlots.py
+|
 ├── .gitignore
 └── README.md
 ```
