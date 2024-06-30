@@ -3,7 +3,7 @@ chromosome  start   end     name            score   strand      thickstart  thic
 chr1	    10244	10357	EH37E1055273	0	    .	        10244	    10357	    225,225,225
 '''
 
-f = open("../../../data/ENCODE/DHS/ENCFF273MVV.bed","r")
+f = open("../../../../../../scratch/data/ENCODE/CTCF/ENCFF807ZZB.bed","r")
 
 import numpy as np
 #lengths of chromosomes, from 1 to 22, and then X and Y.
@@ -51,6 +51,6 @@ for l in f.readlines():
     for i in range(start,end+1):
         forwards[chromosome][i] = True
 
-path = "../../../la_grande_table/"
+path = "../../../../../../scratch/la_grande_table/"
 for i in range(len(list(chromosome_converter.keys()))):
     np.save(path+list(chromosome_converter)[i]+"/DHS.npy",forwards[i])

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/ohh98/enhancerX/preprocess/ENCODE/CTCF/annotate.py", line 6, in <module>
+    f = open("../../../../../../scratch/data/ENCODE/CTCF/ENCFF807ZZB.bed","r")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../../../scratch/data/ENCODE/CTCF/ENCFF807ZZB.bed'

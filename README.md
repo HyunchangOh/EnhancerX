@@ -36,9 +36,9 @@ EnhancerX/
 |   |   └── chr1.fa
 |   ├── hg38/ *reference
 |   |   └── chr1.fa
-|   ├── VISTA/ *Added to LGT!
+|   ├── VISTA/ *preprocessed!
 |   |   └── vista.txt
-|   ├── EPD/ *Added to LGT
+|   ├── EPD/
 |   |   └── Hs_EPDnew_006_hg19.bed
 |   ├── ENCODE/
 |   |   └── ENCFF795IDC.bed #GM12878 cell line, h3k27ac, hg19

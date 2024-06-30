@@ -1,0 +1,34 @@
+Sequence and coding files already exist for chr1.
+Sequence and coding files already exist for chr2.
+Sequence and coding files already exist for chr3.
+Sequence and coding files already exist for chr4.
+Sequence and coding files already exist for chr5.
+Sequence and coding files already exist for chr6.
+Sequence and coding files already exist for chr7.
+Sequence and coding files already exist for chr8.
+Sequence and coding files already exist for chr9.
+Sequence and coding files already exist for chr10.
+Sequence and coding files already exist for chr11.
+Sequence and coding files already exist for chr12.
+Sequence and coding files already exist for chr13.
+Sequence and coding files already exist for chr14.
+Sequence and coding files already exist for chr15.
+Sequence and coding files already exist for chr16.
+Sequence and coding files already exist for chr17.
+Sequence and coding files already exist for chr18.
+Sequence and coding files already exist for chr19.
+Sequence and coding files already exist for chr20.
+Sequence and coding files already exist for chr21.
+Sequence and coding files already exist for chr22.
+Sequence and coding files already exist for chrX.
+Sequence and coding files already exist for chrY.
+Enhancer atlas annotation already exists for chr1.
+Enhancer atlas annotation already exists for chr2.
+Enhancer atlas annotation already exists for chr3.
+Enhancer atlas annotation already exists for chr4.
+Enhancer atlas annotation already exists for chr5.
+Enhancer atlas annotation already exists for chr6.
+Enhancer atlas annotation already exists for chr7.
+Enhancer atlas annotation already exists for chr8.
+Enhancer atlas annotation already exists for chr9.
+Enhancer atlas annotation already exists for chr10.

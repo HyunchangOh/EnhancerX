@@ -65,13 +65,13 @@ chromosomes = [
 ## Create folder structure. If some folder already exists, then nothing happens.
 
 def ensure_folder_structure():
-    base_path = "../la_grande_table/"
+    base_path = "../../../../scratch/la_grande_table/"
     
     # Create all folders, exist=ok then ignores already created folders
     for folder in chromosomes:
         os.makedirs(base_path + folder, exist_ok=True)
 
-ensure_folder_structure()
+# ensure_folder_structure()
 
 #########################################################################################################
 
@@ -80,7 +80,7 @@ ensure_folder_structure()
 ## Check whether fasta file exists for given chromosome. Read fasta, print progress every 5%, then return string of base pairs.
 
 def read_chromosome(chromosome_number, ref_genome = "hg19", range_start=None, range_end=None):
-    file_path = "../data/" + ref_genome + "/" + chromosome_number + ".fa"
+    file_path = "../../../../scratch/ohh98/data/" + ref_genome + "/" + chromosome_number + ".fa"
     if not os.path.exists(file_path):
         print("Fasta file not found for " + chromosome_number + ".")
         return
@@ -130,13 +130,13 @@ def read_chromosome(chromosome_number, ref_genome = "hg19", range_start=None, ra
 
 def read_translate_save(chromosome_number, ref_genome = "hg19", range_start = None, range_end = None):
 
-    file_path = "../la_grande_table/" + chromosome_number + "/"
+    file_path = "../../../../scratch/ohh98/la_grande_table/" + chromosome_number + "/"
     file_path_single = None
     # Check whether the fasta file is there, and whether there is already an npy file
     if os.path.exists(file_path + "seq.npy") and os.path.exists(file_path + "cod.npy"):
         print("Sequence and coding files already exist for " + chromosome_number + ".")
         return
-    elif not os.path.exists("../data/" + ref_genome + "/" + chromosome_number +  ".fa"):
+    elif not os.path.exists("../../../../scratch/ohh98/data/" + ref_genome + "/" + chromosome_number +  ".fa"):
         print("Fasta for " + chromosome_number + " not found.")
         return
     else:
@@ -163,7 +163,7 @@ def read_translate_save(chromosome_number, ref_genome = "hg19", range_start = No
     genome = np.array([dDNA[bp] for bp in Genome_l])
 
     # Create coding annotation
-    coding = np.array([1 if bp.isupper() else 0 for bp in Genome_l])
+    coding = np.array([True if bp.isupper() else False for bp in Genome_l])
 
     # Save sequence and/or coding/non-coding annotation to la grande table, depending on whether one of them already exists
     if file_path_single is not None:
@@ -179,7 +179,7 @@ def read_translate_save(chromosome_number, ref_genome = "hg19", range_start = No
 
 
 #########################################################################################################
-## Read all available fasta files stored in your data/
+# Read all available fasta files stored in your data/
 
 for i in chromosomes:
     read_translate_save(i)
@@ -210,7 +210,7 @@ for i in chromosomes:
 
 def read_enh_atlas(database_name, file_ext=".txt"):
     
-    database_path = "../data/" + database_name + "/"
+    database_path = "../../../../scratch/ohh98/data/" + database_name + "/"
     database = {}
     if not os.path.exists(database_path):
         print(database_name + " not found, could not be read.")
@@ -243,7 +243,7 @@ def read_enh_atlas(database_name, file_ext=".txt"):
 
 def load_annotate_save(chromosome_number):
 
-    file_path = "../la_grande_table/" + chromosome_number + "/"
+    file_path = "../../../../scratch/ohh98/la_grande_table/" + chromosome_number + "/"
 
     # Check whether enhancer atlas npy file is already there
     if os.path.exists(file_path + "atl.npy"):
@@ -281,6 +281,7 @@ def load_annotate_save(chromosome_number):
 
 #########################################################################################################
 
+# load_annotate_save("chr1")
 
 #########################################################################################################
 ## Read and store all enhancers of "GM12878" into each chromosome into la grande table
@@ -311,7 +312,7 @@ for i in chromosomes:
 columns = ["seq", "cod", "atl"]
 def mucho_load(chromosome_number, list_of_features: list):
 
-    file_path = "../la_grande_table/" + chromosome_number + "/"
+    file_path = "../../../../scratch/ohh98/la_grande_table/" + chromosome_number + "/"
     
     # Check for size comparing all columns to sequence file length
     check = [np.load(file_path + feature + ".npy", mmap_mode='r', allow_pickle=False, fix_imports=False).size for feature in list_of_features]

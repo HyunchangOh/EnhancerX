@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/ohh98/enhancerX/processed/la_grande_table_gen.py", line 290, in <module>
+    load_annotate_save(i)
+  File "/home/ohh98/enhancerX/processed/la_grande_table_gen.py", line 270, in load_annotate_save
+    seq = np.load(file_path + "seq.npy", mmap_mode='r', allow_pickle=False, fix_imports=False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/trinity/shared/easybuild/software/SciPy-bundle/2023.07-gfbf-2023a/lib/python3.11/site-packages/numpy/lib/npyio.py", line 453, in load
+    return format.open_memmap(file, mode=mmap_mode,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/trinity/shared/easybuild/software/SciPy-bundle/2023.07-gfbf-2023a/lib/python3.11/site-packages/numpy/lib/format.py", line 945, in open_memmap
+    marray = numpy.memmap(filename, dtype=dtype, shape=shape, order=order,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/trinity/shared/easybuild/software/SciPy-bundle/2023.07-gfbf-2023a/lib/python3.11/site-packages/numpy/core/memmap.py", line 268, in __new__
+    mm = mmap.mmap(fid.fileno(), bytes, access=acc, offset=start)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: mmap length is greater than file size

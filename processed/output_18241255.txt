@@ -1,0 +1,85 @@
+Sequence and coding files already exist for chr1.
+Sequence and coding files already exist for chr2.
+Sequence and coding files already exist for chr3.
+Sequence and coding files already exist for chr4.
+Sequence and coding files already exist for chr5.
+Sequence and coding files already exist for chr6.
+Sequence and coding files already exist for chr7.
+Sequence and coding files already exist for chr8.
+Sequence and coding files already exist for chr9.
+Sequence and coding files already exist for chr10.
+Sequence and coding files already exist for chr11.
+Sequence and coding files already exist for chr12.
+Sequence and coding files already exist for chr13.
+Sequence and coding files already exist for chr14.
+Sequence and coding files already exist for chr15.
+Sequence and coding files already exist for chr16.
+Sequence and coding files already exist for chr17.
+Sequence and coding files already exist for chr18.
+Sequence and coding files already exist for chr19.
+Sequence and coding files already exist for chr20.
+Sequence and coding files already exist for chr21.
+Sequence and coding files already exist for chr22.
+Ahead with loading (sequence file already exists for chrX).
+chrX's lines are read.
+0 % read
+5 % read
+10 % read
+15 % read
+20 % read
+25 % read
+30 % read
+35 % read
+40 % read
+45 % read
+50 % read
+55 % read
+60 % read
+65 % read
+70 % read
+75 % read
+80 % read
+85 % read
+90 % read
+95 % read
+Chromosome data extracted
+
+--- Reading chrX, with 155270560bp, took 26.93810272216797 seconds ---
+
+Ahead with loading both sequence and coding annotation for chrY.
+chrY's lines are read.
+0 % read
+5 % read
+10 % read
+15 % read
+20 % read
+25 % read
+30 % read
+35 % read
+40 % read
+45 % read
+50 % read
+55 % read
+60 % read
+65 % read
+70 % read
+75 % read
+80 % read
+85 % read
+90 % read
+95 % read
+100 % read
+Chromosome data extracted
+
+--- Reading chrY, with 59373566bp, took 13.62533187866211 seconds ---
+
+Enhancer atlas annotation already exists for chr1.
+Enhancer atlas annotation already exists for chr2.
+Enhancer atlas annotation already exists for chr3.
+Enhancer atlas annotation already exists for chr4.
+Enhancer atlas annotation already exists for chr5.
+Enhancer atlas annotation already exists for chr6.
+Enhancer atlas annotation already exists for chr7.
+Enhancer atlas annotation already exists for chr8.
+Enhancer atlas annotation already exists for chr9.
+Enhancer atlas annotation already exists for chr10.
