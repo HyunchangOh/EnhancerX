@@ -68,7 +68,7 @@ EnhancerX/
 |
 ├── plots/
 |   ├── RatioCalculation.py
-|   ├── DistributionPlots.py
+|   └── DistributionPlots.py
 |
 ├── .gitignore
 └── README.md
