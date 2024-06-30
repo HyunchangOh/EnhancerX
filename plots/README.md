@@ -1,4 +1,4 @@
-##The following have been reloaded with a version change:
+## The following have been reloaded with a version change:
   1) FFTW/3.3.10-GCC-12.3.0 => FFTW/3.3.8-gompi-2020b
   2) GCC/12.3.0 => GCC/10.2.0
   3) GCCcore/12.3.0 => GCCcore/10.2.0
