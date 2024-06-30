@@ -3,11 +3,11 @@ import pandas as pd
 import glob
 import os
 
-# Define the base directory - we moved the data to this path
+# Define the base directory
 base_directory = '/scratch/ohh98/la_grande_table'
 
-# List of chromosomes to process - edit here in batches of chr as it is expensive computationally 
-chromosomes = ['chrX', 'chrY']
+# List of chromosomes to process
+chromosomes = [f'chr{i}' for i in range(1, 23)] + (['chrX', 'chrY'])
 
 # Create an empty list to store the results
 results = []
@@ -56,9 +56,12 @@ for chr in chromosomes:
 if results:
     df = pd.DataFrame(results)
     
-    # Save the DataFrame to a CSV file - edit the name as the batch name you put in
-    output_file = '/home/ohh98/enhancerX/plots/Ratio_Results-X-and-Y.csv'
+    # Save the DataFrame to a CSV file
+    output_file = '/home/ohh98/enhancerX/plots/Ratio_Results-Total.csv'
     df.to_csv(output_file, index=False)
     print(f"Results saved to {output_file}")
 else:
     print("No results to save.")
+
+
+
