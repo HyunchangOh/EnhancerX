@@ -1,0 +1,66 @@
+Training fold 1/5
+Fold 1 results:
+              precision    recall  f1-score   support
+
+           0       0.76      0.91      0.83    355759
+           1       0.89      0.71      0.79    355989
+
+    accuracy                           0.81    711748
+   macro avg       0.83      0.81      0.81    711748
+weighted avg       0.83      0.81      0.81    711748
+
+ROC AUC: 0.8967373469939308
+
+Training fold 2/5
+Fold 2 results:
+              precision    recall  f1-score   support
+
+           0       0.76      0.92      0.83    355967
+           1       0.90      0.71      0.79    355780
+
+    accuracy                           0.81    711747
+   macro avg       0.83      0.81      0.81    711747
+weighted avg       0.83      0.81      0.81    711747
+
+ROC AUC: 0.896778944983285
+
+Training fold 3/5
+Fold 3 results:
+              precision    recall  f1-score   support
+
+           0       0.76      0.92      0.83    355892
+           1       0.90      0.71      0.79    355855
+
+    accuracy                           0.81    711747
+   macro avg       0.83      0.81      0.81    711747
+weighted avg       0.83      0.81      0.81    711747
+
+ROC AUC: 0.8965610454969373
+
+Training fold 4/5
+Fold 4 results:
+              precision    recall  f1-score   support
+
+           0       0.76      0.91      0.83    356040
+           1       0.89      0.72      0.79    355707
+
+    accuracy                           0.81    711747
+   macro avg       0.82      0.81      0.81    711747
+weighted avg       0.82      0.81      0.81    711747
+
+ROC AUC: 0.8959996103555496
+
+Training fold 5/5
+Fold 5 results:
+              precision    recall  f1-score   support
+
+           0       0.76      0.92      0.83    355710
+           1       0.90      0.71      0.79    356037
+
+    accuracy                           0.81    711747
+   macro avg       0.83      0.81      0.81    711747
+weighted avg       0.83      0.81      0.81    711747
+
+ROC AUC: 0.8958544586929041
+
+Training complete.

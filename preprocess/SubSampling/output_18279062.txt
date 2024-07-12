@@ -1,0 +1,69 @@
+promoter_transcribed_reverse.npy
+promoter_transcribed_forward.npy
+Subsampled data for chr1 saved successfully.
+promoter_transcribed_reverse.npy
+promoter_transcribed_forward.npy
+Subsampled data for chr2 saved successfully.
+promoter_transcribed_forward.npy
+promoter_transcribed_reverse.npy
+Subsampled data for chr3 saved successfully.
+promoter_transcribed_reverse.npy
+promoter_transcribed_forward.npy
+Subsampled data for chr4 saved successfully.
+promoter_transcribed_forward.npy
+promoter_transcribed_reverse.npy
+Subsampled data for chr5 saved successfully.
+promoter_transcribed_forward.npy
+promoter_transcribed_reverse.npy
+Subsampled data for chr6 saved successfully.
+promoter_transcribed_reverse.npy
+promoter_transcribed_forward.npy
+Subsampled data for chr7 saved successfully.
+promoter_transcribed_forward.npy
+promoter_transcribed_reverse.npy
+Subsampled data for chr8 saved successfully.
+promoter_transcribed_forward.npy
+promoter_transcribed_reverse.npy
+Subsampled data for chr9 saved successfully.
+promoter_transcribed_forward.npy
+promoter_transcribed_reverse.npy
+Subsampled data for chr10 saved successfully.
+promoter_transcribed_forward.npy
+promoter_transcribed_reverse.npy
+Subsampled data for chr11 saved successfully.
+promoter_transcribed_forward.npy
+promoter_transcribed_reverse.npy
+Subsampled data for chr12 saved successfully.
+promoter_transcribed_forward.npy
+promoter_transcribed_reverse.npy
+Subsampled data for chr13 saved successfully.
+promoter_transcribed_reverse.npy
+promoter_transcribed_forward.npy
+Subsampled data for chr14 saved successfully.
+promoter_transcribed_forward.npy
+promoter_transcribed_reverse.npy
+Subsampled data for chr15 saved successfully.
+promoter_transcribed_reverse.npy
+promoter_transcribed_forward.npy
+Subsampled data for chr16 saved successfully.
+promoter_transcribed_forward.npy
+promoter_transcribed_reverse.npy
+Subsampled data for chr17 saved successfully.
+promoter_transcribed_reverse.npy
+promoter_transcribed_forward.npy
+Subsampled data for chr18 saved successfully.
+promoter_transcribed_forward.npy
+promoter_transcribed_reverse.npy
+Subsampled data for chr19 saved successfully.
+promoter_transcribed_reverse.npy
+promoter_transcribed_forward.npy
+Subsampled data for chr20 saved successfully.
+promoter_transcribed_reverse.npy
+promoter_transcribed_forward.npy
+Subsampled data for chr21 saved successfully.
+promoter_transcribed_reverse.npy
+promoter_transcribed_forward.npy
+Subsampled data for chr22 saved successfully.
+promoter_transcribed_forward.npy
+promoter_transcribed_reverse.npy
+Subsampled data for chrX saved successfully.

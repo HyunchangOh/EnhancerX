@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/ohh98/enhancerX/model/gradient_boosting/metropolis_hastings/HP_tuning_mp.py", line 24, in <module>
+    features[feature_name] = np.load(os.path.join(data_dir, file))
+NameError: name 'features' is not defined

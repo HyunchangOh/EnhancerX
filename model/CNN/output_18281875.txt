@@ -1,0 +1,1446 @@
+
+-------------------  Trying learning rates -------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 32 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.09065818786621094 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 35 seconds, results below ---
+Confusion Matrix:
+TP: 02576 FP: 00594
+FN: 31095 TN: 32995
+
+--- Ran structure [64, 64] for 5 epochs in 36 seconds, results below ---
+Confusion Matrix:
+TP: 33660 FP: 33546
+FN: 00011 TN: 00043
+
+--- Ran structure [32, 32, 32] for 5 epochs in 37 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33586
+FN: 00000 TN: 00003
+
+--- Ran structure [64, 64, 64] for 5 epochs in 40 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33589
+FN: 00000 TN: 00000
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 39 seconds, results below ---
+Confusion Matrix:
+TP: 00000 FP: 00000
+FN: 33671 TN: 33589
+
+Sorted results based on accuracy:
+[32, 32] Accuracy: 0.5288581848144531
+[64, 64] Accuracy: 0.5010853409767151
+[32, 32, 32] Accuracy: 0.5006541609764099
+[64, 64, 64] Accuracy: 0.5006095767021179
+[32, 32, 32, 32] Accuracy: 0.4993904232978821
+
+Sorted results based on ppv:
+[32, 32] PPV: 0.8126182965299684
+[64, 64] PPV: 0.5008481385590572
+[32, 32, 32] PPV: 0.5006319044857784
+[64, 64, 64] PPV: 0.5006095747844187
+[32, 32, 32, 32] PPV: 0.0
+
+------------------------ Ran NN on chr1 with 5 epochs, 32 and 0.001 learning rate in 201 seconds ------------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 32 and 0.0001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.055104732513427734 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 32 seconds, results below ---
+Confusion Matrix:
+TP: 33397 FP: 27092
+FN: 00274 TN: 06497
+
+--- Ran structure [64, 64] for 5 epochs in 34 seconds, results below ---
+Confusion Matrix:
+TP: 02929 FP: 00608
+FN: 30742 TN: 32981
+
+--- Ran structure [32, 32, 32] for 5 epochs in 34 seconds, results below ---
+Confusion Matrix:
+TP: 09869 FP: 03730
+FN: 23802 TN: 29859
+
+--- Ran structure [64, 64, 64] for 5 epochs in 36 seconds, results below ---
+Confusion Matrix:
+TP: 03944 FP: 01050
+FN: 29727 TN: 32539
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 36 seconds, results below ---
+Confusion Matrix:
+TP: 06712 FP: 02379
+FN: 26959 TN: 31210
+
+Sorted results based on accuracy:
+[32, 32] Accuracy: 0.5931311249732971
+[32, 32, 32] Accuracy: 0.5906630754470825
+[32, 32, 32, 32] Accuracy: 0.5638120770454407
+[64, 64, 64] Accuracy: 0.5424174666404724
+[64, 64] Accuracy: 0.5338982939720154
+
+Sorted results based on ppv:
+[64, 64] PPV: 0.8281029120723777
+[64, 64, 64] PPV: 0.789747697236684
+[32, 32, 32, 32] PPV: 0.7383126168738312
+[32, 32, 32] PPV: 0.7257151261122141
+[32, 32] PPV: 0.5521169138190415
+
+------------------------ Ran NN on chr1 with 5 epochs, 32 and 0.0001 learning rate in 183 seconds ------------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 32 and 1e-05 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.05121254920959473 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 32 seconds, results below ---
+Confusion Matrix:
+TP: 10218 FP: 03653
+FN: 23453 TN: 29936
+
+--- Ran structure [64, 64] for 5 epochs in 33 seconds, results below ---
+Confusion Matrix:
+TP: 09595 FP: 03487
+FN: 24076 TN: 30102
+
+--- Ran structure [32, 32, 32] for 5 epochs in 34 seconds, results below ---
+Confusion Matrix:
+TP: 04540 FP: 01168
+FN: 29131 TN: 32421
+
+--- Ran structure [64, 64, 64] for 5 epochs in 36 seconds, results below ---
+Confusion Matrix:
+TP: 05115 FP: 01709
+FN: 28556 TN: 31880
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 37 seconds, results below ---
+Confusion Matrix:
+TP: 14740 FP: 06290
+FN: 18931 TN: 27299
+
+Sorted results based on accuracy:
+[32, 32, 32, 32] Accuracy: 0.625022292137146
+[32, 32] Accuracy: 0.5969967246055603
+[64, 64] Accuracy: 0.5902022123336792
+[64, 64, 64] Accuracy: 0.5500297546386719
+[32, 32, 32] Accuracy: 0.5495242476463318
+
+Sorted results based on ppv:
+[32, 32, 32] PPV: 0.795374912403644
+[64, 64, 64] PPV: 0.7495603751465416
+[32, 32] PPV: 0.7366447985004686
+[64, 64] PPV: 0.7334505427304694
+[32, 32, 32, 32] PPV: 0.7009034712315739
+
+------------------------ Ran NN on chr1 with 5 epochs, 32 and 1e-05 learning rate in 184 seconds ------------------------
+
+Top results for learning rate 0.001:
+Top accuracy: [([32, 32], 0.5288581848144531)]
+Top PPV: [([32, 32], 0.8126182965299684)]
+
+
+Top results for learning rate 0.0001:
+Top accuracy: [([32, 32], 0.5931311249732971)]
+Top PPV: [([64, 64], 0.8281029120723777)]
+
+
+Top results for learning rate 1e-05:
+Top accuracy: [([32, 32, 32, 32], 0.625022292137146)]
+Top PPV: [([32, 32, 32], 0.795374912403644)]
+
+-------------------  Trying batch size  -------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 32 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.0505223274230957 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 32 seconds, results below ---
+Confusion Matrix:
+TP: 33109 FP: 31947
+FN: 00562 TN: 01642
+
+--- Ran structure [64, 64] for 5 epochs in 34 seconds, results below ---
+Confusion Matrix:
+TP: 03124 FP: 00600
+FN: 30547 TN: 32989
+
+--- Ran structure [32, 32, 32] for 5 epochs in 35 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33589
+FN: 00000 TN: 00000
+
+--- Ran structure [64, 64, 64] for 5 epochs in 36 seconds, results below ---
+Confusion Matrix:
+TP: 00001 FP: 00004
+FN: 33670 TN: 33585
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 36 seconds, results below ---
+Confusion Matrix:
+TP: 33646 FP: 33561
+FN: 00025 TN: 00028
+
+Sorted results based on accuracy:
+[64, 64] Accuracy: 0.5369164347648621
+[32, 32] Accuracy: 0.5166666507720947
+[32, 32, 32, 32] Accuracy: 0.5006541609764099
+[32, 32, 32] Accuracy: 0.5006095767021179
+[64, 64, 64] Accuracy: 0.4993458092212677
+
+Sorted results based on ppv:
+[64, 64] PPV: 0.8388829215896885
+[32, 32] PPV: 0.508930767338908
+[32, 32, 32, 32] PPV: 0.5006323746038359
+[32, 32, 32] PPV: 0.5006095747844187
+[64, 64, 64] PPV: 0.2
+
+------------------------ Ran NN on chr1 with 5 epochs, 32 and 0.001 learning rate in 184 seconds ------------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 64 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.05068373680114746 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 16 seconds, results below ---
+Confusion Matrix:
+TP: 07418 FP: 02716
+FN: 26253 TN: 30873
+
+--- Ran structure [64, 64] for 5 epochs in 17 seconds, results below ---
+Confusion Matrix:
+TP: 28905 FP: 19911
+FN: 04766 TN: 13678
+
+--- Ran structure [32, 32, 32] for 5 epochs in 18 seconds, results below ---
+Confusion Matrix:
+TP: 00634 FP: 00182
+FN: 33037 TN: 33407
+
+--- Ran structure [64, 64, 64] for 5 epochs in 19 seconds, results below ---
+Confusion Matrix:
+TP: 00503 FP: 00147
+FN: 33168 TN: 33442
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 19 seconds, results below ---
+Confusion Matrix:
+TP: 00592 FP: 00182
+FN: 33079 TN: 33407
+
+Sorted results based on accuracy:
+[64, 64] Accuracy: 0.6331103444099426
+[32, 32] Accuracy: 0.569298267364502
+[32, 32, 32] Accuracy: 0.5061106085777283
+[32, 32, 32, 32] Accuracy: 0.5054861903190613
+[64, 64, 64] Accuracy: 0.5046833157539368
+
+Sorted results based on ppv:
+[32, 32, 32] PPV: 0.7769607843137255
+[64, 64, 64] PPV: 0.7738461538461539
+[32, 32, 32, 32] PPV: 0.7648578811369509
+[32, 32] PPV: 0.7319913163607658
+[64, 64] PPV: 0.592121435594887
+
+------------------------ Ran NN on chr1 with 5 epochs, 64 and 0.001 learning rate in 101 seconds ------------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 128 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.06023907661437988 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 9 seconds, results below ---
+Confusion Matrix:
+TP: 33645 FP: 33533
+FN: 00026 TN: 00056
+
+--- Ran structure [64, 64] for 5 epochs in 9 seconds, results below ---
+Confusion Matrix:
+TP: 09986 FP: 03762
+FN: 23685 TN: 29827
+
+--- Ran structure [32, 32, 32] for 5 epochs in 9 seconds, results below ---
+Confusion Matrix:
+TP: 29033 FP: 20948
+FN: 04638 TN: 12641
+
+--- Ran structure [64, 64, 64] for 5 epochs in 10 seconds, results below ---
+Confusion Matrix:
+TP: 03961 FP: 01022
+FN: 29710 TN: 32567
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 10 seconds, results below ---
+Confusion Matrix:
+TP: 33659 FP: 33551
+FN: 00012 TN: 00038
+
+Sorted results based on accuracy:
+[32, 32, 32] Accuracy: 0.6195955872535706
+[64, 64] Accuracy: 0.5919268727302551
+[64, 64, 64] Accuracy: 0.5430865287780762
+[32, 32] Accuracy: 0.5010555982589722
+[32, 32, 32, 32] Accuracy: 0.5009961128234863
+
+Sorted results based on ppv:
+[64, 64, 64] PPV: 0.7949026690748545
+[64, 64] PPV: 0.7263601978469596
+[32, 32, 32] PPV: 0.5808807346791781
+[32, 32] PPV: 0.5008336062401382
+[32, 32, 32, 32] PPV: 0.5008034518672817
+
+------------------------ Ran NN on chr1 with 5 epochs, 128 and 0.001 learning rate in 60 seconds ------------------------
+
+Top results for batch size 32:
+Top accuracy: [([64, 64], 0.5369164347648621)]
+Top PPV: [([64, 64], 0.8388829215896885)]
+
+
+Top results for batch size 64:
+Top accuracy: [([64, 64], 0.6331103444099426)]
+Top PPV: [([32, 32, 32], 0.7769607843137255)]
+
+
+Top results for batch size 128:
+Top accuracy: [([32, 32, 32], 0.6195955872535706)]
+Top PPV: [([64, 64, 64], 0.7949026690748545)]
+
+-------------------  Trying num_epochs  -------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 32 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.04844856262207031 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 32 seconds, results below ---
+Confusion Matrix:
+TP: 33365 FP: 33319
+FN: 00306 TN: 00270
+
+--- Ran structure [64, 64] for 5 epochs in 33 seconds, results below ---
+Confusion Matrix:
+TP: 01863 FP: 00364
+FN: 31808 TN: 33225
+
+--- Ran structure [32, 32, 32] for 5 epochs in 34 seconds, results below ---
+Confusion Matrix:
+TP: 00136 FP: 00115
+FN: 33535 TN: 33474
+
+--- Ran structure [64, 64, 64] for 5 epochs in 35 seconds, results below ---
+Confusion Matrix:
+TP: 00001 FP: 00000
+FN: 33670 TN: 33589
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 35 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33589
+FN: 00000 TN: 00000
+
+Sorted results based on accuracy:
+[64, 64] Accuracy: 0.5216770768165588
+[32, 32, 32, 32] Accuracy: 0.5006095767021179
+[32, 32] Accuracy: 0.5000743269920349
+[32, 32, 32] Accuracy: 0.4997026324272156
+[64, 64, 64] Accuracy: 0.49940529465675354
+
+Sorted results based on ppv:
+[64, 64, 64] PPV: 1.0
+[64, 64] PPV: 0.8365514144589133
+[32, 32, 32] PPV: 0.5418326693227091
+[32, 32, 32, 32] PPV: 0.5006095747844187
+[32, 32] PPV: 0.500344910323316
+
+------------------------ Ran NN on chr1 with 5 epochs, 32 and 0.001 learning rate in 181 seconds ------------------------
+
+
+------------------- RUNNING chr1 with 10 epochs, 32 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.05503439903259277 seconds ---
+
+
+--- Ran structure [32, 32] for 10 epochs in 63 seconds, results below ---
+Confusion Matrix:
+TP: 00017 FP: 00006
+FN: 33654 TN: 33583
+
+--- Ran structure [64, 64] for 10 epochs in 64 seconds, results below ---
+Confusion Matrix:
+TP: 02514 FP: 00673
+FN: 31157 TN: 32916
+
+--- Ran structure [32, 32, 32] for 10 epochs in 67 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33589
+FN: 00000 TN: 00000
+
+--- Ran structure [64, 64, 64] for 10 epochs in 70 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33589
+FN: 00000 TN: 00000
+
+--- Ran structure [32, 32, 32, 32] for 10 epochs in 71 seconds, results below ---
+Confusion Matrix:
+TP: 33670 FP: 33586
+FN: 00001 TN: 00003
+
+Sorted results based on accuracy:
+[64, 64] Accuracy: 0.5267618298530579
+[32, 32, 32, 32] Accuracy: 0.5006393194198608
+[32, 32, 32] Accuracy: 0.5006095767021179
+[64, 64, 64] Accuracy: 0.5006095767021179
+[32, 32] Accuracy: 0.49955397844314575
+
+Sorted results based on ppv:
+[64, 64] PPV: 0.7888296203326012
+[32, 32] PPV: 0.7391304347826086
+[32, 32, 32, 32] PPV: 0.5006244796003331
+[32, 32, 32] PPV: 0.5006095747844187
+[64, 64, 64] PPV: 0.5006095747844187
+
+------------------------ Ran NN on chr1 with 10 epochs, 32 and 0.001 learning rate in 347 seconds ------------------------
+
+
+------------------- RUNNING chr1 with 15 epochs, 32 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.04807424545288086 seconds ---
+
+
+--- Ran structure [32, 32] for 15 epochs in 94 seconds, results below ---
+Confusion Matrix:
+TP: 00000 FP: 00000
+FN: 33671 TN: 33589
+
+--- Ran structure [64, 64] for 15 epochs in 97 seconds, results below ---
+Confusion Matrix:
+TP: 33635 FP: 33503
+FN: 00036 TN: 00086
+
+--- Ran structure [32, 32, 32] for 15 epochs in 100 seconds, results below ---
+Confusion Matrix:
+TP: 00000 FP: 00000
+FN: 33671 TN: 33589
+
+--- Ran structure [64, 64, 64] for 15 epochs in 105 seconds, results below ---
+Confusion Matrix:
+TP: 00000 FP: 00000
+FN: 33671 TN: 33589
+
+--- Ran structure [32, 32, 32, 32] for 15 epochs in 106 seconds, results below ---
+Confusion Matrix:
+TP: 00000 FP: 00000
+FN: 33671 TN: 33589
+
+Sorted results based on accuracy:
+[64, 64] Accuracy: 0.5013529658317566
+[32, 32] Accuracy: 0.4993904232978821
+[32, 32, 32] Accuracy: 0.4993904232978821
+[64, 64, 64] Accuracy: 0.4993904232978821
+[32, 32, 32, 32] Accuracy: 0.4993904232978821
+
+Sorted results based on ppv:
+[64, 64] PPV: 0.5009830498376479
+[32, 32] PPV: 0.0
+[32, 32, 32] PPV: 0.0
+[64, 64, 64] PPV: 0.0
+[32, 32, 32, 32] PPV: 0.0
+
+------------------------ Ran NN on chr1 with 15 epochs, 32 and 0.001 learning rate in 513 seconds ------------------------
+
+Top results for number of epochs 5:
+Top accuracy: [([64, 64], 0.5216770768165588)]
+Top PPV: [([64, 64, 64], 1.0)]
+
+
+Top results for number of epochs 10:
+Top accuracy: [([64, 64], 0.5267618298530579)]
+Top PPV: [([64, 64], 0.7888296203326012)]
+
+
+Top results for number of epochs 15:
+Top accuracy: [([64, 64], 0.5013529658317566)]
+Top PPV: [([64, 64], 0.5009830498376479)]
+
+End of program, ran 1st feature batch for 1954 seconds
+
+-------------------  Trying learning rates -------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 32 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.04923558235168457 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 32 seconds, results below ---
+Confusion Matrix:
+TP: 21273 FP: 01136
+FN: 12398 TN: 32453
+
+--- Ran structure [64, 64] for 5 epochs in 33 seconds, results below ---
+Confusion Matrix:
+TP: 21223 FP: 01085
+FN: 12448 TN: 32504
+
+--- Ran structure [32, 32, 32] for 5 epochs in 34 seconds, results below ---
+Confusion Matrix:
+TP: 21211 FP: 01075
+FN: 12460 TN: 32514
+
+--- Ran structure [64, 64, 64] for 5 epochs in 35 seconds, results below ---
+Confusion Matrix:
+TP: 21186 FP: 01061
+FN: 12485 TN: 32528
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 36 seconds, results below ---
+Confusion Matrix:
+TP: 21422 FP: 01317
+FN: 12249 TN: 32272
+
+Sorted results based on accuracy:
+[64, 64] Accuracy: 0.7987957000732422
+[32, 32] Accuracy: 0.7987808585166931
+[32, 32, 32] Accuracy: 0.7987659573554993
+[64, 64, 64] Accuracy: 0.7986024618148804
+[32, 32, 32, 32] Accuracy: 0.798305094242096
+
+Sorted results based on ppv:
+[64, 64, 64] PPV: 0.9523081763833325
+[32, 32, 32] PPV: 0.9517634389302702
+[64, 64] PPV: 0.9513627398242783
+[32, 32] PPV: 0.9493060823776162
+[32, 32, 32, 32] PPV: 0.9420818857469546
+
+------------------------ Ran NN on chr1 with 5 epochs, 32 and 0.001 learning rate in 181 seconds ------------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 32 and 0.0001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.06243252754211426 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 32 seconds, results below ---
+Confusion Matrix:
+TP: 21763 FP: 01832
+FN: 11908 TN: 31757
+
+--- Ran structure [64, 64] for 5 epochs in 33 seconds, results below ---
+Confusion Matrix:
+TP: 21548 FP: 01579
+FN: 12123 TN: 32010
+
+--- Ran structure [32, 32, 32] for 5 epochs in 34 seconds, results below ---
+Confusion Matrix:
+TP: 21092 FP: 01066
+FN: 12579 TN: 32523
+
+--- Ran structure [64, 64, 64] for 5 epochs in 36 seconds, results below ---
+Confusion Matrix:
+TP: 21247 FP: 01115
+FN: 12424 TN: 32474
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 36 seconds, results below ---
+Confusion Matrix:
+TP: 24753 FP: 06126
+FN: 08918 TN: 27463
+
+Sorted results based on accuracy:
+[64, 64, 64] Accuracy: 0.7987065315246582
+[32, 32, 32] Accuracy: 0.7971305251121521
+[64, 64] Accuracy: 0.7962830662727356
+[32, 32] Accuracy: 0.7957181334495544
+[32, 32, 32, 32] Accuracy: 0.7763306498527527
+
+Sorted results based on ppv:
+[32, 32, 32] PPV: 0.9518909648885279
+[64, 64, 64] PPV: 0.9501386280296932
+[64, 64] PPV: 0.9317248237990228
+[32, 32] PPV: 0.9223564314473406
+[32, 32, 32, 32] PPV: 0.8016127465267657
+
+------------------------ Ran NN on chr1 with 5 epochs, 32 and 0.0001 learning rate in 181 seconds ------------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 32 and 1e-05 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.06500864028930664 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 32 seconds, results below ---
+Confusion Matrix:
+TP: 21170 FP: 01388
+FN: 12501 TN: 32201
+
+--- Ran structure [64, 64] for 5 epochs in 33 seconds, results below ---
+Confusion Matrix:
+TP: 21132 FP: 01143
+FN: 12539 TN: 32446
+
+--- Ran structure [32, 32, 32] for 5 epochs in 34 seconds, results below ---
+Confusion Matrix:
+TP: 21230 FP: 01265
+FN: 12441 TN: 32324
+
+--- Ran structure [64, 64, 64] for 5 epochs in 35 seconds, results below ---
+Confusion Matrix:
+TP: 21145 FP: 01152
+FN: 12526 TN: 32437
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 34 seconds, results below ---
+Confusion Matrix:
+TP: 21026 FP: 01091
+FN: 12645 TN: 32498
+
+Sorted results based on accuracy:
+[64, 64, 64] Accuracy: 0.7966399192810059
+[64, 64] Accuracy: 0.79658043384552
+[32, 32, 32] Accuracy: 0.7962235808372498
+[32, 32, 32, 32] Accuracy: 0.7957775592803955
+[32, 32] Accuracy: 0.7935028076171875
+
+Sorted results based on ppv:
+[32, 32, 32, 32] PPV: 0.9506714292173442
+[64, 64] PPV: 0.9486868686868687
+[64, 64, 64] PPV: 0.9483338565726331
+[32, 32, 32] PPV: 0.9437652811735942
+[32, 32] PPV: 0.9384697224931289
+
+------------------------ Ran NN on chr1 with 5 epochs, 32 and 1e-05 learning rate in 179 seconds ------------------------
+
+Top results for learning rate 0.001:
+Top accuracy: [([64, 64], 0.7987957000732422)]
+Top PPV: [([64, 64, 64], 0.9523081763833325)]
+
+
+Top results for learning rate 0.0001:
+Top accuracy: [([64, 64, 64], 0.7987065315246582)]
+Top PPV: [([32, 32, 32], 0.9518909648885279)]
+
+
+Top results for learning rate 1e-05:
+Top accuracy: [([64, 64, 64], 0.7966399192810059)]
+Top PPV: [([32, 32, 32, 32], 0.9506714292173442)]
+
+-------------------  Trying batch size  -------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 32 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.05537128448486328 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 30 seconds, results below ---
+Confusion Matrix:
+TP: 21219 FP: 01085
+FN: 12452 TN: 32504
+
+--- Ran structure [64, 64] for 5 epochs in 31 seconds, results below ---
+Confusion Matrix:
+TP: 21200 FP: 01070
+FN: 12471 TN: 32519
+
+--- Ran structure [32, 32, 32] for 5 epochs in 32 seconds, results below ---
+Confusion Matrix:
+TP: 21200 FP: 01079
+FN: 12471 TN: 32510
+
+--- Ran structure [64, 64, 64] for 5 epochs in 34 seconds, results below ---
+Confusion Matrix:
+TP: 21220 FP: 01084
+FN: 12451 TN: 32505
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 34 seconds, results below ---
+Confusion Matrix:
+TP: 21201 FP: 01074
+FN: 12470 TN: 32515
+
+Sorted results based on accuracy:
+[64, 64, 64] Accuracy: 0.7987659573554993
+[32, 32] Accuracy: 0.7987362742424011
+[64, 64] Accuracy: 0.7986767888069153
+[32, 32, 32, 32] Accuracy: 0.7986321449279785
+[32, 32, 32] Accuracy: 0.7985429763793945
+
+Sorted results based on ppv:
+[64, 64] PPV: 0.9519533004041311
+[32, 32, 32, 32] PPV: 0.9517845117845117
+[32, 32, 32] PPV: 0.9515687418645361
+[64, 64, 64] PPV: 0.9513988522238164
+[32, 32] PPV: 0.9513540172166427
+
+------------------------ Ran NN on chr1 with 5 epochs, 32 and 0.001 learning rate in 173 seconds ------------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 64 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.04933762550354004 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 16 seconds, results below ---
+Confusion Matrix:
+TP: 21860 FP: 01875
+FN: 11811 TN: 31714
+
+--- Ran structure [64, 64] for 5 epochs in 18 seconds, results below ---
+Confusion Matrix:
+TP: 21241 FP: 01118
+FN: 12430 TN: 32471
+
+--- Ran structure [32, 32, 32] for 5 epochs in 18 seconds, results below ---
+Confusion Matrix:
+TP: 21227 FP: 01108
+FN: 12444 TN: 32481
+
+--- Ran structure [64, 64, 64] for 5 epochs in 19 seconds, results below ---
+Confusion Matrix:
+TP: 21234 FP: 01095
+FN: 12437 TN: 32494
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 22 seconds, results below ---
+Confusion Matrix:
+TP: 21221 FP: 01088
+FN: 12450 TN: 32501
+
+Sorted results based on accuracy:
+[64, 64, 64] Accuracy: 0.798810601234436
+[32, 32, 32, 32] Accuracy: 0.7987213730812073
+[64, 64] Accuracy: 0.7985727190971375
+[32, 32, 32] Accuracy: 0.7985132336616516
+[32, 32] Accuracy: 0.7965209484100342
+
+Sorted results based on ppv:
+[32, 32, 32, 32] PPV: 0.9512304451118383
+[64, 64, 64] PPV: 0.9509606341528953
+[32, 32, 32] PPV: 0.9503917618088202
+[64, 64] PPV: 0.9499977637640323
+[32, 32] PPV: 0.9210027385717295
+
+------------------------ Ran NN on chr1 with 5 epochs, 64 and 0.001 learning rate in 105 seconds ------------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 128 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.07069587707519531 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 10 seconds, results below ---
+Confusion Matrix:
+TP: 21289 FP: 01267
+FN: 12382 TN: 32322
+
+--- Ran structure [64, 64] for 5 epochs in 11 seconds, results below ---
+Confusion Matrix:
+TP: 21205 FP: 01079
+FN: 12466 TN: 32510
+
+--- Ran structure [32, 32, 32] for 5 epochs in 11 seconds, results below ---
+Confusion Matrix:
+TP: 21235 FP: 01122
+FN: 12436 TN: 32467
+
+--- Ran structure [64, 64, 64] for 5 epochs in 12 seconds, results below ---
+Confusion Matrix:
+TP: 21200 FP: 01077
+FN: 12471 TN: 32512
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 11 seconds, results below ---
+Confusion Matrix:
+TP: 21373 FP: 01298
+FN: 12298 TN: 32291
+
+Sorted results based on accuracy:
+[64, 64] Accuracy: 0.7986173033714294
+[64, 64, 64] Accuracy: 0.7985727190971375
+[32, 32, 32] Accuracy: 0.7984240055084229
+[32, 32, 32, 32] Accuracy: 0.7978590726852417
+[32, 32] Accuracy: 0.7970710396766663
+
+Sorted results based on ppv:
+[64, 64, 64] PPV: 0.951654172464874
+[64, 64] PPV: 0.9515796086878477
+[32, 32, 32] PPV: 0.949814375810708
+[32, 32] PPV: 0.9438286930306792
+[32, 32, 32, 32] PPV: 0.9427462396894711
+
+------------------------ Ran NN on chr1 with 5 epochs, 128 and 0.001 learning rate in 69 seconds ------------------------
+
+Top results for batch size 32:
+Top accuracy: [([64, 64, 64], 0.7987659573554993)]
+Top PPV: [([64, 64], 0.9519533004041311)]
+
+
+Top results for batch size 64:
+Top accuracy: [([64, 64, 64], 0.798810601234436)]
+Top PPV: [([32, 32, 32, 32], 0.9512304451118383)]
+
+
+Top results for batch size 128:
+Top accuracy: [([64, 64], 0.7986173033714294)]
+Top PPV: [([64, 64, 64], 0.951654172464874)]
+
+-------------------  Trying num_epochs  -------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 32 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.04925894737243652 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 37 seconds, results below ---
+Confusion Matrix:
+TP: 21186 FP: 01064
+FN: 12485 TN: 32525
+
+--- Ran structure [64, 64] for 5 epochs in 38 seconds, results below ---
+Confusion Matrix:
+TP: 21188 FP: 01068
+FN: 12483 TN: 32521
+
+--- Ran structure [32, 32, 32] for 5 epochs in 38 seconds, results below ---
+Confusion Matrix:
+TP: 21187 FP: 01065
+FN: 12484 TN: 32524
+
+--- Ran structure [64, 64, 64] for 5 epochs in 41 seconds, results below ---
+Confusion Matrix:
+TP: 21428 FP: 01296
+FN: 12243 TN: 32293
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 41 seconds, results below ---
+Confusion Matrix:
+TP: 21171 FP: 01067
+FN: 12500 TN: 32522
+
+Sorted results based on accuracy:
+[64, 64, 64] Accuracy: 0.7987065315246582
+[32, 32] Accuracy: 0.7985578179359436
+[32, 32, 32] Accuracy: 0.7985578179359436
+[64, 64] Accuracy: 0.7985280752182007
+[32, 32, 32, 32] Accuracy: 0.7982901930809021
+
+Sorted results based on ppv:
+[32, 32] PPV: 0.9521797752808989
+[32, 32, 32] PPV: 0.9521391335610282
+[32, 32, 32, 32] PPV: 0.9520190664628114
+[64, 64] PPV: 0.9520129403306974
+[64, 64, 64] PPV: 0.94296778736138
+
+------------------------ Ran NN on chr1 with 5 epochs, 32 and 0.001 learning rate in 208 seconds ------------------------
+
+
+------------------- RUNNING chr1 with 10 epochs, 32 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.06158876419067383 seconds ---
+
+
+--- Ran structure [32, 32] for 10 epochs in 72 seconds, results below ---
+Confusion Matrix:
+TP: 21231 FP: 01096
+FN: 12440 TN: 32493
+
+--- Ran structure [64, 64] for 10 epochs in 75 seconds, results below ---
+Confusion Matrix:
+TP: 21204 FP: 01077
+FN: 12467 TN: 32512
+
+--- Ran structure [32, 32, 32] for 10 epochs in 76 seconds, results below ---
+Confusion Matrix:
+TP: 21220 FP: 01088
+FN: 12451 TN: 32501
+
+--- Ran structure [64, 64, 64] for 10 epochs in 82 seconds, results below ---
+Confusion Matrix:
+TP: 21343 FP: 01245
+FN: 12328 TN: 32344
+
+--- Ran structure [32, 32, 32, 32] for 10 epochs in 80 seconds, results below ---
+Confusion Matrix:
+TP: 21208 FP: 01070
+FN: 12463 TN: 32519
+
+Sorted results based on accuracy:
+[32, 32, 32, 32] Accuracy: 0.7987957000732422
+[32, 32] Accuracy: 0.7987511157989502
+[32, 32, 32] Accuracy: 0.7987065315246582
+[64, 64] Accuracy: 0.7986321449279785
+[64, 64, 64] Accuracy: 0.7982010245323181
+
+Sorted results based on ppv:
+[32, 32, 32, 32] PPV: 0.9519705539096867
+[64, 64] PPV: 0.9516628517571024
+[32, 32, 32] PPV: 0.9512282589205666
+[32, 32] PPV: 0.9509114525014556
+[64, 64, 64] PPV: 0.9448822383566495
+
+------------------------ Ran NN on chr1 with 10 epochs, 32 and 0.001 learning rate in 399 seconds ------------------------
+
+
+------------------- RUNNING chr1 with 15 epochs, 32 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.0776817798614502 seconds ---
+
+
+--- Ran structure [32, 32] for 15 epochs in 108 seconds, results below ---
+Confusion Matrix:
+TP: 21215 FP: 01082
+FN: 12456 TN: 32507
+
+--- Ran structure [64, 64] for 15 epochs in 111 seconds, results below ---
+Confusion Matrix:
+TP: 21214 FP: 01078
+FN: 12457 TN: 32511
+
+--- Ran structure [32, 32, 32] for 15 epochs in 114 seconds, results below ---
+Confusion Matrix:
+TP: 21331 FP: 01242
+FN: 12340 TN: 32347
+
+--- Ran structure [64, 64, 64] for 15 epochs in 121 seconds, results below ---
+Confusion Matrix:
+TP: 21378 FP: 01262
+FN: 12293 TN: 32327
+
+--- Ran structure [32, 32, 32, 32] for 15 epochs in 121 seconds, results below ---
+Confusion Matrix:
+TP: 21225 FP: 01082
+FN: 12446 TN: 32507
+
+Sorted results based on accuracy:
+[32, 32, 32, 32] Accuracy: 0.7988700270652771
+[64, 64] Accuracy: 0.7987659573554993
+[32, 32] Accuracy: 0.7987213730812073
+[64, 64, 64] Accuracy: 0.7984686493873596
+[32, 32, 32] Accuracy: 0.7980672121047974
+
+Sorted results based on ppv:
+[64, 64] PPV: 0.9516418446079311
+[32, 32, 32, 32] PPV: 0.9514950463979917
+[32, 32] PPV: 0.9514732923711711
+[32, 32, 32] PPV: 0.9449785141540779
+[64, 64, 64] PPV: 0.9442579505300354
+
+------------------------ Ran NN on chr1 with 15 epochs, 32 and 0.001 learning rate in 589 seconds ------------------------
+
+Top results for number of epochs 5:
+Top accuracy: [([64, 64, 64], 0.7987065315246582)]
+Top PPV: [([32, 32], 0.9521797752808989)]
+
+
+Top results for number of epochs 10:
+Top accuracy: [([32, 32, 32, 32], 0.7987957000732422)]
+Top PPV: [([32, 32, 32, 32], 0.9519705539096867)]
+
+
+Top results for number of epochs 15:
+Top accuracy: [([32, 32, 32, 32], 0.7988700270652771)]
+Top PPV: [([64, 64], 0.9516418446079311)]
+
+End of program, ran mix + mem feature batches for 4039 seconds
+
+-------------------  Trying learning rates -------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 32 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 1.0387904644012451 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 36 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33566
+FN: 00000 TN: 00023
+
+--- Ran structure [64, 64] for 5 epochs in 38 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33570
+FN: 00000 TN: 00019
+
+--- Ran structure [32, 32, 32] for 5 epochs in 38 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33529
+FN: 00000 TN: 00060
+
+--- Ran structure [64, 64, 64] for 5 epochs in 42 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33583
+FN: 00000 TN: 00006
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 41 seconds, results below ---
+Confusion Matrix:
+TP: 00000 FP: 00000
+FN: 33671 TN: 33589
+
+Sorted results based on accuracy:
+[32, 32, 32] Accuracy: 0.5015016198158264
+[32, 32] Accuracy: 0.5009515285491943
+[64, 64] Accuracy: 0.5008920431137085
+[64, 64, 64] Accuracy: 0.5006988048553467
+[32, 32, 32, 32] Accuracy: 0.4993904232978821
+
+Sorted results based on ppv:
+[32, 32, 32] PPV: 0.5010565476190476
+[32, 32] PPV: 0.5007808200841798
+[64, 64] PPV: 0.5007510298776044
+[64, 64, 64] PPV: 0.5006542361792607
+[32, 32, 32, 32] PPV: 0.0
+
+------------------------ Ran NN on chr1 with 5 epochs, 32 and 0.001 learning rate in 210 seconds ------------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 32 and 0.0001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.07330584526062012 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 36 seconds, results below ---
+Confusion Matrix:
+TP: 21748 FP: 05887
+FN: 11923 TN: 27702
+
+--- Ran structure [64, 64] for 5 epochs in 38 seconds, results below ---
+Confusion Matrix:
+TP: 24705 FP: 06413
+FN: 08966 TN: 27176
+
+--- Ran structure [32, 32, 32] for 5 epochs in 39 seconds, results below ---
+Confusion Matrix:
+TP: 25052 FP: 09213
+FN: 08619 TN: 24376
+
+--- Ran structure [64, 64, 64] for 5 epochs in 41 seconds, results below ---
+Confusion Matrix:
+TP: 18446 FP: 03264
+FN: 15225 TN: 30325
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 41 seconds, results below ---
+Confusion Matrix:
+TP: 27007 FP: 12120
+FN: 06664 TN: 21469
+
+Sorted results based on accuracy:
+[64, 64] Accuracy: 0.7713499665260315
+[32, 32] Accuracy: 0.735206663608551
+[32, 32, 32] Accuracy: 0.7348795533180237
+[64, 64, 64] Accuracy: 0.7251114845275879
+[32, 32, 32, 32] Accuracy: 0.7207255363464355
+
+Sorted results based on ppv:
+[64, 64, 64] PPV: 0.8496545370796867
+[64, 64] PPV: 0.7939134905842278
+[32, 32] PPV: 0.7869730414329654
+[32, 32, 32] PPV: 0.7311250547205603
+[32, 32, 32, 32] PPV: 0.6902394765762773
+
+------------------------ Ran NN on chr1 with 5 epochs, 32 and 0.0001 learning rate in 208 seconds ------------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 32 and 1e-05 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.0662238597869873 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 36 seconds, results below ---
+Confusion Matrix:
+TP: 20423 FP: 07402
+FN: 13248 TN: 26187
+
+--- Ran structure [64, 64] for 5 epochs in 38 seconds, results below ---
+Confusion Matrix:
+TP: 22842 FP: 07734
+FN: 10829 TN: 25855
+
+--- Ran structure [32, 32, 32] for 5 epochs in 39 seconds, results below ---
+Confusion Matrix:
+TP: 20589 FP: 07780
+FN: 13082 TN: 25809
+
+--- Ran structure [64, 64, 64] for 5 epochs in 41 seconds, results below ---
+Confusion Matrix:
+TP: 22394 FP: 07422
+FN: 11277 TN: 26167
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 41 seconds, results below ---
+Confusion Matrix:
+TP: 19339 FP: 06168
+FN: 14332 TN: 27421
+
+Sorted results based on accuracy:
+[64, 64] Accuracy: 0.7240113019943237
+[64, 64, 64] Accuracy: 0.7219892740249634
+[32, 32, 32, 32] Accuracy: 0.6952126026153564
+[32, 32] Accuracy: 0.6929824352264404
+[32, 32, 32] Accuracy: 0.689830482006073
+
+Sorted results based on ppv:
+[32, 32, 32, 32] PPV: 0.7581840279139059
+[64, 64, 64] PPV: 0.7510732492621411
+[64, 64] PPV: 0.7470565149136578
+[32, 32] PPV: 0.7339802336028751
+[32, 32, 32] PPV: 0.7257569882618351
+
+------------------------ Ran NN on chr1 with 5 epochs, 32 and 1e-05 learning rate in 208 seconds ------------------------
+
+Top results for learning rate 0.001:
+Top accuracy: [([32, 32, 32], 0.5015016198158264)]
+Top PPV: [([32, 32, 32], 0.5010565476190476)]
+
+
+Top results for learning rate 0.0001:
+Top accuracy: [([64, 64], 0.7713499665260315)]
+Top PPV: [([64, 64, 64], 0.8496545370796867)]
+
+
+Top results for learning rate 1e-05:
+Top accuracy: [([64, 64], 0.7240113019943237)]
+Top PPV: [([32, 32, 32, 32], 0.7581840279139059)]
+
+-------------------  Trying batch size  -------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 32 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.06319260597229004 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 36 seconds, results below ---
+Confusion Matrix:
+TP: 33670 FP: 33516
+FN: 00001 TN: 00073
+
+--- Ran structure [64, 64] for 5 epochs in 37 seconds, results below ---
+Confusion Matrix:
+TP: 00000 FP: 00003
+FN: 33671 TN: 33586
+
+--- Ran structure [32, 32, 32] for 5 epochs in 39 seconds, results below ---
+Confusion Matrix:
+TP: 00000 FP: 00000
+FN: 33671 TN: 33589
+
+--- Ran structure [64, 64, 64] for 5 epochs in 41 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33583
+FN: 00000 TN: 00006
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 41 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33583
+FN: 00000 TN: 00006
+
+Sorted results based on accuracy:
+[32, 32] Accuracy: 0.5016800761222839
+[64, 64, 64] Accuracy: 0.5006988048553467
+[32, 32, 32, 32] Accuracy: 0.5006988048553467
+[32, 32, 32] Accuracy: 0.4993904232978821
+[64, 64] Accuracy: 0.4993458092212677
+
+Sorted results based on ppv:
+[32, 32] PPV: 0.5011460720983538
+[64, 64, 64] PPV: 0.5006542361792607
+[32, 32, 32, 32] PPV: 0.5006542361792607
+[64, 64] PPV: 0.0
+[32, 32, 32] PPV: 0.0
+
+------------------------ Ran NN on chr1 with 5 epochs, 32 and 0.001 learning rate in 208 seconds ------------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 64 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.06831765174865723 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 19 seconds, results below ---
+Confusion Matrix:
+TP: 31397 FP: 18807
+FN: 02274 TN: 14782
+
+--- Ran structure [64, 64] for 5 epochs in 20 seconds, results below ---
+Confusion Matrix:
+TP: 27983 FP: 18320
+FN: 05688 TN: 15269
+
+--- Ran structure [32, 32, 32] for 5 epochs in 20 seconds, results below ---
+Confusion Matrix:
+TP: 33669 FP: 33565
+FN: 00002 TN: 00024
+
+--- Ran structure [64, 64, 64] for 5 epochs in 22 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33485
+FN: 00000 TN: 00104
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 21 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33570
+FN: 00000 TN: 00019
+
+Sorted results based on accuracy:
+[32, 32] Accuracy: 0.6865744590759277
+[64, 64] Accuracy: 0.6430568099021912
+[64, 64, 64] Accuracy: 0.5021558403968811
+[32, 32, 32] Accuracy: 0.5009366869926453
+[32, 32, 32, 32] Accuracy: 0.5008920431137085
+
+Sorted results based on ppv:
+[32, 32] PPV: 0.6253884152657159
+[64, 64] PPV: 0.6043452908018919
+[64, 64, 64] PPV: 0.5013848353088332
+[32, 32, 32] PPV: 0.5007734182110242
+[32, 32, 32, 32] PPV: 0.5007510298776044
+
+------------------------ Ran NN on chr1 with 5 epochs, 64 and 0.001 learning rate in 116 seconds ------------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 128 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.0660245418548584 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 11 seconds, results below ---
+Confusion Matrix:
+TP: 20846 FP: 04712
+FN: 12825 TN: 28877
+
+--- Ran structure [64, 64] for 5 epochs in 11 seconds, results below ---
+Confusion Matrix:
+TP: 29699 FP: 12070
+FN: 03972 TN: 21519
+
+--- Ran structure [32, 32, 32] for 5 epochs in 11 seconds, results below ---
+Confusion Matrix:
+TP: 22926 FP: 07082
+FN: 10745 TN: 26507
+
+--- Ran structure [64, 64, 64] for 5 epochs in 12 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33457
+FN: 00000 TN: 00132
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 12 seconds, results below ---
+Confusion Matrix:
+TP: 33663 FP: 33484
+FN: 00008 TN: 00105
+
+Sorted results based on accuracy:
+[64, 64] Accuracy: 0.7614927291870117
+[32, 32] Accuracy: 0.7392655611038208
+[32, 32, 32] Accuracy: 0.7349539399147034
+[64, 64, 64] Accuracy: 0.5025721192359924
+[32, 32, 32, 32] Accuracy: 0.5020517110824585
+
+Sorted results based on ppv:
+[32, 32] PPV: 0.8156350262148838
+[32, 32, 32] PPV: 0.7639962676619568
+[64, 64] PPV: 0.711029711029711
+[64, 64, 64] PPV: 0.501593969729472
+[32, 32, 32, 32] PPV: 0.5013328964808554
+
+------------------------ Ran NN on chr1 with 5 epochs, 128 and 0.001 learning rate in 70 seconds ------------------------
+
+Top results for batch size 32:
+Top accuracy: [([32, 32], 0.5016800761222839)]
+Top PPV: [([32, 32], 0.5011460720983538)]
+
+
+Top results for batch size 64:
+Top accuracy: [([32, 32], 0.6865744590759277)]
+Top PPV: [([32, 32], 0.6253884152657159)]
+
+
+Top results for batch size 128:
+Top accuracy: [([64, 64], 0.7614927291870117)]
+Top PPV: [([32, 32], 0.8156350262148838)]
+
+-------------------  Trying num_epochs  -------------------
+
+
+------------------- RUNNING chr1 with 5 epochs, 32 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.061434030532836914 seconds ---
+
+
+--- Ran structure [32, 32] for 5 epochs in 35 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33526
+FN: 00000 TN: 00063
+
+--- Ran structure [64, 64] for 5 epochs in 36 seconds, results below ---
+Confusion Matrix:
+TP: 03480 FP: 00669
+FN: 30191 TN: 32920
+
+--- Ran structure [32, 32, 32] for 5 epochs in 37 seconds, results below ---
+Confusion Matrix:
+TP: 00000 FP: 00000
+FN: 33671 TN: 33589
+
+--- Ran structure [64, 64, 64] for 5 epochs in 40 seconds, results below ---
+Confusion Matrix:
+TP: 00000 FP: 00000
+FN: 33671 TN: 33589
+
+--- Ran structure [32, 32, 32, 32] for 5 epochs in 39 seconds, results below ---
+Confusion Matrix:
+TP: 00000 FP: 00000
+FN: 33671 TN: 33589
+
+Sorted results based on accuracy:
+[64, 64] Accuracy: 0.5411834716796875
+[32, 32] Accuracy: 0.5015462636947632
+[32, 32, 32] Accuracy: 0.4993904232978821
+[64, 64, 64] Accuracy: 0.4993904232978821
+[32, 32, 32, 32] Accuracy: 0.4993904232978821
+
+Sorted results based on ppv:
+[64, 64] PPV: 0.8387563268257412
+[32, 32] PPV: 0.5010789172135661
+[32, 32, 32] PPV: 0.0
+[64, 64, 64] PPV: 0.0
+[32, 32, 32, 32] PPV: 0.0
+
+------------------------ Ran NN on chr1 with 5 epochs, 32 and 0.001 learning rate in 201 seconds ------------------------
+
+
+------------------- RUNNING chr1 with 10 epochs, 32 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.06236672401428223 seconds ---
+
+
+--- Ran structure [32, 32] for 10 epochs in 70 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33547
+FN: 00000 TN: 00042
+
+--- Ran structure [64, 64] for 10 epochs in 72 seconds, results below ---
+Confusion Matrix:
+TP: 00000 FP: 00000
+FN: 33671 TN: 33589
+
+--- Ran structure [32, 32, 32] for 10 epochs in 74 seconds, results below ---
+Confusion Matrix:
+TP: 00000 FP: 00000
+FN: 33671 TN: 33589
+
+--- Ran structure [64, 64, 64] for 10 epochs in 79 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33587
+FN: 00000 TN: 00002
+
+--- Ran structure [32, 32, 32, 32] for 10 epochs in 79 seconds, results below ---
+Confusion Matrix:
+TP: 00000 FP: 00000
+FN: 33671 TN: 33589
+
+Sorted results based on accuracy:
+[32, 32] Accuracy: 0.5012339949607849
+[64, 64, 64] Accuracy: 0.5006393194198608
+[64, 64] Accuracy: 0.4993904232978821
+[32, 32, 32] Accuracy: 0.4993904232978821
+[32, 32, 32, 32] Accuracy: 0.4993904232978821
+
+Sorted results based on ppv:
+[32, 32] PPV: 0.5009223719836948
+[64, 64, 64] PPV: 0.500624461030658
+[64, 64] PPV: 0.0
+[32, 32, 32] PPV: 0.0
+[32, 32, 32, 32] PPV: 0.0
+
+------------------------ Ran NN on chr1 with 10 epochs, 32 and 0.001 learning rate in 386 seconds ------------------------
+
+
+------------------- RUNNING chr1 with 15 epochs, 32 and 0.001 learning rate  -------------------
+
+
+--- Loaded la grande table for chr1 with 12 columns, and 336298 items in 0.06607913970947266 seconds ---
+
+
+--- Ran structure [32, 32] for 15 epochs in 104 seconds, results below ---
+Confusion Matrix:
+TP: 00000 FP: 00000
+FN: 33671 TN: 33589
+
+--- Ran structure [64, 64] for 15 epochs in 108 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33426
+FN: 00000 TN: 00163
+
+--- Ran structure [32, 32, 32] for 15 epochs in 110 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33585
+FN: 00000 TN: 00004
+
+--- Ran structure [64, 64, 64] for 15 epochs in 119 seconds, results below ---
+Confusion Matrix:
+TP: 00000 FP: 00000
+FN: 33671 TN: 33589
+
+--- Ran structure [32, 32, 32, 32] for 15 epochs in 118 seconds, results below ---
+Confusion Matrix:
+TP: 33671 FP: 33585
+FN: 00000 TN: 00004
+
+Sorted results based on accuracy:
+[64, 64] Accuracy: 0.5030329823493958
+[32, 32, 32] Accuracy: 0.5006690621376038
+[32, 32, 32, 32] Accuracy: 0.5006690621376038
+[32, 32] Accuracy: 0.4993904232978821
+[64, 64, 64] Accuracy: 0.4993904232978821
+
+Sorted results based on ppv:
+[64, 64] PPV: 0.5018257150096129
+[32, 32, 32] PPV: 0.5006393481622458
+[32, 32, 32, 32] PPV: 0.5006393481622458
+[32, 32] PPV: 0.0
+[64, 64, 64] PPV: 0.0
+
+------------------------ Ran NN on chr1 with 15 epochs, 32 and 0.001 learning rate in 571 seconds ------------------------
+
+Top results for number of epochs 5:
+Top accuracy: [([64, 64], 0.5411834716796875)]
+Top PPV: [([64, 64], 0.8387563268257412)]
+
+
+Top results for number of epochs 10:
+Top accuracy: [([32, 32], 0.5012339949607849)]
+Top PPV: [([32, 32], 0.5009223719836948)]
+
+
+Top results for number of epochs 15:
+Top accuracy: [([64, 64], 0.5030329823493958)]
+Top PPV: [([64, 64], 0.5018257150096129)]
+
+End of program, ran mix + mem + dist feature batches for 6218 seconds

@@ -1,0 +1,71 @@
+def create_gb_model():
+    model = RandomForestClassifier(n_estimators=100, random_state=42)
+    return model
+
+
+Training fold 1/5
+Fold 1 results:
+              precision    recall  f1-score   support
+
+           0       0.59      0.55      0.57    356054
+           1       0.58      0.61      0.59    355694
+
+    accuracy                           0.58    711748
+   macro avg       0.58      0.58      0.58    711748
+weighted avg       0.58      0.58      0.58    711748
+
+ROC AUC: 0.6144518313217523
+
+Training fold 2/5
+Fold 2 results:
+              precision    recall  f1-score   support
+
+           0       0.59      0.55      0.57    356062
+           1       0.58      0.61      0.60    355685
+
+    accuracy                           0.58    711747
+   macro avg       0.58      0.58      0.58    711747
+weighted avg       0.58      0.58      0.58    711747
+
+ROC AUC: 0.6163401155366163
+
+Training fold 3/5
+Fold 3 results:
+              precision    recall  f1-score   support
+
+           0       0.59      0.55      0.57    355958
+           1       0.58      0.61      0.59    355789
+
+    accuracy                           0.58    711747
+   macro avg       0.58      0.58      0.58    711747
+weighted avg       0.58      0.58      0.58    711747
+
+ROC AUC: 0.6141665209566801
+
+Training fold 4/5
+Fold 4 results:
+              precision    recall  f1-score   support
+
+           0       0.59      0.55      0.57    355923
+           1       0.58      0.61      0.59    355824
+
+    accuracy                           0.58    711747
+   macro avg       0.58      0.58      0.58    711747
+weighted avg       0.58      0.58      0.58    711747
+
+ROC AUC: 0.6152272312579338
+
+Training fold 5/5
+Fold 5 results:
+              precision    recall  f1-score   support
+
+           0       0.59      0.55      0.57    355371
+           1       0.58      0.62      0.60    356376
+
+    accuracy                           0.58    711747
+   macro avg       0.58      0.58      0.58    711747
+weighted avg       0.58      0.58      0.58    711747
+
+ROC AUC: 0.616391321969293
+
+Training complete.

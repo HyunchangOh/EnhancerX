@@ -1,0 +1,1 @@
+slurmstepd: error: *** JOB 18275509 ON c061 CANCELLED AT 2024-07-08T20:34:03 ***

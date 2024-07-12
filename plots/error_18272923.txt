@@ -1,0 +1,75 @@
+
+The following have been reloaded with a version change:
+  1) FFTW/3.3.10-GCC-12.3.0 => FFTW/3.3.8-gompi-2020b
+  2) GCC/12.3.0 => GCC/10.2.0
+  3) GCCcore/12.3.0 => GCCcore/10.2.0
+  4) LibTIFF/4.5.0-GCCcore-12.3.0 => LibTIFF/4.1.0-GCCcore-10.2.0
+  5) NASM/2.16.01-GCCcore-12.3.0 => NASM/2.15.05-GCCcore-10.2.0
+  6) OpenBLAS/0.3.23-GCC-12.3.0 => OpenBLAS/0.3.12-GCC-10.2.0
+  7) Pillow/10.0.0-GCCcore-12.3.0 => Pillow/8.0.1-GCCcore-10.2.0
+  8) Python/3.11.3-GCCcore-12.3.0 => Python/3.8.6-GCCcore-10.2.0
+  9) SQLite/3.42.0-GCCcore-12.3.0 => SQLite/3.33.0-GCCcore-10.2.0
+ 10) SciPy-bundle/2023.07-gfbf-2023a => SciPy-bundle/2020.11-foss-2020b
+ 11) Tcl/8.6.13-GCCcore-12.3.0 => Tcl/8.6.10-GCCcore-10.2.0
+ 12) Tk/8.6.13-GCCcore-12.3.0 => Tk/8.6.10-GCCcore-10.2.0
+ 13) Tkinter/3.11.3-GCCcore-12.3.0 => Tkinter/3.8.6-GCCcore-10.2.0
+ 14) X11/20230603-GCCcore-12.3.0 => X11/20201008-GCCcore-10.2.0
+ 15) XZ/5.4.2-GCCcore-12.3.0 => XZ/5.2.5-GCCcore-10.2.0
+ 16) binutils/2.40-GCCcore-12.3.0 => binutils/2.35-GCCcore-10.2.0
+ 17) bzip2/1.0.8-GCCcore-12.3.0 => bzip2/1.0.8-GCCcore-10.2.0
+ 18) expat/2.5.0-GCCcore-12.3.0 => expat/2.2.9-GCCcore-10.2.0
+ 19) fontconfig/2.14.2-GCCcore-12.3.0 => fontconfig/2.13.92-GCCcore-10.2.0
+ 20) freetype/2.13.0-GCCcore-12.3.0 => freetype/2.10.3-GCCcore-10.2.0
+ 21) libffi/3.4.4-GCCcore-12.3.0 => libffi/3.3-GCCcore-10.2.0
+ 22) libjpeg-turbo/2.1.5.1-GCCcore-12.3.0 => libjpeg-turbo/2.0.5-GCCcore-10.2.0
+ 23) libpciaccess/0.17-GCCcore-12.3.0 => libpciaccess/0.16-GCCcore-10.2.0
+ 24) libpng/1.6.39-GCCcore-12.3.0 => libpng/1.6.37-GCCcore-10.2.0
+ 25) libreadline/8.2-GCCcore-12.3.0 => libreadline/8.0-GCCcore-10.2.0
+ 26) matplotlib/3.7.2-gfbf-2023a => matplotlib/3.3.3-foss-2020b
+ 27) ncurses/6.4-GCCcore-12.3.0 => ncurses/6.2-GCCcore-10.2.0
+ 28) pybind11/2.11.1-GCCcore-12.3.0 => pybind11/2.6.0-GCCcore-10.2.0
+ 29) util-linux/2.39-GCCcore-12.3.0 => util-linux/2.36-GCCcore-10.2.0
+ 30) xorg-macros/1.20.0-GCCcore-12.3.0 => xorg-macros/1.19.2-GCCcore-10.2.0
+ 31) zlib/1.2.13-GCCcore-12.3.0 => zlib/1.2.11-GCCcore-10.2.0
+
+
+The following have been reloaded with a version change:
+  1) FFTW/3.3.8-gompi-2020b => FFTW/3.3.9-gompi-2021a
+  2) FlexiBLAS/3.3.1-GCC-12.3.0 => FlexiBLAS/3.0.4-GCC-10.3.0
+  3) GCC/10.2.0 => GCC/10.3.0
+  4) GCCcore/10.2.0 => GCCcore/10.3.0
+  5) GMP/6.2.0-GCCcore-10.2.0 => GMP/6.2.1-GCCcore-10.3.0
+  6) OpenBLAS/0.3.12-GCC-10.2.0 => OpenBLAS/0.3.15-GCC-10.3.0
+  7) OpenMPI/4.0.5-GCC-10.2.0 => OpenMPI/4.1.1-GCC-10.3.0
+  8) PMIx/3.1.5-GCCcore-10.2.0 => PMIx/3.2.3-GCCcore-10.3.0
+  9) Python/3.8.6-GCCcore-10.2.0 => Python/3.9.5-GCCcore-10.3.0
+ 10) SQLite/3.33.0-GCCcore-10.2.0 => SQLite/3.35.4-GCCcore-10.3.0
+ 11) ScaLAPACK/2.1.0-gompi-2020b => ScaLAPACK/2.1.0-gompi-2021a-fb
+ 12) SciPy-bundle/2020.11-foss-2020b => SciPy-bundle/2021.05-foss-2021a
+ 13) Tcl/8.6.10-GCCcore-10.2.0 => Tcl/8.6.11-GCCcore-10.3.0
+ 14) UCX/1.9.0-GCCcore-10.2.0 => UCX/1.10.0-GCCcore-10.3.0
+ 15) XZ/5.2.5-GCCcore-10.2.0 => XZ/5.2.5-GCCcore-10.3.0
+ 16) binutils/2.35-GCCcore-10.2.0 => binutils/2.36.1-GCCcore-10.3.0
+ 17) bzip2/1.0.8-GCCcore-10.2.0 => bzip2/1.0.8-GCCcore-10.3.0
+ 18) foss/2020b => foss/2021a
+ 19) gompi/2020b => gompi/2021a
+ 20) hwloc/2.2.0-GCCcore-10.2.0 => hwloc/2.4.1-GCCcore-10.3.0
+ 21) libevent/2.1.12-GCCcore-10.2.0 => libevent/2.1.12-GCCcore-10.3.0
+ 22) libfabric/1.11.0-GCCcore-10.2.0 => libfabric/1.12.1-GCCcore-10.3.0
+ 23) libffi/3.3-GCCcore-10.2.0 => libffi/3.3-GCCcore-10.3.0
+ 24) libpciaccess/0.16-GCCcore-10.2.0 => libpciaccess/0.16-GCCcore-10.3.0
+ 25) libreadline/8.0-GCCcore-10.2.0 => libreadline/8.1-GCCcore-10.3.0
+ 26) libxml2/2.9.10-GCCcore-10.2.0 => libxml2/2.9.10-GCCcore-10.3.0
+ 27) ncurses/6.2-GCCcore-10.2.0 => ncurses/6.2-GCCcore-10.3.0
+ 28) numactl/2.0.13-GCCcore-10.2.0 => numactl/2.0.14-GCCcore-10.3.0
+ 29) pybind11/2.6.0-GCCcore-10.2.0 => pybind11/2.6.2-GCCcore-10.3.0
+ 30) zlib/1.2.11-GCCcore-10.2.0 => zlib/1.2.11-GCCcore-10.3.0
+
+Traceback (most recent call last):
+  File "/home/ohh98/enhancerX/plots/FeatureAnalysis.py", line 3, in <module>
+    import matplotlib.pyplot as plt 
+  File "/trinity/shared/easybuild/software/matplotlib/3.3.3-foss-2020b/lib/python3.8/site-packages/matplotlib/__init__.py", line 174, in <module>
+    _check_versions()
+  File "/trinity/shared/easybuild/software/matplotlib/3.3.3-foss-2020b/lib/python3.8/site-packages/matplotlib/__init__.py", line 159, in _check_versions
+    from . import ft2font
+ImportError: cannot import name 'ft2font' from partially initialized module 'matplotlib' (most likely due to a circular import) (/trinity/shared/easybuild/software/matplotlib/3.3.3-foss-2020b/lib/python3.8/site-packages/matplotlib/__init__.py)

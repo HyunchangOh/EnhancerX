@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/ohh98/enhancerX/preprocess/EPD/calculate_1D_distance.py", line 47, in <module>
+    r = np.load(d+"promoter_reverse.npy")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/trinity/shared/easybuild/software/SciPy-bundle/2023.07-gfbf-2023a/lib/python3.11/site-packages/numpy/lib/npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'scratch/ohh98/la_grande_table/chr2/promoter_reverse.npy'

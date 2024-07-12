@@ -1,0 +1,3121 @@
+Metrics for chr1 - feature_mix - structure: [32, 32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.51      0.98      0.68     33589
+           1       0.80      0.08      0.14     33671
+
+    accuracy                           0.53     67260
+   macro avg       0.66      0.53      0.41     67260
+weighted avg       0.66      0.53      0.41     67260
+
+ROC AUC: 0.5291556675566735
+
+Metrics for chr1 - feature_mix - structure: [32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.25      0.50      0.33     67260
+weighted avg       0.25      0.50      0.33     67260
+
+ROC AUC: 0.5
+
+Metrics for chr1 - feature_mix - structure: [64, 64], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.75      0.40      0.52     33589
+           1       0.59      0.87      0.70     33671
+
+    accuracy                           0.63     67260
+   macro avg       0.67      0.63      0.61     67260
+weighted avg       0.67      0.63      0.61     67260
+
+ROC AUC: 0.6340289715932317
+
+Metrics for chr1 - feature_mix - structure: [64, 64], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.52      0.96      0.68     33589
+           1       0.79      0.13      0.22     33671
+
+    accuracy                           0.55     67260
+   macro avg       0.66      0.55      0.45     67260
+weighted avg       0.66      0.55      0.45     67260
+
+ROC AUC: 0.5470007813672529
+
+Metrics for chr1 - feature_mix - structure: [32, 32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.39      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.45      0.50      0.33     67260
+weighted avg       0.45      0.50      0.34     67260
+
+ROC AUC: 0.49951217542990217
+
+Metrics for chr1 - feature_mix - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.51      0.99      0.67     33589
+           1       0.82      0.07      0.13     33671
+
+    accuracy                           0.53     67260
+   macro avg       0.67      0.53      0.40     67260
+weighted avg       0.67      0.53      0.40     67260
+
+ROC AUC: 0.526711106921256
+
+Metrics for chr1 - feature_mix - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.40      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.45      0.50      0.33     67260
+weighted avg       0.45      0.50      0.33     67260
+
+ROC AUC: 0.49997044585996364
+
+Metrics for chr1 - feature_mix - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67     33589
+           1       0.00      0.00      0.00     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.25      0.50      0.33     67260
+weighted avg       0.25      0.50      0.33     67260
+
+ROC AUC: 0.5
+
+Metrics for chr1 - feature_mix - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.53      0.94      0.68     33589
+           1       0.74      0.18      0.29     33671
+
+    accuracy                           0.56     67260
+   macro avg       0.64      0.56      0.49     67260
+weighted avg       0.64      0.56      0.49     67260
+
+ROC AUC: 0.5588302814970874
+
+Metrics for chr1 - feature_mix - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.25      0.50      0.33     67260
+weighted avg       0.25      0.50      0.33     67260
+
+ROC AUC: 0.5
+
+Metrics for chr1 - feature_mix - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.74      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.62      0.50      0.33     67260
+weighted avg       0.62      0.50      0.33     67260
+
+ROC AUC: 0.5001639615942814
+
+Metrics for chr1 - feature_mix - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.25      0.50      0.33     67260
+weighted avg       0.25      0.50      0.33     67260
+
+ROC AUC: 0.5
+
+Metrics for chr1 - feature_mix - structure: [32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.53      0.95      0.68     33589
+           1       0.76      0.16      0.26     33671
+
+    accuracy                           0.55     67260
+   macro avg       0.64      0.55      0.47     67260
+weighted avg       0.65      0.55      0.47     67260
+
+ROC AUC: 0.5539620276153903
+
+Metrics for chr1 - feature_mix - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.53      0.95      0.68     33589
+           1       0.74      0.14      0.24     33671
+
+    accuracy                           0.55     67260
+   macro avg       0.63      0.55      0.46     67260
+weighted avg       0.63      0.55      0.46     67260
+
+ROC AUC: 0.5466850839107553
+
+Metrics for chr1 - feature_mix - structure: [32, 32, 32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67     33589
+           1       0.68      0.01      0.02     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.59      0.50      0.34     67260
+weighted avg       0.59      0.50      0.34     67260
+
+ROC AUC: 0.5022520962061857
+
+Metrics for chr1 - feature_mix - structure: [64, 64, 64], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.37      0.00      0.01     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.44      0.50      0.34     67260
+weighted avg       0.44      0.50      0.34     67260
+
+ROC AUC: 0.49905307120615167
+
+Metrics for chr1 - feature_mix - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67     33589
+           1       0.58      0.00      0.00     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.54      0.50      0.33     67260
+weighted avg       0.54      0.50      0.33     67260
+
+ROC AUC: 0.5001328486225656
+
+Metrics for chr1 - feature_mix - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.68      0.45      0.54     33589
+           1       0.59      0.79      0.67     33671
+
+    accuracy                           0.62     67260
+   macro avg       0.63      0.62      0.61     67260
+weighted avg       0.63      0.62      0.61     67260
+
+ROC AUC: 0.618334658223842
+
+Metrics for chr1 - feature_mix - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.52      0.97      0.68     33589
+           1       0.78      0.12      0.21     33671
+
+    accuracy                           0.54     67260
+   macro avg       0.65      0.54      0.45     67260
+weighted avg       0.65      0.54      0.45     67260
+
+ROC AUC: 0.5443736756180863
+
+Metrics for chr1 - feature_mix - structure: [32, 32, 32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.27      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.39      0.50      0.33     67260
+weighted avg       0.39      0.50      0.33     67260
+
+ROC AUC: 0.4991399935350838
+
+Metrics for chr1 - feature_mix - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.25      0.50      0.33     67260
+weighted avg       0.25      0.50      0.33     67260
+
+ROC AUC: 0.5
+
+Metrics for chr1 - feature_mix - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.51      0.99      0.67     33589
+           1       0.82      0.04      0.08     33671
+
+    accuracy                           0.52     67260
+   macro avg       0.67      0.52      0.38     67260
+weighted avg       0.67      0.52      0.38     67260
+
+ROC AUC: 0.5169022814813771
+
+Metrics for chr1 - feature_mix - structure: [32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.54      0.92      0.68     33589
+           1       0.75      0.22      0.34     33671
+
+    accuracy                           0.57     67260
+   macro avg       0.64      0.57      0.51     67260
+weighted avg       0.64      0.57      0.51     67260
+
+ROC AUC: 0.5736349303688856
+
+Metrics for chr1 - feature_mix - structure: [64, 64], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.55      0.92      0.69     33589
+           1       0.75      0.25      0.38     33671
+
+    accuracy                           0.58     67260
+   macro avg       0.65      0.58      0.53     67260
+weighted avg       0.65      0.58      0.53     67260
+
+ROC AUC: 0.5844239726882998
+
+Metrics for chr1 - feature_mix - structure: [32, 32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.59      0.63      0.61     33589
+           1       0.60      0.56      0.58     33671
+
+    accuracy                           0.60     67260
+   macro avg       0.60      0.60      0.60     67260
+weighted avg       0.60      0.60      0.60     67260
+
+ROC AUC: 0.5963070005161625
+
+Metrics for chr1 - feature_mix - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.50      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.50      0.50      0.33     67260
+weighted avg       0.50      0.50      0.33     67260
+
+ROC AUC: 0.5000000362518995
+
+Metrics for chr1 - feature_mix - structure: [64, 64, 64], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.40      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.45      0.50      0.33     67260
+weighted avg       0.45      0.50      0.34     67260
+
+ROC AUC: 0.4996009828576094
+
+Metrics for chr1 - feature_mix - structure: [64, 64, 64], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.55      0.90      0.68     33589
+           1       0.72      0.27      0.39     33671
+
+    accuracy                           0.58     67260
+   macro avg       0.64      0.58      0.54     67260
+weighted avg       0.64      0.58      0.54     67260
+
+ROC AUC: 0.5824365675159855
+
+Metrics for chr1 - feature_mix - structure: [64, 64], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.65      0.73      0.69     33589
+           1       0.69      0.60      0.64     33671
+
+    accuracy                           0.67     67260
+   macro avg       0.67      0.67      0.66     67260
+weighted avg       0.67      0.67      0.66     67260
+
+ROC AUC: 0.6662957616934311
+
+Metrics for chr1 - feature_mix - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67     33589
+           1       0.77      0.01      0.01     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.64      0.50      0.34     67260
+weighted avg       0.64      0.50      0.34     67260
+
+ROC AUC: 0.5021955255590795
+
+Metrics for chr1 - feature_mix - structure: [32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.64      0.74      0.69     33589
+           1       0.69      0.58      0.63     33671
+
+    accuracy                           0.66     67260
+   macro avg       0.66      0.66      0.66     67260
+weighted avg       0.67      0.66      0.66     67260
+
+ROC AUC: 0.6606256308256034
+
+Metrics for chr1 - feature_mix - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.25      0.50      0.33     67260
+weighted avg       0.25      0.50      0.33     67260
+
+ROC AUC: 0.5
+
+Metrics for chr1 - feature_mix - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.25      0.50      0.33     67260
+weighted avg       0.25      0.50      0.33     67260
+
+ROC AUC: 0.5
+
+Metrics for chr1 - feature_mix - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67     33589
+           1       0.00      0.00      0.00     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.25      0.50      0.33     67260
+weighted avg       0.25      0.50      0.33     67260
+
+ROC AUC: 0.5
+
+Metrics for chr1 - feature_mix - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67     33589
+           1       0.84      0.03      0.05     33671
+
+    accuracy                           0.51     67260
+   macro avg       0.67      0.51      0.36     67260
+weighted avg       0.67      0.51      0.36     67260
+
+ROC AUC: 0.5100769153103788
+
+Metrics for chr1 - feature_dist - structure: [32, 32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.67      0.78      0.72     33589
+           1       0.73      0.61      0.67     33671
+
+    accuracy                           0.69     67260
+   macro avg       0.70      0.69      0.69     67260
+weighted avg       0.70      0.69      0.69     67260
+
+ROC AUC: 0.693947970578832
+
+Metrics for chr1 - feature_dist - structure: [32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.68      0.75      0.71     33589
+           1       0.72      0.66      0.69     33671
+
+    accuracy                           0.70     67260
+   macro avg       0.70      0.70      0.70     67260
+weighted avg       0.70      0.70      0.70     67260
+
+ROC AUC: 0.7014836962577161
+
+Metrics for chr1 - feature_dist - structure: [64, 64], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.74      0.86      0.79     33589
+           1       0.83      0.70      0.76     33671
+
+    accuracy                           0.78     67260
+   macro avg       0.79      0.78      0.78     67260
+weighted avg       0.79      0.78      0.78     67260
+
+ROC AUC: 0.7779332320631511
+
+Metrics for chr1 - feature_dist - structure: [64, 64], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.70      0.80      0.75     33589
+           1       0.77      0.66      0.71     33671
+
+    accuracy                           0.73     67260
+   macro avg       0.73      0.73      0.73     67260
+weighted avg       0.73      0.73      0.73     67260
+
+ROC AUC: 0.7294452810641114
+
+Metrics for chr1 - feature_dist - structure: [32, 32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67     33589
+           1       0.71      0.00      0.00     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.61      0.50      0.33     67260
+weighted avg       0.61      0.50      0.33     67260
+
+ROC AUC: 0.5002223810882632
+
+Metrics for chr1 - feature_dist - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.76      0.72      0.74     33589
+           1       0.73      0.77      0.75     33671
+
+    accuracy                           0.74     67260
+   macro avg       0.75      0.74      0.74     67260
+weighted avg       0.75      0.74      0.74     67260
+
+ROC AUC: 0.7448497034664028
+
+Metrics for chr1 - feature_dist - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       1.00      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.75      0.50      0.33     67260
+weighted avg       0.75      0.50      0.33     67260
+
+ROC AUC: 0.5000446574771502
+
+Metrics for chr1 - feature_dist - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67     33589
+           1       0.00      0.00      0.00     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.25      0.50      0.33     67260
+weighted avg       0.25      0.50      0.33     67260
+
+ROC AUC: 0.5
+
+Metrics for chr1 - feature_dist - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.64      0.89      0.74     33589
+           1       0.82      0.49      0.62     33671
+
+    accuracy                           0.69     67260
+   macro avg       0.73      0.69      0.68     67260
+weighted avg       0.73      0.69      0.68     67260
+
+ROC AUC: 0.6933734557803781
+
+Metrics for chr1 - feature_dist - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       1.00      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.75      0.50      0.33     67260
+weighted avg       0.75      0.50      0.33     67260
+
+ROC AUC: 0.5000446574771502
+
+Metrics for chr1 - feature_dist - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       1.00      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.75      0.50      0.33     67260
+weighted avg       0.75      0.50      0.33     67260
+
+ROC AUC: 0.5000893149543005
+
+Metrics for chr1 - feature_dist - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67     33589
+           1       0.00      0.00      0.00     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.25      0.50      0.33     67260
+weighted avg       0.25      0.50      0.33     67260
+
+ROC AUC: 0.5
+
+Metrics for chr1 - feature_dist - structure: [32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.76      0.87      0.81     33589
+           1       0.85      0.72      0.78     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.80      0.80      0.79     67260
+weighted avg       0.80      0.80      0.79     67260
+
+ROC AUC: 0.7959725778041119
+
+Metrics for chr1 - feature_dist - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.71      0.72      0.71     33589
+           1       0.72      0.70      0.71     33671
+
+    accuracy                           0.71     67260
+   macro avg       0.71      0.71      0.71     67260
+weighted avg       0.71      0.71      0.71     67260
+
+ROC AUC: 0.7106274536330048
+
+Metrics for chr1 - feature_dist - structure: [32, 32, 32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       1.00      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.75      0.50      0.33     67260
+weighted avg       0.75      0.50      0.33     67260
+
+ROC AUC: 0.5002530590371848
+
+Metrics for chr1 - feature_dist - structure: [64, 64, 64], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.94      0.10      0.18     33589
+           1       0.52      0.99      0.69     33671
+
+    accuracy                           0.55     67260
+   macro avg       0.73      0.55      0.43     67260
+weighted avg       0.73      0.55      0.43     67260
+
+ROC AUC: 0.5454541113159439
+
+Metrics for chr1 - feature_dist - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       1.00      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.75      0.50      0.33     67260
+weighted avg       0.75      0.50      0.33     67260
+
+ROC AUC: 0.5001042007800173
+
+Metrics for chr1 - feature_dist - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       1.00      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.75      0.50      0.34     67260
+weighted avg       0.75      0.50      0.34     67260
+
+ROC AUC: 0.5006996338086873
+
+Metrics for chr1 - feature_dist - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.65      0.83      0.73     33589
+           1       0.77      0.56      0.64     33671
+
+    accuracy                           0.69     67260
+   macro avg       0.71      0.69      0.69     67260
+weighted avg       0.71      0.69      0.69     67260
+
+ROC AUC: 0.6932392335644977
+
+Metrics for chr1 - feature_dist - structure: [32, 32, 32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.61      0.01      0.01     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.55      0.50      0.34     67260
+weighted avg       0.55      0.50      0.34     67260
+
+ROC AUC: 0.5010018455585631
+
+Metrics for chr1 - feature_dist - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67     33589
+           1       0.00      0.00      0.00     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.25      0.50      0.33     67260
+weighted avg       0.25      0.50      0.33     67260
+
+ROC AUC: 0.5
+
+Metrics for chr1 - feature_dist - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       1.00      0.00      0.01     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.75      0.50      0.34     67260
+weighted avg       0.75      0.50      0.34     67260
+
+ROC AUC: 0.5019202715174611
+
+Metrics for chr1 - feature_dist - structure: [32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.69      0.78      0.73     33589
+           1       0.75      0.65      0.70     33671
+
+    accuracy                           0.72     67260
+   macro avg       0.72      0.72      0.72     67260
+weighted avg       0.72      0.72      0.72     67260
+
+ROC AUC: 0.7164949889145185
+
+Metrics for chr1 - feature_dist - structure: [64, 64], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.64      0.88      0.74     33589
+           1       0.81      0.51      0.63     33671
+
+    accuracy                           0.70     67260
+   macro avg       0.73      0.70      0.68     67260
+weighted avg       0.73      0.70      0.68     67260
+
+ROC AUC: 0.6952416969800997
+
+Metrics for chr1 - feature_dist - structure: [32, 32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.53      0.04      0.08     33589
+           1       0.50      0.96      0.66     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.51      0.50      0.37     67260
+weighted avg       0.51      0.50      0.37     67260
+
+ROC AUC: 0.5022494683855668
+
+Metrics for chr1 - feature_dist - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67     33589
+           1       0.00      0.00      0.00     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.25      0.50      0.33     67260
+weighted avg       0.25      0.50      0.33     67260
+
+ROC AUC: 0.5
+
+Metrics for chr1 - feature_dist - structure: [64, 64, 64], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       1.00      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.75      0.50      0.33     67260
+weighted avg       0.75      0.50      0.33     67260
+
+ROC AUC: 0.5004019172943523
+
+Metrics for chr1 - feature_dist - structure: [64, 64, 64], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.71      0.78      0.74     33589
+           1       0.76      0.68      0.72     33671
+
+    accuracy                           0.73     67260
+   macro avg       0.73      0.73      0.73     67260
+weighted avg       0.73      0.73      0.73     67260
+
+ROC AUC: 0.7311532221114033
+
+Metrics for chr1 - feature_dist - structure: [64, 64], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.79      0.66      0.72     33589
+           1       0.71      0.83      0.76     33671
+
+    accuracy                           0.74     67260
+   macro avg       0.75      0.74      0.74     67260
+weighted avg       0.75      0.74      0.74     67260
+
+ROC AUC: 0.7417652738154292
+
+Metrics for chr1 - feature_dist - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67     33589
+           1       0.00      0.00      0.00     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.25      0.50      0.33     67260
+weighted avg       0.25      0.50      0.33     67260
+
+ROC AUC: 0.5
+
+Metrics for chr1 - feature_dist - structure: [32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.45      0.01      0.02     33589
+           1       0.50      0.98      0.66     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.47      0.50      0.34     67260
+weighted avg       0.47      0.50      0.34     67260
+
+ROC AUC: 0.49858937669614845
+
+Metrics for chr1 - feature_dist - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67     33589
+           1       0.00      0.00      0.00     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.25      0.50      0.33     67260
+weighted avg       0.25      0.50      0.33     67260
+
+ROC AUC: 0.5
+
+Metrics for chr1 - feature_dist - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       1.00      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.75      0.50      0.33     67260
+weighted avg       0.75      0.50      0.33     67260
+
+ROC AUC: 0.5000893149543005
+
+Metrics for chr1 - feature_dist - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       1.00      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.75      0.50      0.33     67260
+weighted avg       0.75      0.50      0.33     67260
+
+ROC AUC: 0.5001042007800173
+
+Metrics for chr1 - feature_dist - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       1.00      0.00      0.00     33589
+           1       0.50      1.00      0.67     33671
+
+    accuracy                           0.50     67260
+   macro avg       0.75      0.50      0.33     67260
+weighted avg       0.75      0.50      0.33     67260
+
+ROC AUC: 0.500119086605734
+
+Metrics for chr1 - feature_mem - structure: [32, 32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.96      0.82     33589
+           1       0.94      0.63      0.75     33671
+
+    accuracy                           0.79     67260
+   macro avg       0.83      0.79      0.79     67260
+weighted avg       0.83      0.79      0.79     67260
+
+ROC AUC: 0.7948208960712869
+
+Metrics for chr1 - feature_mem - structure: [32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.96      0.82     33589
+           1       0.95      0.63      0.75     33671
+
+    accuracy                           0.79     67260
+   macro avg       0.83      0.79      0.79     67260
+weighted avg       0.83      0.79      0.79     67260
+
+ROC AUC: 0.7948537853860792
+
+Metrics for chr1 - feature_mem - structure: [64, 64], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7989118880066283
+
+Metrics for chr1 - feature_mem - structure: [64, 64], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7978560819377246
+
+Metrics for chr1 - feature_mem - structure: [32, 32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7985564407844024
+
+Metrics for chr1 - feature_mem - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.75      0.82      0.78     33589
+           1       0.80      0.74      0.77     33671
+
+    accuracy                           0.78     67260
+   macro avg       0.78      0.78      0.78     67260
+weighted avg       0.78      0.78      0.78     67260
+
+ROC AUC: 0.7760977754013901
+
+Metrics for chr1 - feature_mem - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7987785681093689
+
+Metrics for chr1 - feature_mem - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7989263388095509
+
+Metrics for chr1 - feature_mem - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7983477854610712
+
+Metrics for chr1 - feature_mem - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7987495214959258
+
+Metrics for chr1 - feature_mem - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7989421309327558
+
+Metrics for chr1 - feature_mem - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7987049002706752
+
+Metrics for chr1 - feature_mem - structure: [32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.96      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.83      0.80      0.79     67260
+weighted avg       0.83      0.80      0.79     67260
+
+ROC AUC: 0.7978229388596356
+
+Metrics for chr1 - feature_mem - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.83      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7969644187225998
+
+Metrics for chr1 - feature_mem - structure: [32, 32, 32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.96      0.83     33589
+           1       0.94      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.83      0.80      0.79     67260
+weighted avg       0.83      0.80      0.79     67260
+
+ROC AUC: 0.7978521667325763
+
+Metrics for chr1 - feature_mem - structure: [64, 64, 64], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7987780605827757
+
+Metrics for chr1 - feature_mem - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7991933048711654
+
+Metrics for chr1 - feature_mem - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7988068896848217
+
+Metrics for chr1 - feature_mem - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7978423561727925
+
+Metrics for chr1 - feature_mem - structure: [32, 32, 32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7987624134671689
+
+Metrics for chr1 - feature_mem - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7989423846960524
+
+Metrics for chr1 - feature_mem - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7989721200955863
+
+Metrics for chr1 - feature_mem - structure: [32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7971896274590257
+
+Metrics for chr1 - feature_mem - structure: [64, 64], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7981701343537573
+
+Metrics for chr1 - feature_mem - structure: [32, 32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7986286947990149
+
+Metrics for chr1 - feature_mem - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7990017829913213
+
+Metrics for chr1 - feature_mem - structure: [64, 64, 64], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7989413696428657
+
+Metrics for chr1 - feature_mem - structure: [64, 64, 64], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.96      0.82     33589
+           1       0.94      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.83      0.80      0.79     67260
+weighted avg       0.83      0.80      0.79     67260
+
+ROC AUC: 0.7964663711168369
+
+Metrics for chr1 - feature_mem - structure: [64, 64], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.96      0.83     33589
+           1       0.94      0.64      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.83      0.80      0.79     67260
+weighted avg       0.83      0.80      0.79     67260
+
+ROC AUC: 0.7986515423376398
+
+Metrics for chr1 - feature_mem - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7991787453125442
+
+Metrics for chr1 - feature_mem - structure: [32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7986157303239727
+
+Metrics for chr1 - feature_mem - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7989410071238705
+
+Metrics for chr1 - feature_mem - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7989720838436867
+
+Metrics for chr1 - feature_mem - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.799015835023349
+
+Metrics for chr1 - feature_mem - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83     33589
+           1       0.95      0.63      0.76     33671
+
+    accuracy                           0.80     67260
+   macro avg       0.84      0.80      0.79     67260
+weighted avg       0.84      0.80      0.79     67260
+
+ROC AUC: 0.7989424209479519
+
+Metrics for chr21 - feature_mix - structure: [32, 32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.55      0.96      0.70      4496
+           1       0.87      0.24      0.38      4602
+
+    accuracy                           0.60      9098
+   macro avg       0.71      0.60      0.54      9098
+weighted avg       0.71      0.60      0.54      9098
+
+ROC AUC: 0.6026795656692665
+
+Metrics for chr21 - feature_mix - structure: [32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.51      0.98      0.67      4496
+           1       0.83      0.08      0.15      4602
+
+    accuracy                           0.53      9098
+   macro avg       0.67      0.53      0.41      9098
+weighted avg       0.67      0.53      0.41      9098
+
+ROC AUC: 0.532826755271188
+
+Metrics for chr21 - feature_mix - structure: [64, 64], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.51      0.99      0.67      4496
+           1       0.90      0.07      0.13      4602
+
+    accuracy                           0.53      9098
+   macro avg       0.71      0.53      0.40      9098
+weighted avg       0.71      0.53      0.40      9098
+
+ROC AUC: 0.5311985273306824
+
+Metrics for chr21 - feature_mix - structure: [64, 64], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.52      0.97      0.68      4496
+           1       0.82      0.13      0.23      4602
+
+    accuracy                           0.55      9098
+   macro avg       0.67      0.55      0.45      9098
+weighted avg       0.67      0.55      0.45      9098
+
+ROC AUC: 0.551471799356925
+
+Metrics for chr21 - feature_mix - structure: [32, 32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.49      1.00      0.66      4496
+           1       0.84      0.00      0.01      4602
+
+    accuracy                           0.50      9098
+   macro avg       0.67      0.50      0.33      9098
+weighted avg       0.67      0.50      0.33      9098
+
+ROC AUC: 0.5014047447264922
+
+Metrics for chr21 - feature_mix - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.52      0.99      0.68      4496
+           1       0.90      0.09      0.17      4602
+
+    accuracy                           0.54      9098
+   macro avg       0.71      0.54      0.42      9098
+weighted avg       0.71      0.54      0.42      9098
+
+ROC AUC: 0.540726287580365
+
+Metrics for chr21 - feature_mix - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.82      0.46      0.59      4496
+           1       0.63      0.90      0.74      4602
+
+    accuracy                           0.68      9098
+   macro avg       0.73      0.68      0.66      9098
+weighted avg       0.73      0.68      0.67      9098
+
+ROC AUC: 0.6802837734174063
+
+Metrics for chr21 - feature_mix - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.52      0.98      0.68      4496
+           1       0.86      0.11      0.20      4602
+
+    accuracy                           0.54      9098
+   macro avg       0.69      0.55      0.44      9098
+weighted avg       0.69      0.54      0.44      9098
+
+ROC AUC: 0.5472513787909017
+
+Metrics for chr21 - feature_mix - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00      4496
+           1       0.51      1.00      0.67      4602
+
+    accuracy                           0.51      9098
+   macro avg       0.25      0.50      0.34      9098
+weighted avg       0.26      0.51      0.34      9098
+
+ROC AUC: 0.5
+
+Metrics for chr21 - feature_mix - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.25      0.00      0.00      4496
+           1       0.51      1.00      0.67      4602
+
+    accuracy                           0.51      9098
+   macro avg       0.38      0.50      0.34      9098
+weighted avg       0.38      0.51      0.34      9098
+
+ROC AUC: 0.49978526472321333
+
+Metrics for chr21 - feature_mix - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.54      0.96      0.69      4496
+           1       0.85      0.21      0.33      4602
+
+    accuracy                           0.58      9098
+   macro avg       0.69      0.58      0.51      9098
+weighted avg       0.70      0.58      0.51      9098
+
+ROC AUC: 0.5837670570276577
+
+Metrics for chr21 - feature_mix - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00      4496
+           1       0.51      1.00      0.67      4602
+
+    accuracy                           0.51      9098
+   macro avg       0.25      0.50      0.34      9098
+weighted avg       0.26      0.51      0.34      9098
+
+ROC AUC: 0.49934810951760106
+
+Metrics for chr21 - feature_mix - structure: [32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67      4496
+           1       0.91      0.02      0.04      4602
+
+    accuracy                           0.50      9098
+   macro avg       0.71      0.51      0.35      9098
+weighted avg       0.71      0.50      0.35      9098
+
+ROC AUC: 0.5101873353841204
+
+Metrics for chr21 - feature_mix - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.66      4496
+           1       0.87      0.00      0.01      4602
+
+    accuracy                           0.50      9098
+   macro avg       0.68      0.50      0.34      9098
+weighted avg       0.68      0.50      0.33      9098
+
+ROC AUC: 0.5018393383814247
+
+Metrics for chr21 - feature_mix - structure: [32, 32, 32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.66      4496
+           1       0.94      0.01      0.02      4602
+
+    accuracy                           0.50      9098
+   macro avg       0.72      0.50      0.34      9098
+weighted avg       0.72      0.50      0.34      9098
+
+ROC AUC: 0.50477284555222
+
+Metrics for chr21 - feature_mix - structure: [64, 64, 64], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.66      4496
+           1       0.87      0.01      0.03      4602
+
+    accuracy                           0.50      9098
+   macro avg       0.68      0.51      0.34      9098
+weighted avg       0.68      0.50      0.34      9098
+
+ROC AUC: 0.5054093667305412
+
+Metrics for chr21 - feature_mix - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.51      0.99      0.67      4496
+           1       0.86      0.08      0.15      4602
+
+    accuracy                           0.53      9098
+   macro avg       0.69      0.53      0.41      9098
+weighted avg       0.69      0.53      0.41      9098
+
+ROC AUC: 0.5345025893894191
+
+Metrics for chr21 - feature_mix - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.51      0.99      0.67      4496
+           1       0.90      0.07      0.13      4602
+
+    accuracy                           0.53      9098
+   macro avg       0.71      0.53      0.40      9098
+weighted avg       0.71      0.53      0.40      9098
+
+ROC AUC: 0.5312010888813622
+
+Metrics for chr21 - feature_mix - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67      4496
+           1       0.91      0.03      0.06      4602
+
+    accuracy                           0.51      9098
+   macro avg       0.70      0.51      0.36      9098
+weighted avg       0.71      0.51      0.36      9098
+
+ROC AUC: 0.5131105963521971
+
+Metrics for chr21 - feature_mix - structure: [32, 32, 32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67      4496
+           1       0.89      0.03      0.06      4602
+
+    accuracy                           0.51      9098
+   macro avg       0.70      0.51      0.36      9098
+weighted avg       0.70      0.51      0.36      9098
+
+ROC AUC: 0.513646153768824
+
+Metrics for chr21 - feature_mix - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.11      0.00      0.00      4496
+           1       0.51      1.00      0.67      4602
+
+    accuracy                           0.51      9098
+   macro avg       0.31      0.50      0.34      9098
+weighted avg       0.31      0.51      0.34      9098
+
+ROC AUC: 0.49924202265454753
+
+Metrics for chr21 - feature_mix - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.56      0.94      0.70      4496
+           1       0.83      0.27      0.41      4602
+
+    accuracy                           0.60      9098
+   macro avg       0.69      0.61      0.56      9098
+weighted avg       0.69      0.60      0.55      9098
+
+ROC AUC: 0.607542693800158
+
+Metrics for chr21 - feature_mix - structure: [32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00      4496
+           1       0.51      1.00      0.67      4602
+
+    accuracy                           0.51      9098
+   macro avg       0.25      0.50      0.34      9098
+weighted avg       0.26      0.51      0.34      9098
+
+ROC AUC: 0.5
+
+Metrics for chr21 - feature_mix - structure: [64, 64], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.53      0.97      0.69      4496
+           1       0.86      0.17      0.28      4602
+
+    accuracy                           0.57      9098
+   macro avg       0.70      0.57      0.49      9098
+weighted avg       0.70      0.57      0.48      9098
+
+ROC AUC: 0.5708342709575444
+
+Metrics for chr21 - feature_mix - structure: [32, 32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67      4496
+           1       0.92      0.05      0.09      4602
+
+    accuracy                           0.51      9098
+   macro avg       0.71      0.52      0.38      9098
+weighted avg       0.71      0.51      0.37      9098
+
+ROC AUC: 0.5204858807326538
+
+Metrics for chr21 - feature_mix - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00      4496
+           1       0.51      1.00      0.67      4602
+
+    accuracy                           0.51      9098
+   macro avg       0.25      0.50      0.34      9098
+weighted avg       0.26      0.51      0.34      9098
+
+ROC AUC: 0.5
+
+Metrics for chr21 - feature_mix - structure: [64, 64, 64], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.52      0.97      0.68      4496
+           1       0.82      0.12      0.20      4602
+
+    accuracy                           0.54      9098
+   macro avg       0.67      0.55      0.44      9098
+weighted avg       0.67      0.54      0.44      9098
+
+ROC AUC: 0.5454438423028205
+
+Metrics for chr21 - feature_mix - structure: [64, 64, 64], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.51      0.99      0.68      4496
+           1       0.91      0.08      0.14      4602
+
+    accuracy                           0.53      9098
+   macro avg       0.71      0.54      0.41      9098
+weighted avg       0.71      0.53      0.41      9098
+
+ROC AUC: 0.5350037833620228
+
+Metrics for chr21 - feature_mix - structure: [64, 64], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67      4496
+           1       0.91      0.04      0.08      4602
+
+    accuracy                           0.51      9098
+   macro avg       0.71      0.52      0.38      9098
+weighted avg       0.71      0.51      0.37      9098
+
+ROC AUC: 0.519290748181589
+
+Metrics for chr21 - feature_mix - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.83      0.40      0.54      4496
+           1       0.61      0.92      0.73      4602
+
+    accuracy                           0.66      9098
+   macro avg       0.72      0.66      0.64      9098
+weighted avg       0.72      0.66      0.64      9098
+
+ROC AUC: 0.6608472101716567
+
+Metrics for chr21 - feature_mix - structure: [32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67      4496
+           1       0.90      0.03      0.06      4602
+
+    accuracy                           0.51      9098
+   macro avg       0.70      0.51      0.37      9098
+weighted avg       0.70      0.51      0.36      9098
+
+ROC AUC: 0.5149499347336218
+
+Metrics for chr21 - feature_mix - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.66      4496
+           1       0.85      0.01      0.02      4602
+
+    accuracy                           0.50      9098
+   macro avg       0.68      0.50      0.34      9098
+weighted avg       0.68      0.50      0.34      9098
+
+ROC AUC: 0.5047574762481422
+
+Metrics for chr21 - feature_mix - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67      4496
+           1       0.91      0.04      0.08      4602
+
+    accuracy                           0.51      9098
+   macro avg       0.71      0.52      0.37      9098
+weighted avg       0.71      0.51      0.37      9098
+
+ROC AUC: 0.5182068255949371
+
+Metrics for chr21 - feature_mix - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.12      0.00      0.00      4496
+           1       0.51      1.00      0.67      4602
+
+    accuracy                           0.50      9098
+   macro avg       0.32      0.50      0.34      9098
+weighted avg       0.32      0.50      0.34      9098
+
+ROC AUC: 0.49870134213656137
+
+Metrics for chr21 - feature_mix - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.51      0.98      0.68      4496
+           1       0.86      0.09      0.16      4602
+
+    accuracy                           0.53      9098
+   macro avg       0.68      0.54      0.42      9098
+weighted avg       0.69      0.53      0.41      9098
+
+ROC AUC: 0.5365489783955916
+
+Metrics for chr21 - feature_dist - structure: [32, 32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.57      0.76      0.65      4496
+           1       0.65      0.44      0.52      4602
+
+    accuracy                           0.60      9098
+   macro avg       0.61      0.60      0.59      9098
+weighted avg       0.61      0.60      0.59      9098
+
+ROC AUC: 0.6006068361891241
+
+Metrics for chr21 - feature_dist - structure: [32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.70      0.72      0.71      4496
+           1       0.72      0.69      0.70      4602
+
+    accuracy                           0.71      9098
+   macro avg       0.71      0.71      0.71      9098
+weighted avg       0.71      0.71      0.71      9098
+
+ROC AUC: 0.7064843770540736
+
+Metrics for chr21 - feature_dist - structure: [64, 64], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.82      0.83      0.82      4496
+           1       0.83      0.82      0.83      4602
+
+    accuracy                           0.83      9098
+   macro avg       0.83      0.83      0.83      9098
+weighted avg       0.83      0.83      0.83      9098
+
+ROC AUC: 0.8253278591545375
+
+Metrics for chr21 - feature_dist - structure: [64, 64], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.65      0.80      0.72      4496
+           1       0.75      0.58      0.66      4602
+
+    accuracy                           0.69      9098
+   macro avg       0.70      0.69      0.69      9098
+weighted avg       0.70      0.69      0.69      9098
+
+ROC AUC: 0.690964763115526
+
+Metrics for chr21 - feature_dist - structure: [32, 32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.79      0.88      0.83      4496
+           1       0.86      0.77      0.81      4602
+
+    accuracy                           0.82      9098
+   macro avg       0.83      0.82      0.82      9098
+weighted avg       0.83      0.82      0.82      9098
+
+ROC AUC: 0.8227749597498224
+
+Metrics for chr21 - feature_dist - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.84      0.80      0.82      4496
+           1       0.81      0.85      0.83      4602
+
+    accuracy                           0.83      9098
+   macro avg       0.83      0.82      0.82      9098
+weighted avg       0.83      0.83      0.83      9098
+
+ROC AUC: 0.8248923955389967
+
+Metrics for chr21 - feature_dist - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.62      0.95      0.75      4496
+           1       0.90      0.42      0.58      4602
+
+    accuracy                           0.68      9098
+   macro avg       0.76      0.69      0.66      9098
+weighted avg       0.76      0.68      0.66      9098
+
+ROC AUC: 0.6878302467130956
+
+Metrics for chr21 - feature_dist - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.82      0.74      0.78      4496
+           1       0.77      0.84      0.80      4602
+
+    accuracy                           0.79      9098
+   macro avg       0.79      0.79      0.79      9098
+weighted avg       0.79      0.79      0.79      9098
+
+ROC AUC: 0.7877410177533827
+
+Metrics for chr21 - feature_dist - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.85      0.77      0.81      4496
+           1       0.79      0.87      0.83      4602
+
+    accuracy                           0.82      9098
+   macro avg       0.82      0.82      0.82      9098
+weighted avg       0.82      0.82      0.82      9098
+
+ROC AUC: 0.8179728255237935
+
+Metrics for chr21 - feature_dist - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.81      0.78      0.80      4496
+           1       0.80      0.82      0.81      4602
+
+    accuracy                           0.80      9098
+   macro avg       0.80      0.80      0.80      9098
+weighted avg       0.80      0.80      0.80      9098
+
+ROC AUC: 0.8037977357051939
+
+Metrics for chr21 - feature_dist - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.94      0.71      0.81      4496
+           1       0.77      0.96      0.85      4602
+
+    accuracy                           0.83      9098
+   macro avg       0.86      0.83      0.83      9098
+weighted avg       0.85      0.83      0.83      9098
+
+ROC AUC: 0.8329291399685422
+
+Metrics for chr21 - feature_dist - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.99      0.14      0.24      4496
+           1       0.54      1.00      0.70      4602
+
+    accuracy                           0.57      9098
+   macro avg       0.77      0.57      0.47      9098
+weighted avg       0.76      0.57      0.47      9098
+
+ROC AUC: 0.567633589217747
+
+Metrics for chr21 - feature_dist - structure: [32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.81      0.78      0.79      4496
+           1       0.79      0.82      0.80      4602
+
+    accuracy                           0.80      9098
+   macro avg       0.80      0.80      0.80      9098
+weighted avg       0.80      0.80      0.80      9098
+
+ROC AUC: 0.7982987147008649
+
+Metrics for chr21 - feature_dist - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.65      0.74      0.69      4496
+           1       0.71      0.61      0.66      4602
+
+    accuracy                           0.67      9098
+   macro avg       0.68      0.68      0.67      9098
+weighted avg       0.68      0.67      0.67      9098
+
+ROC AUC: 0.675719380093136
+
+Metrics for chr21 - feature_dist - structure: [32, 32, 32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.82      0.75      0.78      4496
+           1       0.77      0.84      0.81      4602
+
+    accuracy                           0.80      9098
+   macro avg       0.80      0.80      0.80      9098
+weighted avg       0.80      0.80      0.80      9098
+
+ROC AUC: 0.7958680930927448
+
+Metrics for chr21 - feature_dist - structure: [64, 64, 64], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.80      0.88      0.84      4496
+           1       0.87      0.78      0.82      4602
+
+    accuracy                           0.83      9098
+   macro avg       0.83      0.83      0.83      9098
+weighted avg       0.83      0.83      0.83      9098
+
+ROC AUC: 0.8296146867136523
+
+Metrics for chr21 - feature_dist - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.80      0.83      0.81      4496
+           1       0.83      0.79      0.81      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.81      0.81      0.81      9098
+weighted avg       0.81      0.81      0.81      9098
+
+ROC AUC: 0.8103866723581423
+
+Metrics for chr21 - feature_dist - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.86      0.75      0.80      4496
+           1       0.79      0.88      0.83      4602
+
+    accuracy                           0.82      9098
+   macro avg       0.82      0.82      0.82      9098
+weighted avg       0.82      0.82      0.82      9098
+
+ROC AUC: 0.816593261323794
+
+Metrics for chr21 - feature_dist - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.78      0.75      0.76      4496
+           1       0.76      0.79      0.78      4602
+
+    accuracy                           0.77      9098
+   macro avg       0.77      0.77      0.77      9098
+weighted avg       0.77      0.77      0.77      9098
+
+ROC AUC: 0.7694562823528684
+
+Metrics for chr21 - feature_dist - structure: [32, 32, 32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.89      0.74      0.81      4496
+           1       0.78      0.91      0.84      4602
+
+    accuracy                           0.83      9098
+   macro avg       0.84      0.83      0.83      9098
+weighted avg       0.83      0.83      0.83      9098
+
+ROC AUC: 0.8259406497407131
+
+Metrics for chr21 - feature_dist - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.84      0.84      0.84      4496
+           1       0.84      0.84      0.84      4602
+
+    accuracy                           0.84      9098
+   macro avg       0.84      0.84      0.84      9098
+weighted avg       0.84      0.84      0.84      9098
+
+ROC AUC: 0.840274169052292
+
+Metrics for chr21 - feature_dist - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.78      0.88      0.83      4496
+           1       0.87      0.75      0.81      4602
+
+    accuracy                           0.82      9098
+   macro avg       0.82      0.82      0.82      9098
+weighted avg       0.82      0.82      0.82      9098
+
+ROC AUC: 0.8171036865450733
+
+Metrics for chr21 - feature_dist - structure: [32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.75      0.79      0.77      4496
+           1       0.78      0.75      0.77      4602
+
+    accuracy                           0.77      9098
+   macro avg       0.77      0.77      0.77      9098
+weighted avg       0.77      0.77      0.77      9098
+
+ROC AUC: 0.7685510400089085
+
+Metrics for chr21 - feature_dist - structure: [64, 64], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.81      0.80      0.80      4496
+           1       0.81      0.81      0.81      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.81      0.81      0.81      9098
+weighted avg       0.81      0.81      0.81      9098
+
+ROC AUC: 0.8060464872150589
+
+Metrics for chr21 - feature_dist - structure: [32, 32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.86      0.78      0.82      4496
+           1       0.81      0.88      0.84      4602
+
+    accuracy                           0.83      9098
+   macro avg       0.83      0.83      0.83      9098
+weighted avg       0.83      0.83      0.83      9098
+
+ROC AUC: 0.8300752825245405
+
+Metrics for chr21 - feature_dist - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.99      0.21      0.34      4496
+           1       0.56      1.00      0.72      4602
+
+    accuracy                           0.61      9098
+   macro avg       0.78      0.60      0.53      9098
+weighted avg       0.77      0.61      0.53      9098
+
+ROC AUC: 0.6016715229801062
+
+Metrics for chr21 - feature_dist - structure: [64, 64, 64], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.79      0.87      0.83      4496
+           1       0.86      0.77      0.81      4602
+
+    accuracy                           0.82      9098
+   macro avg       0.82      0.82      0.82      9098
+weighted avg       0.82      0.82      0.82      9098
+
+ROC AUC: 0.8205584451136052
+
+Metrics for chr21 - feature_dist - structure: [64, 64, 64], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.68      0.79      0.73      4496
+           1       0.76      0.64      0.70      4602
+
+    accuracy                           0.72      9098
+   macro avg       0.72      0.72      0.71      9098
+weighted avg       0.72      0.72      0.71      9098
+
+ROC AUC: 0.7164930805266472
+
+Metrics for chr21 - feature_dist - structure: [64, 64], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.80      0.81      0.80      4496
+           1       0.81      0.80      0.81      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.81      0.81      0.81      9098
+weighted avg       0.81      0.81      0.81      9098
+
+ROC AUC: 0.8059342139654583
+
+Metrics for chr21 - feature_dist - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.84      0.78      0.81      4496
+           1       0.80      0.86      0.83      4602
+
+    accuracy                           0.82      9098
+   macro avg       0.82      0.82      0.82      9098
+weighted avg       0.82      0.82      0.82      9098
+
+ROC AUC: 0.8187169318306602
+
+Metrics for chr21 - feature_dist - structure: [32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.88      0.65      0.75      4496
+           1       0.73      0.91      0.81      4602
+
+    accuracy                           0.78      9098
+   macro avg       0.80      0.78      0.78      9098
+weighted avg       0.80      0.78      0.78      9098
+
+ROC AUC: 0.7819461134799817
+
+Metrics for chr21 - feature_dist - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.91      0.45      0.60      4496
+           1       0.64      0.96      0.77      4602
+
+    accuracy                           0.71      9098
+   macro avg       0.77      0.70      0.68      9098
+weighted avg       0.77      0.71      0.68      9098
+
+ROC AUC: 0.7024721670602756
+
+Metrics for chr21 - feature_dist - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.87      0.20      0.33      4496
+           1       0.55      0.97      0.71      4602
+
+    accuracy                           0.59      9098
+   macro avg       0.71      0.59      0.52      9098
+weighted avg       0.71      0.59      0.52      9098
+
+ROC AUC: 0.5859672357368991
+
+Metrics for chr21 - feature_dist - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.53      0.98      0.69      4496
+           1       0.88      0.17      0.28      4602
+
+    accuracy                           0.57      9098
+   macro avg       0.71      0.57      0.49      9098
+weighted avg       0.71      0.57      0.49      9098
+
+ROC AUC: 0.5731850495142914
+
+Metrics for chr21 - feature_dist - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.87      0.80      0.84      4496
+           1       0.82      0.89      0.85      4602
+
+    accuracy                           0.84      9098
+   macro avg       0.85      0.84      0.84      9098
+weighted avg       0.85      0.84      0.84      9098
+
+ROC AUC: 0.8437679791859025
+
+Metrics for chr21 - feature_mem - structure: [32, 32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.96      0.82      4496
+           1       0.94      0.64      0.76      4602
+
+    accuracy                           0.80      9098
+   macro avg       0.83      0.80      0.79      9098
+weighted avg       0.83      0.80      0.79      9098
+
+ROC AUC: 0.7994213505345811
+
+Metrics for chr21 - feature_mem - structure: [32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.83      4496
+           1       0.95      0.64      0.77      4602
+
+    accuracy                           0.80      9098
+   macro avg       0.84      0.80      0.80      9098
+weighted avg       0.84      0.80      0.80      9098
+
+ROC AUC: 0.8030528561000091
+
+Metrics for chr21 - feature_mem - structure: [64, 64], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.77      0.86      0.81      4496
+           1       0.84      0.75      0.80      4602
+
+    accuracy                           0.80      9098
+   macro avg       0.81      0.80      0.80      9098
+weighted avg       0.81      0.80      0.80      9098
+
+ROC AUC: 0.8047568189445715
+
+Metrics for chr21 - feature_mem - structure: [64, 64], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.98      0.83      4496
+           1       0.96      0.64      0.77      4602
+
+    accuracy                           0.80      9098
+   macro avg       0.84      0.81      0.80      9098
+weighted avg       0.85      0.80      0.80      9098
+
+ROC AUC: 0.8064301398432678
+
+Metrics for chr21 - feature_mem - structure: [32, 32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.98      0.84      4496
+           1       0.96      0.65      0.78      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.85      0.81      0.81      9098
+weighted avg       0.85      0.81      0.81      9098
+
+ROC AUC: 0.8129516062179372
+
+Metrics for chr21 - feature_mem - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.77      0.87      0.82      4496
+           1       0.85      0.74      0.80      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.81      0.81      0.81      9098
+weighted avg       0.81      0.81      0.81      9098
+
+ROC AUC: 0.8070578647532173
+
+Metrics for chr21 - feature_mem - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.98      0.84      4496
+           1       0.97      0.64      0.77      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.85      0.81      0.80      9098
+weighted avg       0.85      0.81      0.80      9098
+
+ROC AUC: 0.8114038496336886
+
+Metrics for chr21 - feature_mem - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.98      0.84      4496
+           1       0.97      0.64      0.77      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.85      0.81      0.80      9098
+weighted avg       0.85      0.81      0.80      9098
+
+ROC AUC: 0.8117246717735287
+
+Metrics for chr21 - feature_mem - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.77      0.87      0.82      4496
+           1       0.86      0.74      0.80      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.81      0.81      0.81      9098
+weighted avg       0.81      0.81      0.81      9098
+
+ROC AUC: 0.807968036873957
+
+Metrics for chr21 - feature_mem - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.73      0.98      0.84      4496
+           1       0.97      0.65      0.78      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.85      0.81      0.81      9098
+weighted avg       0.85      0.81      0.80      9098
+
+ROC AUC: 0.8119942628997758
+
+Metrics for chr21 - feature_mem - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.83      4496
+           1       0.96      0.65      0.78      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.84      0.81      0.81      9098
+weighted avg       0.85      0.81      0.81      9098
+
+ROC AUC: 0.8122356769685468
+
+Metrics for chr21 - feature_mem - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.73      0.98      0.84      4496
+           1       0.97      0.64      0.77      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.85      0.81      0.81      9098
+weighted avg       0.85      0.81      0.81      9098
+
+ROC AUC: 0.8128111559108604
+
+Metrics for chr21 - feature_mem - structure: [32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.77      0.86      0.81      4496
+           1       0.85      0.75      0.80      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.81      0.81      0.81      9098
+weighted avg       0.81      0.81      0.80      9098
+
+ROC AUC: 0.8061015847202438
+
+Metrics for chr21 - feature_mem - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.72      0.98      0.83      4496
+           1       0.97      0.63      0.77      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.85      0.81      0.80      9098
+weighted avg       0.85      0.81      0.80      9098
+
+ROC AUC: 0.8073633659201245
+
+Metrics for chr21 - feature_mem - structure: [32, 32, 32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.83      4496
+           1       0.95      0.66      0.78      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.84      0.81      0.81      9098
+weighted avg       0.84      0.81      0.81      9098
+
+ROC AUC: 0.8115274323711955
+
+Metrics for chr21 - feature_mem - structure: [64, 64, 64], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.98      0.84      4496
+           1       0.97      0.64      0.77      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.85      0.81      0.80      9098
+weighted avg       0.85      0.81      0.80      9098
+
+ROC AUC: 0.810309680844318
+
+Metrics for chr21 - feature_mem - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.77      0.87      0.82      4496
+           1       0.86      0.74      0.79      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.81      0.81      0.81      9098
+weighted avg       0.81      0.81      0.81      9098
+
+ROC AUC: 0.8071014111147713
+
+Metrics for chr21 - feature_mem - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.74      0.96      0.83      4496
+           1       0.94      0.67      0.78      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.84      0.81      0.81      9098
+weighted avg       0.84      0.81      0.81      9098
+
+ROC AUC: 0.812438667777123
+
+Metrics for chr21 - feature_mem - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.77      0.86      0.81      4496
+           1       0.84      0.76      0.80      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.81      0.81      0.80      9098
+weighted avg       0.81      0.81      0.80      9098
+
+ROC AUC: 0.8058100029230677
+
+Metrics for chr21 - feature_mem - structure: [32, 32, 32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.77      0.86      0.81      4496
+           1       0.85      0.75      0.80      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.81      0.81      0.81      9098
+weighted avg       0.81      0.81      0.80      9098
+
+ROC AUC: 0.8060836538654863
+
+Metrics for chr21 - feature_mem - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.73      0.98      0.84      4496
+           1       0.97      0.64      0.78      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.85      0.81      0.81      9098
+weighted avg       0.85      0.81      0.81      9098
+
+ROC AUC: 0.8131294165000209
+
+Metrics for chr21 - feature_mem - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.78      0.85      0.81      4496
+           1       0.84      0.76      0.80      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.81      0.81      0.81      9098
+weighted avg       0.81      0.81      0.81      9098
+
+ROC AUC: 0.8061128942081504
+
+Metrics for chr21 - feature_mem - structure: [32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.83      4496
+           1       0.95      0.66      0.78      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.84      0.81      0.81      9098
+weighted avg       0.84      0.81      0.80      9098
+
+ROC AUC: 0.8111030849189815
+
+Metrics for chr21 - feature_mem - structure: [64, 64], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.77      0.86      0.81      4496
+           1       0.85      0.75      0.80      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.81      0.81      0.81      9098
+weighted avg       0.81      0.81      0.81      9098
+
+ROC AUC: 0.806877492920454
+
+Metrics for chr21 - feature_mem - structure: [32, 32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.84      4496
+           1       0.96      0.65      0.78      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.85      0.81      0.81      9098
+weighted avg       0.85      0.81      0.81      9098
+
+ROC AUC: 0.8125016432589266
+
+Metrics for chr21 - feature_mem - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.84      4496
+           1       0.96      0.65      0.78      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.85      0.81      0.81      9098
+weighted avg       0.85      0.81      0.81      9098
+
+ROC AUC: 0.8133605843660733
+
+Metrics for chr21 - feature_mem - structure: [64, 64, 64], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.77      0.86      0.81      4496
+           1       0.84      0.75      0.80      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.81      0.81      0.80      9098
+weighted avg       0.81      0.81      0.80      9098
+
+ROC AUC: 0.8057372162188496
+
+Metrics for chr21 - feature_mem - structure: [64, 64, 64], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.77      0.86      0.81      4496
+           1       0.85      0.75      0.79      4602
+
+    accuracy                           0.80      9098
+   macro avg       0.81      0.80      0.80      9098
+weighted avg       0.81      0.80      0.80      9098
+
+ROC AUC: 0.804585630029339
+
+Metrics for chr21 - feature_mem - structure: [64, 64], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.83      4496
+           1       0.96      0.66      0.78      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.84      0.81      0.81      9098
+weighted avg       0.85      0.81      0.81      9098
+
+ROC AUC: 0.8125462529056685
+
+Metrics for chr21 - feature_mem - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.98      0.84      4496
+           1       0.97      0.64      0.77      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.85      0.81      0.80      9098
+weighted avg       0.85      0.81      0.80      9098
+
+ROC AUC: 0.8116006540557177
+
+Metrics for chr21 - feature_mem - structure: [32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.98      0.84      4496
+           1       0.97      0.65      0.77      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.85      0.81      0.80      9098
+weighted avg       0.85      0.81      0.80      9098
+
+ROC AUC: 0.8112337240036438
+
+Metrics for chr21 - feature_mem - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.78      0.85      0.81      4496
+           1       0.84      0.76      0.80      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.81      0.81      0.81      9098
+weighted avg       0.81      0.81      0.81      9098
+
+ROC AUC: 0.8062292272739224
+
+Metrics for chr21 - feature_mem - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.73      0.98      0.84      4496
+           1       0.97      0.64      0.78      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.85      0.81      0.81      9098
+weighted avg       0.85      0.81      0.81      9098
+
+ROC AUC: 0.8126845766423696
+
+Metrics for chr21 - feature_mem - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.73      0.98      0.84      4496
+           1       0.97      0.65      0.78      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.85      0.81      0.81      9098
+weighted avg       0.85      0.81      0.81      9098
+
+ROC AUC: 0.8128557655576022
+
+Metrics for chr21 - feature_mem - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.73      0.98      0.84      4496
+           1       0.97      0.65      0.78      4602
+
+    accuracy                           0.81      9098
+   macro avg       0.85      0.81      0.81      9098
+weighted avg       0.85      0.81      0.81      9098
+
+ROC AUC: 0.8131166087466225
+
+Metrics for all - feature_mix - structure: [32, 32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.88      0.32      0.47    355759
+           1       0.59      0.96      0.73    355989
+
+    accuracy                           0.64    711748
+   macro avg       0.73      0.64      0.60    711748
+weighted avg       0.73      0.64      0.60    711748
+
+ROC AUC: 0.6390240779299206
+
+Metrics for all - feature_mix - structure: [32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.68      0.78      0.73    355759
+           1       0.74      0.64      0.69    355989
+
+    accuracy                           0.71    711748
+   macro avg       0.71      0.71      0.71    711748
+weighted avg       0.71      0.71      0.71    711748
+
+ROC AUC: 0.7084261448662615
+
+Metrics for all - feature_mix - structure: [64, 64], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00    355759
+           1       0.50      1.00      0.67    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Metrics for all - feature_mix - structure: [64, 64], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.63      0.86      0.73    355759
+           1       0.78      0.49      0.60    355989
+
+    accuracy                           0.67    711748
+   macro avg       0.70      0.67      0.66    711748
+weighted avg       0.70      0.67      0.66    711748
+
+ROC AUC: 0.6735253832389008
+
+Metrics for all - feature_mix - structure: [32, 32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67    355759
+           1       0.00      0.00      0.00    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Metrics for all - feature_mix - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.51      0.98      0.67    355759
+           1       0.81      0.06      0.12    355989
+
+    accuracy                           0.52    711748
+   macro avg       0.66      0.52      0.40    711748
+weighted avg       0.66      0.52      0.40    711748
+
+ROC AUC: 0.524146094660814
+
+Metrics for all - feature_mix - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       1.00      0.00      0.00    355759
+           1       0.50      1.00      0.67    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.75      0.50      0.33    711748
+weighted avg       0.75      0.50      0.33    711748
+
+ROC AUC: 0.5000098381207503
+
+Metrics for all - feature_mix - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00    355759
+           1       0.50      1.00      0.67    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Metrics for all - feature_mix - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.53      0.98      0.69    355759
+           1       0.87      0.14      0.24    355989
+
+    accuracy                           0.56    711748
+   macro avg       0.70      0.56      0.47    711748
+weighted avg       0.70      0.56      0.47    711748
+
+ROC AUC: 0.5602029170914354
+
+Metrics for all - feature_mix - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00    355759
+           1       0.50      1.00      0.67    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Metrics for all - feature_mix - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00    355759
+           1       0.50      1.00      0.67    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Metrics for all - feature_mix - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67    355759
+           1       0.00      0.00      0.00    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Metrics for all - feature_mix - structure: [32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67    355759
+           1       0.00      0.00      0.00    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Metrics for all - feature_mix - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.57      0.90      0.69    355759
+           1       0.75      0.31      0.44    355989
+
+    accuracy                           0.61    711748
+   macro avg       0.66      0.61      0.57    711748
+weighted avg       0.66      0.61      0.57    711748
+
+ROC AUC: 0.6055921323456022
+
+Metrics for all - feature_mix - structure: [32, 32, 32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.00      0.00    355759
+           1       0.50      1.00      0.67    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.61      0.50      0.33    711748
+weighted avg       0.61      0.50      0.33    711748
+
+ROC AUC: 0.5001841851378362
+
+Metrics for all - feature_mix - structure: [64, 64, 64], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67    355759
+           1       0.00      0.00      0.00    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Metrics for all - feature_mix - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67    355759
+           1       0.00      0.00      0.00    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Metrics for all - feature_mix - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67    355759
+           1       0.00      0.00      0.00    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Metrics for all - feature_mix - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.52      0.99      0.68    355759
+           1       0.88      0.09      0.17    355989
+
+    accuracy                           0.54    711748
+   macro avg       0.70      0.54      0.43    711748
+weighted avg       0.70      0.54      0.43    711748
+
+ROC AUC: 0.540092532161027
+
+Metrics for all - feature_mix - structure: [32, 32, 32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67    355759
+           1       0.00      0.00      0.00    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Metrics for all - feature_mix - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67    355759
+           1       0.00      0.00      0.00    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Metrics for all - feature_mix - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.19      0.00      0.00    355759
+           1       0.50      1.00      0.67    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.35      0.50      0.33    711748
+weighted avg       0.35      0.50      0.33    711748
+
+ROC AUC: 0.49939476498596214
+
+Metrics for all - feature_mix - structure: [32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.67      0.79      0.72    355759
+           1       0.74      0.61      0.67    355989
+
+    accuracy                           0.70    711748
+   macro avg       0.71      0.70      0.70    711748
+weighted avg       0.71      0.70      0.70    711748
+
+ROC AUC: 0.7000070082218393
+
+Metrics for all - feature_mix - structure: [64, 64], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.63      0.92      0.75    355759
+           1       0.86      0.46      0.60    355989
+
+    accuracy                           0.69    711748
+   macro avg       0.74      0.69      0.68    711748
+weighted avg       0.74      0.69      0.68    711748
+
+ROC AUC: 0.6925115345950915
+
+Metrics for all - feature_mix - structure: [32, 32, 32], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       1.00      0.00      0.00    355759
+           1       0.50      1.00      0.67    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.75      0.50      0.33    711748
+weighted avg       0.75      0.50      0.33    711748
+
+ROC AUC: 0.5000014054458215
+
+Metrics for all - feature_mix - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67    355759
+           1       0.00      0.00      0.00    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Metrics for all - feature_mix - structure: [64, 64, 64], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67    355759
+           1       0.00      0.00      0.00    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Metrics for all - feature_mix - structure: [64, 64, 64], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.75      0.60      0.67    355759
+           1       0.67      0.80      0.73    355989
+
+    accuracy                           0.70    711748
+   macro avg       0.71      0.70      0.70    711748
+weighted avg       0.71      0.70      0.70    711748
+
+ROC AUC: 0.6990135091832709
+
+Metrics for all - feature_mix - structure: [64, 64], batch_size: 128, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.52      0.98      0.68    355759
+           1       0.82      0.08      0.14    355989
+
+    accuracy                           0.53    711748
+   macro avg       0.67      0.53      0.41    711748
+weighted avg       0.67      0.53      0.41    711748
+
+ROC AUC: 0.5302538465067137
+
+Metrics for all - feature_mix - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00    355759
+           1       0.50      1.00      0.67    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Metrics for all - feature_mix - structure: [32, 32], batch_size: 64, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.49      0.00      0.00    355759
+           1       0.50      1.00      0.67    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.49      0.50      0.34    711748
+weighted avg       0.49      0.50      0.34    711748
+
+ROC AUC: 0.4999403104231388
+
+Metrics for all - feature_mix - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67    355759
+           1       0.00      0.00      0.00    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Metrics for all - feature_mix - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 10:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00    355759
+           1       0.50      1.00      0.67    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Metrics for all - feature_mix - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67    355759
+           1       0.00      0.00      0.00    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Metrics for all - feature_mix - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 15:
+              precision    recall  f1-score   support
+
+           0       1.00      0.00      0.00    355759
+           1       0.50      1.00      0.67    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.75      0.50      0.33    711748
+weighted avg       0.75      0.50      0.33    711748
+
+ROC AUC: 0.5000014054458215
+
+Metrics for all - feature_mem - structure: [32, 32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.84    355759
+           1       0.96      0.65      0.77    355989
+
+    accuracy                           0.81    711748
+   macro avg       0.85      0.81      0.80    711748
+weighted avg       0.85      0.81      0.80    711748
+
+ROC AUC: 0.8092710394687799
+
+Metrics for all - feature_mem - structure: [32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.84    355759
+           1       0.96      0.65      0.77    355989
+
+    accuracy                           0.81    711748
+   macro avg       0.84      0.81      0.80    711748
+weighted avg       0.84      0.81      0.80    711748
+
+ROC AUC: 0.8088775818337883
+
+Metrics for all - feature_mem - structure: [64, 64], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.84    355759
+           1       0.96      0.65      0.77    355989
+
+    accuracy                           0.81    711748
+   macro avg       0.85      0.81      0.80    711748
+weighted avg       0.85      0.81      0.80    711748
+
+ROC AUC: 0.809276825607452
+
+Metrics for all - feature_mem - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.84    355759
+           1       0.96      0.65      0.77    355989
+
+    accuracy                           0.81    711748
+   macro avg       0.85      0.81      0.81    711748
+weighted avg       0.85      0.81      0.81    711748
+
+ROC AUC: 0.8101025367314214
+
+Metrics for all - feature_mem - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.84    355759
+           1       0.96      0.65      0.77    355989
+
+    accuracy                           0.81    711748
+   macro avg       0.85      0.81      0.80    711748
+weighted avg       0.85      0.81      0.80    711748
+
+ROC AUC: 0.8099873001625099
+
+Metrics for all - feature_mem - structure: [64, 64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.84    355759
+           1       0.96      0.65      0.77    355989
+
+    accuracy                           0.81    711748
+   macro avg       0.85      0.81      0.80    711748
+weighted avg       0.85      0.81      0.80    711748
+
+ROC AUC: 0.8099863351164799
+
+Metrics for all - feature_mem - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.84    355759
+           1       0.96      0.65      0.77    355989
+
+    accuracy                           0.81    711748
+   macro avg       0.85      0.81      0.80    711748
+weighted avg       0.85      0.81      0.80    711748
+
+ROC AUC: 0.8099088975740965
+
+Metrics for all - feature_mem - structure: [32, 32, 32, 32], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.84    355759
+           1       0.96      0.65      0.77    355989
+
+    accuracy                           0.81    711748
+   macro avg       0.84      0.81      0.80    711748
+weighted avg       0.85      0.81      0.80    711748
+
+ROC AUC: 0.8094268578065975
+
+Metrics for all - feature_mem - structure: [32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.84    355759
+           1       0.96      0.65      0.77    355989
+
+    accuracy                           0.81    711748
+   macro avg       0.85      0.81      0.81    711748
+weighted avg       0.85      0.81      0.81    711748
+
+ROC AUC: 0.810133436562596
+
+Metrics for all - feature_mem - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.84    355759
+           1       0.96      0.65      0.77    355989
+
+    accuracy                           0.81    711748
+   macro avg       0.85      0.81      0.81    711748
+weighted avg       0.85      0.81      0.81    711748
+
+ROC AUC: 0.8100997203915336
+
+Metrics for all - feature_mem - structure: [64, 64], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.84    355759
+           1       0.96      0.65      0.77    355989
+
+    accuracy                           0.81    711748
+   macro avg       0.85      0.81      0.81    711748
+weighted avg       0.85      0.81      0.81    711748
+
+ROC AUC: 0.810126515574263
+
+Metrics for all - feature_mem - structure: [32, 32], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.84    355759
+           1       0.96      0.65      0.77    355989
+
+    accuracy                           0.81    711748
+   macro avg       0.85      0.81      0.80    711748
+weighted avg       0.85      0.81      0.80    711748
+
+ROC AUC: 0.8100465068630097
+
+Metrics for all - feature_mem - structure: [64, 64], batch_size: 32, lrn_rate: 0.0001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.84    355759
+           1       0.96      0.65      0.77    355989
+
+    accuracy                           0.81    711748
+   macro avg       0.85      0.81      0.81    711748
+weighted avg       0.85      0.81      0.81    711748
+
+ROC AUC: 0.8101334783324731
+
+Metrics for all - feature_mem - structure: [64, 64, 64], batch_size: 32, lrn_rate: 1e-05, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.84    355759
+           1       0.96      0.65      0.77    355989
+
+    accuracy                           0.81    711748
+   macro avg       0.85      0.81      0.80    711748
+weighted avg       0.85      0.81      0.80    711748
+
+ROC AUC: 0.8095127189435017
+
+Metrics for all - feature_mem - structure: [32, 32, 32], batch_size: 32, lrn_rate: 0.001, num_epochs: 5:
+              precision    recall  f1-score   support
+
+           0       0.73      0.97      0.84    355759
+           1       0.96      0.65      0.77    355989
+
+    accuracy                           0.81    711748
+   macro avg       0.85      0.81      0.80    711748
+weighted avg       0.85      0.81      0.80    711748
+
+ROC AUC: 0.8099780050501624
+
+Metrics calculation and plotting complete for all chromosomes and features. Done in 173 seconds.

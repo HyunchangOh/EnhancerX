@@ -1,0 +1,69 @@
+max_iter = 200, c=1.0 (default)
+all chromosomes concatenated, 5 fold tested.
+
+Training fold 1/5
+Fold 1 results:
+              precision    recall  f1-score   support
+
+           0       0.69      0.24      0.35    356054
+           1       0.54      0.89      0.67    355694
+
+    accuracy                           0.57    711748
+   macro avg       0.61      0.57      0.51    711748
+weighted avg       0.61      0.57      0.51    711748
+
+ROC AUC: 0.5752401370837495
+
+Training fold 2/5
+Fold 2 results:
+              precision    recall  f1-score   support
+
+           0       0.68      0.24      0.36    356062
+           1       0.54      0.88      0.67    355685
+
+    accuracy                           0.56    711747
+   macro avg       0.61      0.56      0.51    711747
+weighted avg       0.61      0.56      0.51    711747
+
+ROC AUC: 0.5738226541438096
+
+Training fold 3/5
+Fold 3 results:
+              precision    recall  f1-score   support
+
+           0       0.68      0.24      0.36    355958
+           1       0.54      0.89      0.67    355789
+
+    accuracy                           0.56    711747
+   macro avg       0.61      0.56      0.51    711747
+weighted avg       0.61      0.56      0.51    711747
+
+ROC AUC: 0.5720786131625556
+
+Training fold 4/5
+Fold 4 results:
+              precision    recall  f1-score   support
+
+           0       0.68      0.24      0.36    355923
+           1       0.54      0.89      0.67    355824
+
+    accuracy                           0.57    711747
+   macro avg       0.61      0.57      0.52    711747
+weighted avg       0.61      0.57      0.52    711747
+
+ROC AUC: 0.5761541115348221
+
+Training fold 5/5
+Fold 5 results:
+              precision    recall  f1-score   support
+
+           0       0.68      0.25      0.36    355371
+           1       0.54      0.88      0.67    356376
+
+    accuracy                           0.57    711747
+   macro avg       0.61      0.57      0.52    711747
+weighted avg       0.61      0.57      0.52    711747
+
+ROC AUC: 0.5743578591133202
+
+Training complete.

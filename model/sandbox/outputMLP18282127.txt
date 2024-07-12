@@ -1,0 +1,66 @@
+Training fold 1/5
+Fold 1 results:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00    355759
+           1       0.50      1.00      0.67    355989
+
+    accuracy                           0.50    711748
+   macro avg       0.25      0.50      0.33    711748
+weighted avg       0.25      0.50      0.33    711748
+
+ROC AUC: 0.5
+
+Training fold 2/5
+Fold 2 results:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67    355967
+           1       0.00      0.00      0.00    355780
+
+    accuracy                           0.50    711747
+   macro avg       0.25      0.50      0.33    711747
+weighted avg       0.25      0.50      0.33    711747
+
+ROC AUC: 0.5
+
+Training fold 3/5
+Fold 3 results:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67    355892
+           1       0.00      0.00      0.00    355855
+
+    accuracy                           0.50    711747
+   macro avg       0.25      0.50      0.33    711747
+weighted avg       0.25      0.50      0.33    711747
+
+ROC AUC: 0.5
+
+Training fold 4/5
+Fold 4 results:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67    356040
+           1       0.00      0.00      0.00    355707
+
+    accuracy                           0.50    711747
+   macro avg       0.25      0.50      0.33    711747
+weighted avg       0.25      0.50      0.33    711747
+
+ROC AUC: 0.5
+
+Training fold 5/5
+Fold 5 results:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67    355710
+           1       0.00      0.00      0.00    356037
+
+    accuracy                           0.50    711747
+   macro avg       0.25      0.50      0.33    711747
+weighted avg       0.25      0.50      0.33    711747
+
+ROC AUC: 0.5
+
+Training complete.

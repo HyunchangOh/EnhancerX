@@ -1,0 +1,66 @@
+Training fold 1/5
+Fold 1 results:
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      1.00      8407
+           1       0.99      1.00      1.00      8220
+
+    accuracy                           1.00     16627
+   macro avg       1.00      1.00      1.00     16627
+weighted avg       1.00      1.00      1.00     16627
+
+ROC AUC: 0.9971375377429943
+
+Training fold 2/5
+Fold 2 results:
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99      8205
+           1       0.99      1.00      0.99      8422
+
+    accuracy                           0.99     16627
+   macro avg       0.99      0.99      0.99     16627
+weighted avg       0.99      0.99      0.99     16627
+
+ROC AUC: 0.9950174747632177
+
+Training fold 3/5
+Fold 3 results:
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99      8336
+           1       0.99      1.00      0.99      8291
+
+    accuracy                           0.99     16627
+   macro avg       0.99      0.99      0.99     16627
+weighted avg       0.99      0.99      0.99     16627
+
+ROC AUC: 0.9937020153550864
+
+Training fold 4/5
+Fold 4 results:
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99      8263
+           1       0.99      1.00      0.99      8364
+
+    accuracy                           0.99     16627
+   macro avg       0.99      0.99      0.99     16627
+weighted avg       0.99      0.99      0.99     16627
+
+ROC AUC: 0.99419170250284
+
+Training fold 5/5
+Fold 5 results:
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99      8356
+           1       0.99      0.99      0.99      8270
+
+    accuracy                           0.99     16626
+   macro avg       0.99      0.99      0.99     16626
+weighted avg       0.99      0.99      0.99     16626
+
+ROC AUC: 0.9919398655246605
+
+Training complete.

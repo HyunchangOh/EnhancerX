@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/ohh98/enhancerX/model/gradient_boosting/test_train_each.py", line 109, in <module>
+    model = create_gb_model()
+  File "/home/ohh98/enhancerX/model/gradient_boosting/test_train_each.py", line 77, in create_gb_model
+    model = GradientBoostingClassifier(n_estimators=100, random_state=42)
+NameError: name 'GradientBoostingClassifier' is not defined

@@ -53,8 +53,8 @@ for i in range(len(features)):
                 p_value_array[j,k] = p_value
                 p_value_array[k,j] = p_value
     np.save(save_path+f+".npy",p_value_array)
-    plt.figure(figsize=(8, 6))
-    sns.heatmap(p_value_array, annot=True, cmap="coolwarm", cbar=True, square=True, vmin=0, vmax=1, linewidths=0.5, linecolor='black')
+    plt.figure(figsize=(13, 12))
+    sns.heatmap(p_value_array, fmt=".2f",annot=True, cmap="coolwarm", cbar=True, square=True, vmin=0, vmax=1, linewidths=0.5, linecolor='black')
 
     # Set labels and title
     plt.xlabel('Chromosomes')

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/ohh98/enhancerX/model/sandbox/logistic_regression.py", line 81, in <module>
+    model.fit(X_train, y_train)
+  File "/trinity/shared/easybuild/software/scikit-learn/0.24.2-foss-2021a/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py", line 1306, in fit
+    solver = _check_solver(self.solver, self.penalty, self.dual)
+  File "/trinity/shared/easybuild/software/scikit-learn/0.24.2-foss-2021a/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py", line 434, in _check_solver
+    raise ValueError("Logistic Regression supports only solvers in %s, got"
+ValueError: Logistic Regression supports only solvers in ['liblinear', 'newton-cg', 'lbfgs', 'sag', 'saga'], got newton-cholesky.

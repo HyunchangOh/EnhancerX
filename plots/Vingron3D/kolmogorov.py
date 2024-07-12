@@ -36,8 +36,8 @@ b=len(chromosomes)
 c=(a,b)
 p_value_array = np.zeros((len(chromosomes),len(chromosomes)))
 
-data_path = "../../../../../scratch/ohh98/vingron/"
-save_path = "../../../../../scratch/ohh98/vingron/kolmogorov_smirnov/"
+data_path = "../../../../../scratch/ohh98/vingron3D/"
+save_path = "../../../../../scratch/ohh98/vingron3D/kolmogorov_smirnov/"
 for i in range(len(features)):
     f = features[i]
     for j in range(len(chromosomes)):
@@ -53,7 +53,7 @@ for i in range(len(features)):
                 p_value_array[j,k] = p_value
                 p_value_array[k,j] = p_value
     np.save(save_path+f+".npy",p_value_array)
-    plt.figure(figsize=(8, 6))
+    plt.figure(figsize=(16, 12))
     sns.heatmap(p_value_array, annot=True, cmap="coolwarm", cbar=True, square=True, vmin=0, vmax=1, linewidths=0.5, linecolor='black')
 
     # Set labels and title

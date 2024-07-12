@@ -1,0 +1,66 @@
+Training fold 1/5
+Fold 1 results:
+              precision    recall  f1-score   support
+
+           0       0.65      0.48      0.55    356054
+           1       0.59      0.74      0.65    355694
+
+    accuracy                           0.61    711748
+   macro avg       0.62      0.61      0.60    711748
+weighted avg       0.62      0.61      0.60    711748
+
+ROC AUC: 0.6455503956071316
+
+Training fold 2/5
+Fold 2 results:
+              precision    recall  f1-score   support
+
+           0       0.64      0.49      0.55    356062
+           1       0.59      0.73      0.65    355685
+
+    accuracy                           0.61    711747
+   macro avg       0.62      0.61      0.60    711747
+weighted avg       0.62      0.61      0.60    711747
+
+ROC AUC: 0.6461493273925004
+
+Training fold 3/5
+Fold 3 results:
+              precision    recall  f1-score   support
+
+           0       0.64      0.49      0.56    355958
+           1       0.59      0.73      0.65    355789
+
+    accuracy                           0.61    711747
+   macro avg       0.62      0.61      0.60    711747
+weighted avg       0.62      0.61      0.60    711747
+
+ROC AUC: 0.6454033651585064
+
+Training fold 4/5
+Fold 4 results:
+              precision    recall  f1-score   support
+
+           0       0.65      0.48      0.55    355923
+           1       0.59      0.73      0.65    355824
+
+    accuracy                           0.61    711747
+   macro avg       0.62      0.61      0.60    711747
+weighted avg       0.62      0.61      0.60    711747
+
+ROC AUC: 0.6459972475108424
+
+Training fold 5/5
+Fold 5 results:
+              precision    recall  f1-score   support
+
+           0       0.64      0.48      0.55    355371
+           1       0.59      0.73      0.65    356376
+
+    accuracy                           0.61    711747
+   macro avg       0.62      0.61      0.60    711747
+weighted avg       0.62      0.61      0.60    711747
+
+ROC AUC: 0.6465706134685507
+
+Training complete.

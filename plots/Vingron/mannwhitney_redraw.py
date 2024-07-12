@@ -39,13 +39,13 @@ for i in range(len(features)):
     f = features[i]
 
     p_value_array=np.load(save_path+f+".npy")
-    plt.figure(figsize=(16, 12))
-    sns.heatmap(p_value_array, annot=True, cmap="coolwarm", cbar=True, square=True, vmin=0, vmax=0.5, linewidths=0.5, linecolor='black',fmt=".2f")
+    plt.figure(figsize=(13, 12))
+    sns.heatmap(p_value_array, annot=True, cmap="coolwarm", cbar=True, square=True, vmin=0, vmax=0.05, linewidths=0.5, linecolor='black',fmt=".2f")
 
     # Set labels and title
     plt.xlabel('Chromosomes')
     plt.ylabel('Chromosomes')
-    plt.title(f)
+    plt.title(f,fontsize=48)
     plt.savefig(save_path+f+"_redrawn.png")
     plt.close()
     

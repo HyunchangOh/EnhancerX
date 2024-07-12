@@ -1,0 +1,265 @@
+
+##########################################################################################
+------------------------------------------------------------------------------------------
+##########################################################################################
+
+---------------- End of program, ran feature_mix for chr22 in 0 seconds ----------------
+
+##########################################################################################
+------------------------------------------------------------------------------------------
+##########################################################################################
+
+
+--------------------------------------------------------------
+-------------------  Trying learning rates -------------------
+--------------------------------------------------------------
+
+
+-------------------------------- Running chr22: 5 epochs, 32 batch size, 0.001 learning rate  --------------------------------
+
+------------------------ Ran NN on chr22: 5 epochs, 32 batch size, 0.001 learning rate in 155 seconds ------------------------
+
+
+
+UNIQUE VALUES OF BIN50_enhancer_atlas at chr1:
+[ 0  1 10 11 20 21 30 31 40 41 50]
+FIRST 15 VALUES OF BIN50_enhancer_atlas at chr1:
+[ 0 50 50 50 50 50 50 50  0  0  0  0  0 50  0]
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------
+-------------------  CHECK feature_mix at all -------------------
+-------------------------------------------------------------------
+
+File: testvpred_[32, 32, 32]_32_1e-05_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 486037, 1: 937459}
+File: testvpred_[32, 32]_32_1e-05_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 760763, 1: 662733}
+File: testvpred_[64, 64]_64_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 355759, 1: 1067737}
+File: testvpred_[64, 64]_32_1e-05_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 845725, 1: 577771}
+File: testvpred_[32, 32, 32]_64_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 1067507, 1: 355989}
+File: testvpred_[64, 64, 64]_32_0.0001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 1039448, 1: 384048}
+File: testvpred_[32, 32, 32, 32]_32_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 355766, 1: 1067730}
+File: testvpred_[64, 64, 64]_32_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 355759, 1: 1067737}
+File: testvpred_[32, 32, 32, 32]_32_0.0001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 1009643, 1: 413853}
+File: testvpred_[32, 32, 32]_32_0.001_10.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 355759, 1: 1067737}
+File: testvpred_[32, 32]_32_0.001_10.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 355759, 1: 1067737}
+File: testvpred_[32, 32, 32, 32]_32_0.001_15.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 1067507, 1: 355989}
+File: testvpred_[32, 32]_128_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 1067507, 1: 355989}
+File: testvpred_[32, 32, 32, 32]_32_1e-05_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 918910, 1: 504586}
+File: testvpred_[32, 32, 32, 32]_64_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 356048, 1: 1067448}
+File: testvpred_[64, 64, 64]_128_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 1067507, 1: 355989}
+File: testvpred_[64, 64]_32_0.001_15.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 1067507, 1: 355989}
+File: testvpred_[32, 32]_32_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 1067507, 1: 355989}
+File: testvpred_[32, 32, 32]_32_0.0001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 1029681, 1: 393815}
+File: testvpred_[32, 32, 32, 32]_128_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 1067507, 1: 355989}
+File: testvpred_[64, 64]_32_0.001_10.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 1067507, 1: 355989}
+File: testvpred_[64, 64]_32_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 356456, 1: 1067040}
+File: testvpred_[32, 32]_32_0.0001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 775298, 1: 648198}
+File: testvpred_[64, 64]_32_0.0001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 874671, 1: 548825}
+File: testvpred_[32, 32, 32]_128_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 355760, 1: 1067736}
+File: testvpred_[64, 64, 64]_32_0.001_15.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 1067507, 1: 355989}
+File: testvpred_[64, 64, 64]_64_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 1067507, 1: 355989}
+File: testvpred_[64, 64, 64]_32_1e-05_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 641858, 1: 781638}
+File: testvpred_[64, 64]_128_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 1033815, 1: 389681}
+File: testvpred_[32, 32, 32]_32_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 355759, 1: 1067737}
+File: testvpred_[32, 32]_64_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 357356, 1: 1066140}
+File: testvpred_[32, 32, 32, 32]_32_0.001_10.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 1067507, 1: 355989}
+File: testvpred_[64, 64, 64]_32_0.001_10.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 355759, 1: 1067737}
+File: testvpred_[32, 32, 32]_32_0.001_15.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 1067507, 1: 355989}
+File: testvpred_[32, 32]_32_0.001_15.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 355760, 1: 1067736}
+
+-------------------------------------------------------------------
+-------------------  FINISHED feature_mix at all -------------------
+-------------------------------------------------------------------
+
+
+-------------------------------------------------------------------
+-------------------  CHECK feature_mem at all -------------------
+-------------------------------------------------------------------
+
+File: testvpred_[32, 32, 32]_32_1e-05_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 826196, 1: 597300}
+File: testvpred_[32, 32]_32_1e-05_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 826064, 1: 597432}
+File: testvpred_[64, 64]_64_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825570, 1: 597926}
+File: testvpred_[64, 64]_32_1e-05_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 826562, 1: 596934}
+File: testvpred_[32, 32, 32]_64_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825715, 1: 597781}
+File: testvpred_[64, 64, 64]_32_0.0001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825628, 1: 597868}
+File: testvpred_[32, 32, 32, 32]_32_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 826804, 1: 596692}
+File: testvpred_[64, 64, 64]_32_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825759, 1: 597737}
+File: testvpred_[32, 32, 32, 32]_32_0.0001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 826178, 1: 597318}
+File: testvpred_[32, 32, 32]_32_0.001_10.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825710, 1: 597786}
+File: testvpred_[32, 32]_32_0.001_10.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825574, 1: 597922}
+File: testvpred_[32, 32]_128_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825819, 1: 597677}
+File: testvpred_[32, 32, 32, 32]_32_1e-05_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825897, 1: 597599}
+File: testvpred_[32, 32, 32, 32]_64_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825582, 1: 597914}
+File: testvpred_[64, 64, 64]_128_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 826557, 1: 596939}
+File: testvpred_[64, 64]_32_0.001_15.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825585, 1: 597911}
+File: testvpred_[32, 32]_32_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825726, 1: 597770}
+File: testvpred_[32, 32, 32]_32_0.0001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825614, 1: 597882}
+File: testvpred_[32, 32, 32, 32]_128_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825665, 1: 597831}
+File: testvpred_[64, 64]_32_0.001_10.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825633, 1: 597863}
+File: testvpred_[64, 64]_32_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 826607, 1: 596889}
+File: testvpred_[32, 32]_32_0.0001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 826002, 1: 597494}
+File: testvpred_[64, 64]_32_0.0001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825698, 1: 597798}
+File: testvpred_[32, 32, 32]_128_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825752, 1: 597744}
+File: testvpred_[64, 64, 64]_32_0.001_15.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825655, 1: 597841}
+File: testvpred_[64, 64, 64]_64_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825811, 1: 597685}
+File: testvpred_[64, 64, 64]_32_1e-05_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 826242, 1: 597254}
+File: testvpred_[64, 64]_128_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 826424, 1: 597072}
+File: testvpred_[32, 32, 32]_32_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 826565, 1: 596931}
+File: testvpred_[32, 32]_64_0.001_5.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825635, 1: 597861}
+File: testvpred_[32, 32, 32, 32]_32_0.001_10.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825736, 1: 597760}
+File: testvpred_[64, 64, 64]_32_0.001_10.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 825639, 1: 597857}
+File: testvpred_[32, 32, 32]_32_0.001_15.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 826938, 1: 596558}
+File: testvpred_[32, 32]_32_0.001_15.npy
+  Shape: (711748, 2)
+  Unique Values and Counts: {0: 827386, 1: 596110}
+
+-------------------------------------------------------------------
+-------------------  FINISHED feature_mem at all -------------------
+-------------------------------------------------------------------
+
+
+-------------------------------------------------------------------
+-------------------  CHECK feature_dist at all -------------------
+-------------------------------------------------------------------
+
+No .npy files found in the directory temp/all/feature_dist.

@@ -47,13 +47,11 @@ chromosomes = [
         'chr20',
         'chr21',
         'chr22',
-        'chrX',
-        'chrY'
+        'chrX'
     ]
 
 features = ["CTCF","cod","DHS","EP300Conservative","h3k4me1","h3k4me2","h3k9me3","h3k27ac","h3k27me3","h3k36me3","promoter_any","promoter_forward","promoter_reverse"]
 
-chromosomes=["chrY"]
 data_path = "../../../../../scratch/ohh98/la_grande_table/"
 save_path = "../../../../../scratch/ohh98/vingron/"
 for c in chromosomes:

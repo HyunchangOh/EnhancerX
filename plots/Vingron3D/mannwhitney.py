@@ -33,8 +33,8 @@ features = ["CTCF","cod","DHS","EP300Conservative","h3k4me1","h3k4me2","h3k9me3"
 
 p_value_array = np.zeros((len(chromosomes),len(chromosomes)))
 
-data_path = "../../../../../scratch/ohh98/vingron/"
-save_path = "../../../../../scratch/ohh98/vingron/mann_whitney/"
+data_path = "../../../../../scratch/ohh98/vingron3D/"
+save_path = "../../../../../scratch/ohh98/vingron3D/mann_whitney/"
 for i in range(len(features)):
     f = features[i]
     for j in range(len(chromosomes)):
@@ -50,8 +50,8 @@ for i in range(len(features)):
                 p_value_array[j,k] = p_value
                 p_value_array[k,j] = p_value
     np.save(save_path+f+".npy",p_value_array)
-    plt.figure(figsize=(8, 6))
-    sns.heatmap(p_value_array, annot=True, cmap="coolwarm", cbar=True, square=True, vmin=0, vmax=1, linewidths=0.5, linecolor='black')
+    plt.figure(figsize=(16, 12))
+    sns.heatmap(p_value_array, annot=True, cmap="coolwarm", cbar=True, square=True, vmin=0, vmax=0.5, linewidths=0.5, linecolor='black')
 
     # Set labels and title
     plt.xlabel('Chromosomes')

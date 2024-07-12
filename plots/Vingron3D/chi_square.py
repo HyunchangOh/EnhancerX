@@ -33,8 +33,8 @@ features = ["CTCF","cod","DHS","EP300Conservative","h3k4me1","h3k4me2","h3k9me3"
 
 p_value_array = np.zeros((len(chromosomes),len(chromosomes)))
 
-data_path = "../../../../../scratch/ohh98/vingron/"
-save_path = "../../../../../scratch/ohh98/vingron/chi/"
+data_path = "../../../../../scratch/ohh98/vingron3D/"
+save_path = "../../../../../scratch/ohh98/vingron3D/chi/"
 for i in range(len(features)):
     f = features[i]
     for j in range(len(chromosomes)):

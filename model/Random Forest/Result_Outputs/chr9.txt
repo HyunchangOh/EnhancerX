@@ -1,0 +1,67 @@
+'seq' feature not found. Skipping categorical conversion.
+Training fold 1/5
+Fold 1 results:
+              precision    recall  f1-score   support
+
+           0       0.75      0.97      0.84     13711
+           1       0.95      0.68      0.79     13855
+
+    accuracy                           0.82     27566
+   macro avg       0.85      0.82      0.82     27566
+weighted avg       0.85      0.82      0.82     27566
+
+ROC AUC: 0.8592980408773879
+
+Training fold 2/5
+Fold 2 results:
+              precision    recall  f1-score   support
+
+           0       0.74      0.97      0.84     13710
+           1       0.96      0.67      0.79     13856
+
+    accuracy                           0.82     27566
+   macro avg       0.85      0.82      0.81     27566
+weighted avg       0.85      0.82      0.81     27566
+
+ROC AUC: 0.857846521920582
+
+Training fold 3/5
+Fold 3 results:
+              precision    recall  f1-score   support
+
+           0       0.75      0.97      0.85     13841
+           1       0.95      0.68      0.79     13725
+
+    accuracy                           0.82     27566
+   macro avg       0.85      0.82      0.82     27566
+weighted avg       0.85      0.82      0.82     27566
+
+ROC AUC: 0.8592475221777804
+
+Training fold 4/5
+Fold 4 results:
+              precision    recall  f1-score   support
+
+           0       0.75      0.97      0.84     13761
+           1       0.95      0.68      0.79     13805
+
+    accuracy                           0.82     27566
+   macro avg       0.85      0.82      0.82     27566
+weighted avg       0.85      0.82      0.82     27566
+
+ROC AUC: 0.8578903351915943
+
+Training fold 5/5
+Fold 5 results:
+              precision    recall  f1-score   support
+
+           0       0.75      0.97      0.85     13892
+           1       0.96      0.67      0.79     13674
+
+    accuracy                           0.82     27566
+   macro avg       0.85      0.82      0.82     27566
+weighted avg       0.85      0.82      0.82     27566
+
+ROC AUC: 0.8614216769107607
+
+Training complete.

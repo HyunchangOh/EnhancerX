@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/ohh98/enhancerX/model/model_comparisons/random_forest/test_train_each_200.py", line 161, in <module>
+    plt.errorbar(chromosomes, means1, yerr=stds1, label=str(lr), fmt='-o', color='b')
+  File "/trinity/shared/easybuild/software/matplotlib/3.4.2-foss-2021a/lib/python3.9/site-packages/matplotlib/pyplot.py", line 2772, in errorbar
+    return gca().errorbar(
+  File "/trinity/shared/easybuild/software/matplotlib/3.4.2-foss-2021a/lib/python3.9/site-packages/matplotlib/__init__.py", line 1361, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/trinity/shared/easybuild/software/matplotlib/3.4.2-foss-2021a/lib/python3.9/site-packages/matplotlib/axes/_axes.py", line 3297, in errorbar
+    raise ValueError("'x' and 'y' must have the same size")
+ValueError: 'x' and 'y' must have the same size

@@ -33,27 +33,27 @@ def closest_true_distances(arr,direction="both"):
 # output_list = closest_true_distances(input_list,"forward")
 # print(output_list)
 
-names = ["chr" + str(i) for i in [7,9]]
+names = ["chr" + str(i) for i in [2,3,7,9]]
 # names += ["chrX","chrY"]
 
-root_folder = "../../la_grande_table/"
+root_folder = "/scratch/ohh98/la_grande_table/"
 
 #7 and 9 any not done
 for name in names:
     print(name)
     d = root_folder+name+"/"
-    a = np.load(d+"promoter_any.npy")
-    f = np.load(d+"promoter_forward.npy")
+    # a = np.load(d+"promoter_any.npy")
+    # f = np.load(d+"promoter_forward.npy")
     r = np.load(d+"promoter_reverse.npy")
 
     # f_d =closest_true_distances(f,"forward")
     # np.save(d+"promoter_1D_Dist_forward.npy",f_d)
     # print("forward done")
 
-    # r_d = closest_true_distances(r,"reverse")
-    # np.save(d+"promoter_1D_Dist_reverse.npy",r_d)
-    # print("reverse done")
+    r_d = closest_true_distances(r,"reverse")
+    np.save(d+"promoter_1D_Dist_reverse.npy",r_d)
+    print("reverse done")
 
-    a_d = closest_true_distances(a,"both")
-    np.save(d+"promoter_1D_Dist_any.npy",a_d)
-    print("both direction done")
+    # a_d = closest_true_distances(a,"both")
+    # np.save(d+"promoter_1D_Dist_any.npy",a_d)
+    # print("both direction done")

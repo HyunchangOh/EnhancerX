@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/ohh98/enhancerX/preprocess/bin/bin50.py", line 40, in <module>
+    data = np.load(data_path+c+"/"+f+".npy")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/trinity/shared/easybuild/software/SciPy-bundle/2023.07-gfbf-2023a/lib/python3.11/site-packages/numpy/lib/npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../../scratch/ohh98/chr22/CTCF.npy'

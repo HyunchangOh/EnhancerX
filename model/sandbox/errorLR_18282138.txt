@@ -1,0 +1,26 @@
+/trinity/shared/easybuild/software/scikit-learn/0.24.2-foss-2021a/lib/python3.9/site-packages/sklearn/utils/optimize.py:202: ConvergenceWarning: newton-cg failed to converge. Increase the number of iterations.
+  warnings.warn("newton-cg failed to converge. Increase the "
+/trinity/shared/easybuild/software/SciPy-bundle/2021.05-foss-2021a/lib/python3.9/site-packages/scipy/optimize/linesearch.py:478: LineSearchWarning: The line search algorithm did not converge
+  warn('The line search algorithm did not converge', LineSearchWarning)
+/trinity/shared/easybuild/software/SciPy-bundle/2021.05-foss-2021a/lib/python3.9/site-packages/scipy/optimize/linesearch.py:327: LineSearchWarning: The line search algorithm did not converge
+  warn('The line search algorithm did not converge', LineSearchWarning)
+/trinity/shared/easybuild/software/scikit-learn/0.24.2-foss-2021a/lib/python3.9/site-packages/sklearn/utils/optimize.py:202: ConvergenceWarning: newton-cg failed to converge. Increase the number of iterations.
+  warnings.warn("newton-cg failed to converge. Increase the "
+/trinity/shared/easybuild/software/SciPy-bundle/2021.05-foss-2021a/lib/python3.9/site-packages/scipy/optimize/linesearch.py:478: LineSearchWarning: The line search algorithm did not converge
+  warn('The line search algorithm did not converge', LineSearchWarning)
+/trinity/shared/easybuild/software/SciPy-bundle/2021.05-foss-2021a/lib/python3.9/site-packages/scipy/optimize/linesearch.py:327: LineSearchWarning: The line search algorithm did not converge
+  warn('The line search algorithm did not converge', LineSearchWarning)
+/trinity/shared/easybuild/software/scikit-learn/0.24.2-foss-2021a/lib/python3.9/site-packages/sklearn/utils/optimize.py:202: ConvergenceWarning: newton-cg failed to converge. Increase the number of iterations.
+  warnings.warn("newton-cg failed to converge. Increase the "
+/trinity/shared/easybuild/software/SciPy-bundle/2021.05-foss-2021a/lib/python3.9/site-packages/scipy/optimize/linesearch.py:478: LineSearchWarning: The line search algorithm did not converge
+  warn('The line search algorithm did not converge', LineSearchWarning)
+/trinity/shared/easybuild/software/SciPy-bundle/2021.05-foss-2021a/lib/python3.9/site-packages/scipy/optimize/linesearch.py:327: LineSearchWarning: The line search algorithm did not converge
+  warn('The line search algorithm did not converge', LineSearchWarning)
+/trinity/shared/easybuild/software/SciPy-bundle/2021.05-foss-2021a/lib/python3.9/site-packages/scipy/optimize/linesearch.py:478: LineSearchWarning: The line search algorithm did not converge
+  warn('The line search algorithm did not converge', LineSearchWarning)
+/trinity/shared/easybuild/software/SciPy-bundle/2021.05-foss-2021a/lib/python3.9/site-packages/scipy/optimize/linesearch.py:327: LineSearchWarning: The line search algorithm did not converge
+  warn('The line search algorithm did not converge', LineSearchWarning)
+/trinity/shared/easybuild/software/scikit-learn/0.24.2-foss-2021a/lib/python3.9/site-packages/sklearn/utils/optimize.py:202: ConvergenceWarning: newton-cg failed to converge. Increase the number of iterations.
+  warnings.warn("newton-cg failed to converge. Increase the "
+/trinity/shared/easybuild/software/scikit-learn/0.24.2-foss-2021a/lib/python3.9/site-packages/sklearn/utils/optimize.py:202: ConvergenceWarning: newton-cg failed to converge. Increase the number of iterations.
+  warnings.warn("newton-cg failed to converge. Increase the "
