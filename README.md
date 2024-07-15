@@ -62,9 +62,10 @@ EnhancerX/
 |   └── la_grande_table_gen.py
 |
 ├── model/
-|   ├── proto_HMM.py
-|   ├── proto_CNN.py
-|   └── prediction.txt
+|   ├── Random Forest/
+|   ├── MLP/
+|   ├── logistic_regression
+|   └── gradient_boosting
 |
 ├── plots/
 |   ├── RatioCalculation.py
@@ -150,20 +151,12 @@ Function mucho_load is defined, which takes chromosome number (string format: "c
 ## Models
 Different models here.
 
-### HMM
-Currently in a proto state.  
+### MLP 
 Run directly.  
-Current relevant values for analysis right now are: 
-- Chromosome 1.
-- Positions 0 through 2M.
-- 2-state-markov chain (non-enhancer or enhancer, by base pair).
-
-### CNN
-Currently in proto state.  
-Run directly.  
-- Definable chromosome number.
-- Definable base pair range.
-- 800 wide input layer (sliding window).
+Saves predictions in la grande table (NN_results folder).  
+Runs first on chromosome all, which is a concatenation of all chromosomes, and then individually.  
+Runs a combination of different Neural Network structures, different batch sizes, learning rates, number of epochs and lists of features.  
+After finished, can run plotting.py, to produce plots to visualize how the MLP performs on different metrics accross all combinations of hyperparameters, and all three lists of features.  
 
 ## Plots
 

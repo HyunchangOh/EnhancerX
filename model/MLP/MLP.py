@@ -297,8 +297,8 @@ def run_model(chromosome_number, features_list, num_epochs = 5, batch_size = 32,
 
         # Save test vs predictions to a npy for later assesment if necessary
         y_test = np.array(y_test)
-        #save_res = "../../../../../scratch/ohh98/Subsampled_Final/NN_results/"
-        save_res = "temp/"
+        save_res = "../../../../../scratch/ohh98/Subsampled_Final/NN_results/"
+        #save_res = "temp/"
         file_name = "testvpred" + "_" + str(structure) + "_" + str(batch_size) + "_" + str(lrn_rate) + "_" + str(num_epochs)
         np.save((save_res + chromosome_number + "/" + f_list + "/" + file_name + ".npy"), np.column_stack((y_test, binary_predictions)))
         
@@ -430,18 +430,6 @@ def tryout(chromosome_number, feature_list, structures, num_epochs, batch_size, 
     print("#"*90)
     print(("#"*90) + "\n")
 
-# for i in chromosomes[:-1]:
-#     # order: chr_no, feat_list, num_epochs, batch_size, learn_rate, feat_list_name
-#     tryout(i, feature_mix, structures, [5, 10, 15], [32, 64, 128], [0.001, 0.0001, 0.00001], "feature_mix")
-
-# for i in chromosomes[:-1]:
-#     # order: chr_no, feat_list, num_epochs, batch_size, learn_rate, feat_list_name
-#     tryout(i, feature_mem, structures, [5, 10, 15], [32, 64, 128], [0.001, 0.0001, 0.00001], "feature_mem")
-
-# for i in chromosomes[:-1]:
-#     # order: chr_no, feat_list, num_epochs, batch_size, learn_rate, feat_list_name
-#     tryout(i, feature_dist, structures, [5, 10, 15], [32, 64, 128], [0.001, 0.0001, 0.00001], "feature_dist")
-
 try_learn_rate = [0.001, 0.0001, 0.00001]
 try_batch_size = [32, 64, 128]
 try_epochs = [5, 10, 15]
@@ -450,7 +438,13 @@ try_epochs = [5, 10, 15]
 # tryout("all", feature_mem, structures, try_epochs, try_batch_size, try_learn_rate, "feature_mem")
 # tryout("all", feature_dist, structures, try_epochs, try_batch_size, try_learn_rate, "feature_dist")
 
-# Let's try only for chromosome 1
+# First run on chromosome all, which is a concatenation of all chromosomes
 tryout("all", feature_mix, structures, try_epochs, try_batch_size, try_learn_rate, "feature_mix")
 tryout("all", feature_mem, structures, try_epochs, try_batch_size, try_learn_rate, "feature_mem")
 tryout("all", feature_dist, structures, try_epochs, try_batch_size, try_learn_rate, "feature_dist")
+
+# And then run on all chromosomes
+for i in chromosomes[:-1]:
+    tryout(i, feature_mix, structures, try_epochs, try_batch_size, try_learn_rate, "feature_mix")
+    tryout(i, feature_mem, structures, try_epochs, try_batch_size, try_learn_rate, "feature_mem")
+    tryout(i, feature_dist, structures, try_epochs, try_batch_size, try_learn_rate, "feature_dist")
