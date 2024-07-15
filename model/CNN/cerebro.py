@@ -139,7 +139,7 @@ def check_unique_n_first_n(feature, chromosome_number, path = "../../../../../sc
     print("\n")
 
 
-check_unique_n_first_n("BIN50_enhancer_atlas", "chr1", path = "../../../../../scratch/ohh98/Subsampled_Final/")
+#check_unique_n_first_n("BIN50_enhancer_atlas", "chr1", path = "../../../../../scratch/ohh98/Subsampled_Final/")
 #check_unique_n_first_n("BIN50_Interaction_1D_Dist", "chr1", path = "../../../../../scratch/ohh98/Subsampled_Final/")
 
 save_res = "../../../../../scratch/ohh98/Subsampled_Final/NN_results/"
