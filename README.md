@@ -2,9 +2,11 @@
 Annotate enhancer regions from other genomic annotations using various machine-learning techniques. 
 
 
+
 ### Data
 We are dealing with big data, therefore we do not upload it directly to the GitHub repo. The data can be accessed through link: 
 
+[Enhancer X Workflow Overview](OverviewWorkflow.png) I
 
 ## Organization
 Minor helper functions are skipped
