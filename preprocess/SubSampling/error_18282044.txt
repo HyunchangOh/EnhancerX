@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "/home/ohh98/enhancerX/preprocess/SubSampling/combine_all.py", line 39, in <module>
-    np.save(path+"all/"+filename,a)
-  File "/trinity/shared/easybuild/software/SciPy-bundle/2023.07-gfbf-2023a/lib/python3.11/site-packages/numpy/lib/npyio.py", line 542, in save
-    file_ctx = open(file, "wb")
-               ^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '/scratch/ohh98/Subsampled_Final/all/BIN50_CTCF_1D_Dist.npy'
