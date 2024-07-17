@@ -1,3 +1,6 @@
+# Developers Handbook
+This is a practical handbook for developers, an exthensive documentation of the organization files, the troubleshooting, along with HPC commands.
+
 ## Organization
 Minor helper functions are skipped
 ```
