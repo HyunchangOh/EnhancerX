@@ -26,8 +26,8 @@ This project features several well-established machine-learning algorithms tailo
  - Metrics such as accuracy, precision, recall, F1-score, and ROC AUC are calculated for each fold and saved.
 
 #### Metrics
- - Number of Trees: 100
- - Tree Depth: The default setting of None is used, meaning nodes are expanded until all leaves are pure or contain less than the minimum samples required for splitting.
- - Splitting Criteria: Gini impurity is used as the measure for splitting nodes.
+ - **Number of Trees:** 100
+ - **Tree Depth:** The default setting of None is used, meaning nodes are expanded until all leaves are pure or contain less than the minimum samples required for splitting.
+ - **Splitting Criteria:** Gini impurity is used as the measure for splitting nodes.
 
 ### Multilayer Perceptron (MLP) '''hidden_layer_sizes=(32-64), learning_rate =0.01-0.0001, batch_size = 32-128'''
