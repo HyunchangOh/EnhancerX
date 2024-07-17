@@ -1,29 +1,9 @@
 # EnhancerX
-Annotate Enhancers using various ML techniques
+Annotate enhancer regions from other genomic annotations using various machine-learning techniques. 
 
-## INTERN_Rules
-
-READ THE ORGANIZATION AND STICK TO THE STRUCTURE  
-BE ORGANIZED  
-Rules can be changed through democratic means.
 
 ### Data
-DO NOT upload data to github repo directly. 
-
-The folder 'data' is added to .gitignore, so anything inside that folder will be ignored by git.
-
-### Log
-If you write a code, or modify anything that uses a new data, update README.md - Data section and Organization section on how to download/unzip the raw data accordingly.
-
-Provide whatever necessary tech-tutorials to "TroubleShooting"
-
-Writing small logs on DEVDIARY.md may help others and help you get back to work quickly later.
-
-### Formats
-Use tsv, not csv if possible. (decimal point , . conversion error can screw things up)
-Use hard typing if possible.
-Use docstring if possible.
-Showing Database Format (header + head(1)) in a comment can help, whereever you call data from a database.
+We are dealing with big data, therefore we do not upload it directly to the GitHub repo. The data can be access through link: 
 
 
 ## Organization
@@ -68,20 +48,17 @@ EnhancerX/
 |   └── gradient_boosting
 |
 ├── plots/
-|   ├── RatioCalculation.py
-|   └── DistributionPlots.py
+|   ├── Vingron
+|   └── Vingron3D
 |
 ├── .gitignore
 └── README.md
 ```
 
-Goal is to make this table as large as possible WITHOUT HARMING THE INTEGRITY
-
 * enrichment_GC_PER_sequence.tsv
 sequence(hg19 chr1) / GC_content / enrichment_score (enhancerAtlas GM12878 chr1)
 
 ## Data 
-Put all raw data into 'data' directory. Make a subdirectory for each database you use.
 
 The following explains how the data was accessed and what they are.
 
@@ -148,33 +125,6 @@ La grande table is a structure of folders as defined in the folder structure abo
 It is automatically created running processed/la_grande_table_gen.py, using whichever fasta files there are loaded in data/hg19/ for the sequence ("seq") and coding/non-coding annotation ("cod"), and files in data/enhancer_atlas/ for enhancer/non-enhancer annotation ("atl").  
 Function mucho_load is defined, which takes chromosome number (string format: "chr1", "chr2", etc) and list of features or columns to load (list format: ["seq", "cod", "atl"]) as input paramenters, and returns la grande table as a numpy array with shape (no_cols, length_seq). To access a specific data point, for example: la_grande_table[seq][100234].  
 
-## Models
-Different models here.
-
-### MLP 
-Run directly.  
-Saves predictions in la grande table (NN_results folder).  
-Runs first on chromosome all, which is a concatenation of all chromosomes, and then individually.  
-Runs a combination of different Neural Network structures, different batch sizes, learning rates, number of epochs and lists of features.  
-After finished, can run plotting.py, to produce plots to visualize how the MLP performs on different metrics accross all combinations of hyperparameters, and all three lists of features.  
-
-## Plots
-
-### Steps
-
-#### Ratio Calculation 
- The script `RatioCalculation.py` loads data from the `la_grande` table and performs 1D calculations. It processes the data to categorize values: numbers as possible sites (non-zero) and zeros as not. It then computes the ratio of possible sites to total entries, representing their density along chromatin. The results are saved to `Cleaned_Merged_Ratio_Results.csv`.
-
-#### Distribution Plots 
-The script performs data visualization for statistical analysis of distances. It takes the main table generated from `Cleaned_Merged_Ratio_Results.csv` and creates the following plots:
-
- 1. **Heatmap of Feature Correlations Across Chromosomes:** This plot shows the correlation matrix between different features across chromosomes using a heatmap.
- 2. **Scatter Plot of Ratios per Feature by Chromosome:** This plot displays scatter plots for each feature, showing the distribution of ratios across different chromosomes.
- 3. **Line Plot of Average Ratios per Chromosome by Feature:** This plot illustrates the average ratio trend across chromosomes for each feature using line plots.
- 4. **Bar Plot of Average Ratios Across Chromosomes:** This plot provides a bar plot showing the average ratio across all chromosomes.
- 5. **Strip Plot of Ratios Across Chromosomes:** This plot shows individual data points (ratios) across chromosomes using a strip plot.
- 6. **Facet Grid of Histograms:** This facet grid shows histograms of ratios for each feature across different chromosomes.
- 7. **Bar Plot of Ratios by Chromosome and Feature:** This plot displays a bar plot that compares ratios across both chromosomes and features.
 
 ## TroubleShooting
 Here are some instructions to tackle frequently encountered problems or tips for technical issues.
