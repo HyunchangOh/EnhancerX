@@ -6,8 +6,13 @@ from sklearn.model_selection import KFold
 from sklearn.metrics import classification_report, roc_auc_score, accuracy_score, precision_score, recall_score, f1_score
 import pickle
 
+'''
+This code is the Random Forest model trained on the subsampled_reboot directory.
+It takes all the chromosome inputs
+'''
+
 # Define paths
-input_dir = '/scratch/ohh98/LGT_subsampled_reboot/'
+input_dir = '/LGT_subsampled_reboot/' #edit here for the relative path
 chr_folder = 'all'
 chromosomes = [
         'chr1',

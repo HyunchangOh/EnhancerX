@@ -6,8 +6,34 @@ from sklearn.model_selection import KFold
 from sklearn.metrics import classification_report, roc_auc_score, accuracy_score, precision_score, recall_score, f1_score
 import pickle
 
+
+'''
+This code is run-tested per chromosome. The result outputs can be found in .txt files.
+Only one .py file is kept as the code repeats itself.
+
+Preprocess Data:
+Replace infinite values with ten times the max finite value and one-hot encode categorical features.
+
+Features Matrix Transformation:
+Horizontally combine all feature arrays to create the design matrix X. Convert the response variable to binary format.
+
+Handle Missing Values:
+Replace NaNs with the column mean and replace infinities with ten times the max finite value.
+Ensure no NaNs or infinities remain in the dataset.
+
+Model Setup:
+n_estimators=100, random_state=42 with 5-fold cross-validation to split data into training and testing sets.
+Then for each fold:
+1. Split data into training and testing sets.
+2. Train a RandomForest model.
+3. Save the trained model.
+4. Predict probabilities and classes for the test set.
+5. Compute and store evaluation metrics (accuracy, precision, recall, F1 score, ROC AUC).
+6. Print classification report and ROC AUC for each fold.
+'''
+
 # Define paths
-input_dir = '../../../../../scratch/ohh98/la_grande_table_subsampled/subsampled_data'
+input_dir = '/la_grande_table_subsampled/subsampled_data' #edit here for your relative path in the data
 chr_folder = 'chrX'
 data_dir = os.path.join(input_dir, chr_folder)
 response_file = os.path.join(data_dir, 'BIN50_enhancer_atlas.npy')
@@ -106,4 +132,3 @@ with open(os.path.join(model_save_dir, "metrics.pkl"), "wb") as f:
 
 print("Training complete.")
 
-# 18.50 submitted 18251314
