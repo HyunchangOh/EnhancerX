@@ -12,7 +12,7 @@ This project features several well-established machine-learning algorithms tailo
 ### Gradient Boosting 
 '''num_estimators(trees)=10, learning_rate = 0.1, min_samples_split=2, min_samples_leaf=1, max_depth = 3'''
 
-### Random Forest '''num_estimators(trees)=10, min_samples_split=2, min_samples_leaf=1, max_depth = None'''
+### Random Forest 
 
 #### Data Loading and Preprocessing:
 -Loads response variable (response) indicating enhancer regions.
