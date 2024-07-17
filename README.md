@@ -3,7 +3,7 @@ Annotate enhancer regions from other genomic annotations using various machine-l
 
 
 ### Data
-We are dealing with big data, therefore we do not upload it directly to the GitHub repo. The data can be access through link: 
+We are dealing with big data, therefore we do not upload it directly to the GitHub repo. The data can be accessed through link: 
 
 
 ## Organization
