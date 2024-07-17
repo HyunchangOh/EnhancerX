@@ -8,10 +8,7 @@ This GitHub repository contains all the code used for creating the region model,
 
 
 ## Workflow
-![Enhancer X Workflow Overview](OverviewWorkflow.png) I
-
-
-
+![Enhancer X Workflow Overview](OverviewWorkflow.png) 
 
 ## Organization
 Minor helper functions are skipped
