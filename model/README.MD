@@ -30,4 +30,10 @@ This project features several well-established machine-learning algorithms tailo
  - **Tree Depth:** The default setting of None is used, meaning nodes are expanded until all leaves are pure or contain less than the minimum samples required for splitting.
  - **Splitting Criteria:** Gini impurity is used as the measure for splitting nodes.
 
-### Multilayer Perceptron (MLP) '''hidden_layer_sizes=(32-64), learning_rate =0.01-0.0001, batch_size = 32-128'''
+### Multilayer Perceptron (MLP) 
+Run directly.  
+Saves predictions in la grande table (NN_results folder).  
+Runs first on chromosome all, which is a concatenation of all chromosomes, and then individually.  
+Runs a combination of different Neural Network structures, different batch sizes, learning rates, number of epochs and lists of features.  
+After finished, can run plotting.py, to produce plots to visualize how the MLP performs on different metrics across all combinations of hyperparameters, and all three lists of features.  
+
