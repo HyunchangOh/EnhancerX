@@ -5,10 +5,10 @@ import time
 from sklearn.metrics import classification_report, roc_auc_score, accuracy_score, precision_score, recall_score, f1_score
 import matplotlib.pyplot as plt
 
-time_jaja = time.time()
+time_plot = time.time()
 
 # Define the save directory for metrics
-save_dir = 'temp/'
+save_dir = '../../Subsampled_Final/NN_results'
 
 # Define the chromosomes and features directories
 chromosomes = ['chr1', 'chr21', 'all']
@@ -18,11 +18,10 @@ features_list = ['feature_mix', 'feature_dist', 'feature_mem']
 for chromosome in chromosomes:
     for feature in features_list:
         metrics_save_dir = os.path.join(save_dir, 'metrics', chromosome, feature)
-        os.makedirs(metrics_save_dir, exist_ok=True)
-        #print(f"Created directory: {metrics_save_dir}")
+        os.makedirs(metrics_save_dir, exist_ok = True)
 
 # Define the root directory
-root_dir = 'temp/'
+root_dir = '../../Subsampled_Final/'
 
 # Function to calculate metrics
 def calculate_metrics(y_test, y_pred, y_pred_prob):
@@ -113,4 +112,4 @@ for chromosome in chromosomes:
             plt.savefig(plot_path)
             plt.close()
 
-print("Metrics calculation and plotting complete for all chromosomes and features. Done in %s seconds." % round(time.time() - time_jaja))
+print("Metrics calculation and plotting complete for all chromosomes and features. Done in %s seconds." % round(time.time() - time_plot))
