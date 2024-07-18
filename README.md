@@ -7,7 +7,70 @@ Our goal with Enhancer X is to predict enhancers using different genomic annotat
 This GitHub repository contains all the code used for creating the region model, including data preprocessing, various model constructions and data visualizations. Since we are dealing with big data, it will not be uploaded to the GitHub repo. The sub-sampled data can be accessed through the following link:  
 https://drive.google.com/file/d/1xoGo9fNkEYFD-tSqfSNv6_HMYIbnYulb/view?usp=sharing
 
+Data is structured as one folder for each chromosome, and inside, one .npy file per feature (already binned and sub-sampled). As an example, the file that stores the 3D distances from h3k4me1 methylation sites to promoters, from chromosome 1, is located at:  
+/Susampled_Final/chr1/BIN50_h3k4me1_3D_Dist.npy  
+See list of features below.
+
 
 ## Workflow
 ![Enhancer X Workflow Overview](OverviewWorkflow.png) 
 
+## Features  
+
+Tip: file_name = "BIN50_" + feature_name + ".npy"  
+
+### Predictor variable  
+
+  enhancer_atlas
+
+
+### List of features  
+
+  cod  
+  cod_1D_Dist  
+
+  promoter_any  
+  promoter_1D_Dist_any  
+  promoter_3D_Dist_any  
+  promoter_forward  
+  promoter_1D_Dist_forward  
+  promoter_reverse  
+  promoter_1D_Dist_reverse  
+
+  h3k4me1  
+  Bh3k4me1_1D_Dist  
+  Bh3k4me1_3D_Dist  
+
+  h3k4me2  
+  Bh3k4me2_1D_Dist  
+  h3k4me2_3D_Dist  
+
+  h3k9me3  
+  h3k9me3_1D_Dist  
+  h3k9me3_3D_Dist  
+
+  h3k27ac  
+  h3k27ac_1D_Dist  
+  h3k27ac_3D_Dist  
+
+  h3k27me3  
+  h3k27me3_1D_Dist  
+  h3k27me3_3D_Dist  
+
+  h3k36me3  
+  h3k36me3_1D_Dist  
+  h3k36me3_3D_Dist  
+
+  CTCF  
+  CTCF_1D_Dist  
+  CTCF_3D_Dist  
+    
+  DHS  
+  DHS_1D_Dist  
+  DHS_3D_Dist  
+
+  EP300Conservative  
+  EP300Conservative_1D_Dist  
+  EP300Conservative_3D_Dist  
+
+  Interaction_1D_Dist  
