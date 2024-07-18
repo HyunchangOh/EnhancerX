@@ -1,8 +1,0 @@
-chr2
-reverse done
-chr3
-reverse done
-chr7
-reverse done
-chr9
-reverse done

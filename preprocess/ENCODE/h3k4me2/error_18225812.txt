@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/home/ohh98/enhancerX/preprocess/ENCODE/h3k4me2/annotate.py", line 6, in <module>
-    f = open("../../../data/ENCODE/h3k4me2/ENCFF250KUQ.bed","r")
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../../../data/ENCODE/h3k4me2/ENCFF250KUQ.bed'

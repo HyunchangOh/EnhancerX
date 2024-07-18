@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/home/ohh98/enhancerX/preprocess/VISTA/annotate.py", line 53, in <module>
-    forwards[chromosome][i] = True
-    ~~~~~~~~~~~~~~~~~~~~^^^
-IndexError: index 83057021 is out of bounds for axis 0 with size 78077248

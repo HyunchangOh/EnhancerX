@@ -15,6 +15,57 @@ See list of features below.
 ## Workflow
 ![Enhancer X Workflow Overview](OverviewWorkflow.png) 
 
+## Orgnisation
+EnhancerX/
+|
+├── data/*omitted on Github
+|   ├── hg19/ *reference
+|   |   └── chr1.fa
+|   ├── ...
+|   └── enhancer_atlas/
+|       └── GM12878.txt
+|
+├── la_grande_table/*omitted on Github
+|   ├── chr1/
+|   ├── chr2/
+|   ├── ...
+|   └── chrY/
+|
+├── preprocess/
+|   ├── 3DIV/
+|   ├── ENCODE/
+|   |   ├── CTCF/
+|   |   ├── .../ *more directories per feature
+|   |   └── h3k36me3/
+|   |        ├── annotate.py *reads raw data to create boolean annotation
+|   |        ├── calculate_1D_distance.py *calculate 1D distance to nearest feature
+|   |        └── calculate_3D_distance.py *calculate 3D distance to nearest feature
+|   |
+|   ├── .../ *more directories per database
+|   ├── SubSampling/ *performs subsampling
+|   └── bin/ *performs binning
+|
+├── processed/
+|   ├── VISTA/
+|   |   └── vista.tsv 
+|   ├── enrichment_GC_PER_sequence.tsv
+|   └── la_grande_table_gen.py
+|
+├── model/
+|   ├── Random Forest/
+|   ├── MLP/
+|   ├── logistic_regression
+|   └── gradient_boosting
+|
+├── plots/
+|   ├── Vingron
+|   └── Vingron3D
+|
+├── .gitignore
+└── README.md
+
+### Preprocess
+
 ## Features  
 
 Tip: file_name = "BIN50_" + feature_name + ".npy"  

@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/home/ohh98/enhancerX/preprocess/VISTA/annotate.py", line 50, in <module>
-    chromosome = chromosome_converter[l[1]]
-                 ~~~~~~~~~~~~~~~~~~~~^^^^^^
-KeyError: 'chr'
