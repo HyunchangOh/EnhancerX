@@ -16,6 +16,7 @@ See list of features below.
 ![Enhancer X Workflow Overview](OverviewWorkflow.png) 
 
 ## Orgnisation
+'''
 EnhancerX/
 |
 ├── data/*omitted on Github
@@ -63,7 +64,7 @@ EnhancerX/
 |
 ├── .gitignore
 └── README.md
-
+'''
 ### Preprocess
 
 ## Features  
