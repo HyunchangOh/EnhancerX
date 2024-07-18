@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/home/ohh98/enhancerX/model/gradient_boosting/sandbox.py", line 28, in <module>
-    for file in os.listdir(legacy_data_dir):
-NameError: name 'legacy_data_dir' is not defined

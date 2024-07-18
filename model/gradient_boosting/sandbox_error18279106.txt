@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/home/ohh98/enhancerX/model/gradient_boosting/model.py", line 28, in <module>
-    for file in os.listdir(legacy_data_dir):
-FileNotFoundError: [Errno 2] No such file or directory: '/scratch/ohh98/la_grande_table_subsampled/subsampled_data/all'

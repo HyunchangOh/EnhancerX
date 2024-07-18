@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/home/ohh98/enhancerX/model/gradient_boosting/metropolis_hastings/HP_tuning_mp.py", line 122, in <module>
-    Q_Current_from_proposed = proposal_prob(learning_rate,learning_rate_p,sigma_l)*proposal_prob(min_leaves,mean_leaves_p,sigma_p)*proposal_prob(max_depth,max_depth_p,sigma_p)
-NameError: name 'mean_leaves_p' is not defined

@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/home/ohh98/enhancerX/model/gradient_boosting/metropolis_hastings/HP_tuning_mp.py", line 104, in <module>
-    for i in range(niters):
-NameError: name 'niters' is not defined

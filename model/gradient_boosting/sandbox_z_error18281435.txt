@@ -1,4 +1,0 @@
-  File "/home/ohh98/enhancerX/model/gradient_boosting/sandbox.py", line 29
-    if  file.startswith('BIN50_') and file.endswith('.npy') and and not file.startswith("BIN50_enhancer_atlas"):
-                                                                ^
-SyntaxError: invalid syntax

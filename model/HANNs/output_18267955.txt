@@ -1,2 +1,0 @@
-Training on chr1
-Testing on chr1

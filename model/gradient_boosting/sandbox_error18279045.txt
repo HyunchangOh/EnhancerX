@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/home/ohh98/enhancerX/model/gradient_boosting/model.py", line 15, in <module>
-    legacy_data_dir = os.path.join(legacy_data,chr_folder)
-NameError: name 'legacy_data' is not defined
