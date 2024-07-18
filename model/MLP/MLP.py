@@ -19,7 +19,7 @@ from sklearn.metrics import confusion_matrix, precision_score
 #########################################################################################################
 ## Globals
 
-save_res = "../../../../../scratch/ohh98/Subsampled_Final/NN_results/"
+save_res = "../../Subsampled_Final/NN_results/"
 chromosomes = [
         "chr1",
         "chr2",
@@ -175,11 +175,11 @@ structures = [
 #########################################################################################################
 
 #########################################################################################################
-## Standardized loading function
+## Standardized loading function. Take feature list as input.
 
 def mucho_load(chromosome_number, features_list,  validation = "BIN50_enhancer_atlas"):
 
-    file_path = "../../../../../scratch/ohh98/Subsampled_Final/" + chromosome_number + "/"
+    file_path = "../../Subsampled_Final/" + chromosome_number + "/"
     
     mucho_time = time.time()
 
@@ -211,7 +211,7 @@ def mucho_load(chromosome_number, features_list,  validation = "BIN50_enhancer_a
 
 
 #########################################################################################################
-## Function to build the neural network model
+## Function to construct the Neural Network model.
 
 def build_model(input_shape, structure):
 
@@ -227,7 +227,7 @@ def build_model(input_shape, structure):
 
 
 #########################################################################################################
-## Model definition and running
+## Model definition and running.
 
 def run_model(chromosome_number, features_list, num_epochs = 5, batch_size = 32, validation = "BIN50_enhancer_atlas", structures = [[32, 32, 32]], lrn_rate = 0.001, f_list = "feature_mix"):
 
@@ -258,7 +258,6 @@ def run_model(chromosome_number, features_list, num_epochs = 5, batch_size = 32,
         "auc": []
     }
 
-    #print("------------------- RUNNING " + chromosome_number + "  -------------------\n")
     chr_time = time.time()
 
     for structure in structures:
@@ -269,7 +268,6 @@ def run_model(chromosome_number, features_list, num_epochs = 5, batch_size = 32,
         # Compile the model
         model.compile(optimizer = tf.keras.optimizers.Adam(learning_rate = lrn_rate),
                     loss = "binary_crossentropy",
-                    #metrics=["accuracy", tf.keras.metrics.AUC()])
                     metrics=["accuracy"])
 
         # Train the model
@@ -282,23 +280,14 @@ def run_model(chromosome_number, features_list, num_epochs = 5, batch_size = 32,
         results = model.evaluate(X_test, y_test, verbose = 0)
         result_dict = {name: result for name, result in zip(model.metrics_names, results)}
         acc_list.append((structure, result_dict["accuracy"]))
-        # print("RESULT DICT:")
-        # print(result_dict)
-        #auc_list.append((structure, result_dict["auc"]))
 
-        # Print available metrics results
-        """
-        for name, result in zip(model.metrics_names, results):
-            print("Test", name, ":", result)
-        """
         # Make predictions on the test set, classify more than 0.5 as enh, less as non-enh, from sigmoid act function
         predictions = model.predict(X_test)
         binary_predictions = (predictions > 0.5).astype(int)
 
         # Save test vs predictions to a npy for later assesment if necessary
         y_test = np.array(y_test)
-        save_res = "../../../../../scratch/ohh98/Subsampled_Final/NN_results/"
-        #save_res = "temp/"
+        save_res = "../../Subsampled_Final/NN_results/"
         file_name = "testvpred" + "_" + str(structure) + "_" + str(batch_size) + "_" + str(lrn_rate) + "_" + str(num_epochs)
         np.save((save_res + chromosome_number + "/" + f_list + "/" + file_name + ".npy"), np.column_stack((y_test, binary_predictions)))
         
@@ -313,7 +302,6 @@ def run_model(chromosome_number, features_list, num_epochs = 5, batch_size = 32,
 
     # Sort the results based on accuracy and ppv
     sorted_acc = sorted(acc_list, key=lambda x: x[1], reverse=True)
-    #sorted_auc = sorted(auc_list, key=lambda x: x[1], reverse=True)
     sorted_ppv = sorted(list(zip(structures, ppv_list)), key=lambda x: x[1], reverse=True)
 
     # Print the sorted results
@@ -321,20 +309,13 @@ def run_model(chromosome_number, features_list, num_epochs = 5, batch_size = 32,
     for structure, accuracy in sorted_acc:
         print(structure, "Accuracy:", accuracy)
     
-    # print("\nSorted results based on AUC:")
-    # for structure, auc in sorted_auc:
-    #     print(structure, "AUC:", auc)
-    
     print("\nSorted results based on ppv:")
     for structure, ppv_v in sorted_ppv:
         print(structure, "PPV:", ppv_v)
     
     # Add results to dictionary of lists:
     prel_res["acc"].append(sorted_acc[0])
-    #prel_res["auc"].append(sorted_auc[0])
     prel_res["ppv"].append(sorted_ppv[0])
-
-    #print("\n------------------------ Ran NN on " + chromosome_number + " in %s seconds ------------------------\n" % round(time.time() - chr_time))
     
     # want to maybe return a list with results, maybe only top structure results
     return prel_res
@@ -418,7 +399,6 @@ def tryout(chromosome_number, feature_list, structures, num_epochs, batch_size, 
             print("\n")
         print("Top results for number of epochs " + str(i) + ":")
         print("Top accuracy:", result_list1[j]["acc"])
-        #print("Top AUC:", result_list1[j]["auc"])
         print("Top PPV:", result_list1[j]["ppv"])
         j += 1
 
@@ -433,10 +413,6 @@ def tryout(chromosome_number, feature_list, structures, num_epochs, batch_size, 
 try_learn_rate = [0.001, 0.0001, 0.00001]
 try_batch_size = [32, 64, 128]
 try_epochs = [5, 10, 15]
-
-# tryout("all", feature_mix, structures, try_epochs, try_batch_size, try_learn_rate, "feature_mix")
-# tryout("all", feature_mem, structures, try_epochs, try_batch_size, try_learn_rate, "feature_mem")
-# tryout("all", feature_dist, structures, try_epochs, try_batch_size, try_learn_rate, "feature_dist")
 
 # First run on chromosome all, which is a concatenation of all chromosomes
 tryout("all", feature_mix, structures, try_epochs, try_batch_size, try_learn_rate, "feature_mix")
