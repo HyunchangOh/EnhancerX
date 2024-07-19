@@ -3,7 +3,7 @@
 ## Steps
 
 ### Ratio Calculation 
- The script `RatioCalculation.py` loads data from the `la_grande` table and performs 1D calculations. It processes the data to categorize values: numbers as possible sites (non-zero) and zeros as not. It then computes the ratio of possible sites to total entries, representing their density along chromatin. The results are saved to `Cleaned_Merged_Ratio_Results.csv`.
+ The script `RatioCalculation.py` loads data from the `la_grande_table` and performs 1D calculations. It processes the data to categorize values: numbers as possible sites (non-zero) and zeros as not. It then computes the ratio of possible sites to total entries, representing their density along chromatin. The results are saved to `Cleaned_Merged_Ratio_Results.csv`.
 
 ### Distribution Plots 
 The script performs data visualization for statistical analysis of distances. It takes the main table generated from `Cleaned_Merged_Ratio_Results.csv` and creates the following plots:
