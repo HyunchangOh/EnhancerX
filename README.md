@@ -15,7 +15,7 @@ See list of features below.
 ## Workflow
 ![Enhancer X Workflow Overview](OverviewWorkflow.png) 
 
-## Orgnisation
+## Organisation
 ```
 EnhancerX/
 |
