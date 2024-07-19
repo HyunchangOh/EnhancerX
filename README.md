@@ -104,6 +104,7 @@ bin contains for binnning, which is combining the features of 'n=50' subsequent 
 
 * Subsampling
 As there are much more non-enhancers than enhancers, subsampling has been performed to tackle this imbalance (subsampling ratio 1:1)
+
 ---
 
 ### Plots
@@ -116,6 +117,7 @@ Statistical Tests include:
 Note that Mann-Whitney test was the valid and applicable test to be selected.
 
 Also contains 'contributing_feature/' which calculates the most contributing features and plot them for tree-like learning algorithms.
+
 ---
 
 
@@ -138,6 +140,7 @@ The subdirectories 'Random Forest' and 'gradient_boosting' contains an additiona
 This subdirectory contains code to apply each learning method to 'interchromosome analysis', where the model is trained for one chromosome and tested for all other chromosomes for robustness.
 
 Also, the (sub)finally selected models are applied to the entire data to yield the final evaluation metrics at the root directory of this subdirectory.
+
 ---
 ### Interaction_model
 
@@ -151,6 +154,7 @@ https://orangedatamining.com/download/
 #### How to Use the Workflow
 The orange workflow that we used is stored at the directory "interaction_model." 
 After Orange has been installed, open the .ows file with Orange and download '3div.tsv' from the drive and feed it into the 'Data' widget.
+
 ---
 
 ## Features  
