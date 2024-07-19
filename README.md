@@ -103,14 +103,14 @@ bin contains for binnning, which is combining the features of 'n=50' subsequent 
 * Subsampling
 As there are much more non-enhancers than enhancers, subsampling has been performed to tackle this imbalance (subsampling ratio 1:1)
 
-### plots
+### Plots
 Vingron plots are distribution plots of enhancer-feature / promoter-feature distances which were used to justify the use of our feature engineering involving 1D and 3D distances.
 
 Also contains 'FeatureAnalysis.py' which calculates the most contributing features and plot them for tree-like learning algorithms.
 
 For further information for the plots, refer to the README in this directory.
 
-### model
+### Model
 For more details on the model directory and finally selected models, refer to the README in the model directory.
 
 #### Learning Methods
@@ -125,12 +125,12 @@ Note that the directory also contains many different versions of each learning m
 #### Metropolis Hastings
 The subdirectories 'Random Forest' and 'gradient_boosting' contains an additional subdirectory called 'metropolis_hastings.' As they were the most well-performing models in the exploratory models, metropolis hastings algorithm was applied to further fine-tune the hyperparameters. This directory also contains code to plot the progress of the algorithm.
 
-#### overall_analysis
+#### Overall_analysis
 This subdirectory contains code to apply each learning method to 'interchromosome analysis', where the model is trained for one chromosome and tested for all other chromosomes for robustness.
 
 Also, the (sub)finally selected models are applied to the entire data to yield the final evaluation metrics at the root directory of this subdirectory.
 
-### interaction_model
+### Interaction_model
 
 #### How to Install Orange
 Orange is a GUI-based data mining software that offers scikit-learn based learning algorithms. As the interaction database was small enough to be run locally, Orange was used predominantly to train and test the interaction models. 
