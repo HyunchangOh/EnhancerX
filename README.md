@@ -77,6 +77,8 @@ EnhancerX/
 ├── .gitignore
 └── README.md
 ```
+---
+
 
 ### preprocess
 
@@ -102,13 +104,20 @@ bin contains for binnning, which is combining the features of 'n=50' subsequent 
 
 * Subsampling
 As there are much more non-enhancers than enhancers, subsampling has been performed to tackle this imbalance (subsampling ratio 1:1)
+---
 
 ### Plots
-Vingron plots are distribution plots of enhancer-feature / promoter-feature distances which were used to justify the use of our feature engineering involving 1D and 3D distances.
+Vingron plots are distribution plots of enhancer-feature / promoter-feature distances which were used to justify the use of our feature engineering involving 1D and 3D distances. Also contains various statistical tests for hypothesis testing: if the samples (distances) drawn from distributions from different chromosomes are indeed from different chromosomes, or in other words, are the distributions different enough to be called different?
 
-Also contains 'FeatureAnalysis.py' which calculates the most contributing features and plot them for tree-like learning algorithms.
+Statistical Tests include:
+* Chi Square Test
+* Mann Whitney Test
+* Kolmogorov Smirnov Test
+Note that Mann-Whitney test was the valid and applicable test to be selected.
 
-For further information for the plots, refer to the README in this directory.
+Also contains 'contributing_feature/' which calculates the most contributing features and plot them for tree-like learning algorithms.
+---
+
 
 ### Model
 For more details on the model directory and finally selected models, refer to the README in the model directory.
@@ -129,7 +138,7 @@ The subdirectories 'Random Forest' and 'gradient_boosting' contains an additiona
 This subdirectory contains code to apply each learning method to 'interchromosome analysis', where the model is trained for one chromosome and tested for all other chromosomes for robustness.
 
 Also, the (sub)finally selected models are applied to the entire data to yield the final evaluation metrics at the root directory of this subdirectory.
-
+---
 ### Interaction_model
 
 #### How to Install Orange
@@ -142,7 +151,7 @@ https://orangedatamining.com/download/
 #### How to Use the Workflow
 The orange workflow that we used is stored at the directory "interaction_model." 
 After Orange has been installed, open the .ows file with Orange and download '3div.tsv' from the drive and feed it into the 'Data' widget.
-
+---
 
 ## Features  
 
