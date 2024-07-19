@@ -19,14 +19,14 @@ See list of features below.
 ```
 EnhancerX/
 |
-├── data/*omitted on Github
+├── data/*omitted on Github (very big)
 |   ├── hg19/ *reference
 |   |   └── chr1.fa
 |   ├── ...
 |   └── enhancer_atlas/
 |       └── GM12878.txt
 |
-├── la_grande_table/*omitted on Github
+├── la_grande_table/*omitted on Github (even bigger)
 |   ├── chr1/
 |   ├── chr2/
 |   ├── ...
@@ -55,12 +55,17 @@ EnhancerX/
 ├── model/
 |   ├── Random Forest/
 |   ├── MLP/
-|   ├── logistic_regression
-|   └── gradient_boosting
+|   ├── gradient_boosting/
+|   |   ├── metropolis_hastings/ *search based algorithm to optimize hyperparameters
+|   |   └── model_... *contains models with different hyperparameters to test
+|   ├── .../ *more directories per models
+|   └── plots_each/ *storage for plots
 |
 ├── plots/
-|   ├── Vingron
-|   └── Vingron3D
+|   ├── Vingron/ *draws Vingron plots and apply statistical tests
+|   ├── Vingron_Combine/ *combines the plots for each feature and beautifies
+|   ├── Vingron3D/ *same as the Vingron counterparts, but for 3D distances
+|   └── Vingron_Combine_3D/
 |
 ├── .gitignore
 └── README.md
