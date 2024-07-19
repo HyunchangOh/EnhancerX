@@ -1,5 +1,7 @@
 # Enhancer X
 
+Link to the Github Repository: https://github.com/HyunchangOh/EnhancerX
+
 Predicting enhancers is challenging due to several factors: they are located in vast non-coding regions of the genome, lack consistent sequence motifs, and their activity varies across different cell types, developmental stages, and environmental conditions. Additionally, enhancers often exhibit redundancy and can function modularly, further complicating their identification. Accurate prediction of enhancers is crucial because they are involved in many biological processes and diseases. 
 
 Our goal with Enhancer X is to predict enhancers using different genomic annotations. By combining various data sources and using advanced computational methods, Enhancer X aims to improve the accuracy and reliability of enhancer prediction. This, in turn, will enhance our understanding of gene regulation and its implications for health and disease. Specifically, we developed two models: one for predicting enhancers based on interactions and another for predicting enhancers from regions. 
@@ -78,7 +80,71 @@ EnhancerX/
 └── README.md
 ```
 
-### Preprocess
+### preprocess
+
+#### Databases
+List of Database-subdirectories:
+Basic structure: preprocess - database - accessions
+* 3DIV (only at root)
+* ENCODE
+* enhancer_atlas (only at root)
+* EPD (only at root)
+* VISTA (only at root)
+
+Each accession subdirectory contains codes for:
+* boolean annotation of each feature
+* 1D distance calculation
+* 3D distance calculation
+
+Note that 3D distance calculation was done with respect to 3DIV database.
+
+#### Further Preprocessing
+* bin
+bin contains for binnning, which is combining the features of 'n=50' subsequent base pairs to reduce the data size.
+
+* Subsampling
+As there are much more non-enhancers than enhancers, subsampling has been performed to tackle this imbalance (subsampling ratio 1:1)
+
+### plots
+Vingron plots are distribution plots of enhancer-feature / promoter-feature distances which were used to justify the use of our feature engineering involving 1D and 3D distances.
+
+Also contains 'FeatureAnalysis.py' which calculates the most contributing features and plot them for tree-like learning algorithms.
+
+For further information for the plots, refer to the README in this directory.
+
+### model
+For more details on the model directory and finally selected models, refer to the README in the model directory.
+
+#### Learning Methods
+* Logistic Regression (logistic_regression)
+* Random Forest (Random Forest)
+* Gradient Boosting (gradient_boosting)
+* Multilayer Perceptron (MLP, HANNs)
+* Single Feature Naive (single_feature)
+
+Note that the directory also contains many different versions of each learning methods, often implemented using different libraries. Each subdirectory contains multiple python scripts for different models, mostly built to test different hyperparameters.
+
+#### Metropolis Hastings
+The subdirectories 'Random Forest' and 'gradient_boosting' contains an additional subdirectory called 'metropolis_hastings.' As they were the most well-performing models in the exploratory models, metropolis hastings algorithm was applied to further fine-tune the hyperparameters. This directory also contains code to plot the progress of the algorithm.
+
+#### overall_analysis
+This subdirectory contains code to apply each learning method to 'interchromosome analysis', where the model is trained for one chromosome and tested for all other chromosomes for robustness.
+
+Also, the (sub)finally selected models are applied to the entire data to yield the final evaluation metrics at the root directory of this subdirectory.
+
+### interaction_model
+
+#### How to Install Orange
+Orange is a GUI-based data mining software that offers scikit-learn based learning algorithms. As the interaction database was small enough to be run locally, Orange was used predominantly to train and test the interaction models. 
+
+We have tested Orange distributions for Windows10 and macOS, and the results were built by Orange3-3.37.0 on Windows10 22H2.
+
+https://orangedatamining.com/download/
+
+#### How to Use the Workflow
+The orange workflow that we used is stored at the directory "interaction_model." 
+After Orange has been installed, open the .ows file with Orange and download '3div.tsv' from the drive and feed it into the 'Data' widget.
+
 
 ## Features  
 
