@@ -28,9 +28,13 @@ EnhancerX/
 |
 ├── la_grande_table/*omitted on Github (even bigger)
 |   ├── chr1/
-|   ├── chr2/
-|   ├── ...
+|   ├── ... *for all chromosomes
 |   └── chrY/
+|
+├── Subsampled_Final/*omitted on Github (also big), stores binned and subsampled LGT
+|   ├── chr1/
+|   ├── ... *for all chromosomes except Y
+|   └── chrX/
 |
 ├── preprocess/
 |   ├── 3DIV/
@@ -46,11 +50,14 @@ EnhancerX/
 |   ├── SubSampling/ *performs subsampling
 |   └── bin/ *performs binning
 |
-├── processed/
+├── processed/ 
 |   ├── VISTA/
 |   |   └── vista.tsv 
 |   ├── enrichment_GC_PER_sequence.tsv
 |   └── la_grande_table_gen.py
+|
+├── interaction_model/
+|   └── enhancer.ows *orange workflow file to build and test interaction model
 |
 ├── model/
 |   ├── Random Forest/
@@ -70,6 +77,7 @@ EnhancerX/
 ├── .gitignore
 └── README.md
 ```
+
 ### Preprocess
 
 ## Features  
