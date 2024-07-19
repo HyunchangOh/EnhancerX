@@ -113,19 +113,19 @@ For further information for the plots, refer to the README in this directory.
 ### Model
 For more details on the model directory and finally selected models, refer to the README in the model directory.
 
-#### Learning Methods
-* Logistic Regression (logistic_regression)
-* Random Forest (Random Forest)
-* Gradient Boosting (gradient_boosting)
-* Multilayer Perceptron (MLP, HANNs)
-* Single Feature Naive (single_feature)
+#### Learning Methods (model/model)
+* Logistic Regression 
+* Random Forest 
+* Gradient Boosting 
+* Multilayer Perceptron (scikit-learn version and tensorflow versino)
+* Single Feature Naive 
 
 Note that the directory also contains many different versions of each learning methods, often implemented using different libraries. Each subdirectory contains multiple python scripts for different models, mostly built to test different hyperparameters.
 
 #### Metropolis Hastings
 The subdirectories 'Random Forest' and 'gradient_boosting' contains an additional subdirectory called 'metropolis_hastings.' As they were the most well-performing models in the exploratory models, metropolis hastings algorithm was applied to further fine-tune the hyperparameters. This directory also contains code to plot the progress of the algorithm.
 
-#### Overall_analysis
+#### analysis
 This subdirectory contains code to apply each learning method to 'interchromosome analysis', where the model is trained for one chromosome and tested for all other chromosomes for robustness.
 
 Also, the (sub)finally selected models are applied to the entire data to yield the final evaluation metrics at the root directory of this subdirectory.
